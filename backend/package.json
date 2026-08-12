@@ -1,0 +1,19 @@
+{
+  "name": "faculty-appraisal-backend",
+  "version": "1.0.0",
+  "description": "Supabase BaaS Backend configuration and database migrations for SRM Faculty Appraisal System",
+  "scripts": {
+    "supabase:init": "supabase init",
+    "supabase:start": "supabase start",
+    "supabase:db:push": "supabase db push",
+    "supabase:seed": "supabase db reset"
+  },
+  "keywords": [
+    "supabase",
+    "postgresql",
+    "faculty-appraisal",
+    "backend"
+  ],
+  "author": "SRMIST Full-Stack Team",
+  "license": "MIT"
+}
