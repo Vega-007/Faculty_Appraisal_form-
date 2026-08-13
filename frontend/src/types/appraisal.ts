@@ -644,12 +644,22 @@ export type InstitutionName =
   | 'SRM Trichy Engineering College'
   | 'SRM Trichy Medical College';
 
+export interface SchoolNode {
+  name: string;
+  departments: string[];
+}
+
+export interface InstitutionNode {
+  name: InstitutionName;
+  /** Sub-schools (E&T, S&H, Management, B.Arch) — only for SRM IST-type institutions */
+  schools?: SchoolNode[];
+  /** Flat department list — for institutions without school sub-grouping */
+  departments?: string[];
+}
+
 export interface CampusHierarchyNode {
   campus: CampusName;
-  institutions: {
-    name: InstitutionName;
-    departments: string[];
-  }[];
+  institutions: InstitutionNode[];
 }
 
 export const CAMPUS_HIERARCHY: CampusHierarchyNode[] = [
@@ -658,27 +668,61 @@ export const CAMPUS_HIERARCHY: CampusHierarchyNode[] = [
     institutions: [
       {
         name: 'SRM Institute of Science & Technology (SRMIST)',
-        departments: [
-          'Computer Science & Engineering (CSE)',
-          'Artificial Intelligence (AI)',
-          'Electronics & Communication Engineering (ECE)',
-          'Electrical & Electronics Engineering (EEE)',
-          'Information Technology (IT)',
-          'Biomedical Engineering (BME)',
-          'Biotechnology',
-          'Civil Engineering',
-          'Mechanical Engineering',
-          'Science & Humanities (S&H)',
-          'Computer Science & Applications',
-          'Commerce',
-          'English',
-          'Psychology',
-          'Economics',
-          'Media / Visual Communication',
-          'Mathematics',
-          'Physics',
-          'Chemistry',
-          'Management Studies',
+        schools: [
+          {
+            name: 'E&T',
+            departments: [
+              'Computer Science & Engineering (CSE)',
+              'Artificial Intelligence (AI)',
+              'Electronics & Communication Engineering (ECE)',
+              'Electrical & Electronics Engineering (EEE)',
+              'Information Technology (IT)',
+              'Biomedical Engineering (BME)',
+              'Civil Engineering',
+              'Mechanical Engineering',
+            ],
+          },
+          {
+            name: 'S&H',
+            departments: [
+              'COMMERCE',
+              'Commerce - PA, ISM, IAF& SF',
+              'BCA',
+              'Commerce (A&F)',
+              'Data Science',
+              'B.Sc Cyber Security',
+              'B.Sc Computer Science',
+              'B.Sc. (AI & ML)',
+              'MCA',
+              'Viscom',
+              'Film Tech',
+              'Fashion Designing',
+              'JMC',
+              'LCS (English)',
+              'LCS (Tamil)',
+              'Biotechnology',
+              'Psychology',
+              'Mathematics',
+              'Physics',
+              'Chemistry',
+              'Economics',
+              'Computer Science & Applications',
+              'English',
+              'Science & Humanities (S&H)',
+            ],
+          },
+          {
+            name: 'Management',
+            departments: [
+              'Management Studies',
+            ],
+          },
+          {
+            name: 'B.Arch',
+            departments: [
+              'Architecture',
+            ],
+          },
         ],
       },
       {

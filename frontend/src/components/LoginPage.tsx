@@ -111,30 +111,33 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
     <div className="min-h-screen bg-slate-50 flex flex-col justify-between font-sans selection:bg-blue-100 selection:text-blue-900">
       
       {/* ── TOP MINIMALIST INSTITUTIONAL HEADER BAR ── */}
-      <header className="bg-white/80 backdrop-blur-md border-b border-slate-200/80 py-4 px-6 sm:px-12 flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <img
-            src="/srm_ramapuram-removebg-preview.svg"
-            alt="SRM Institute of Science and Technology"
-            className="h-11 sm:h-13 w-auto object-contain shrink-0"
-          />
-          <div className="h-8 w-[1.5px] bg-slate-200 hidden sm:block"></div>
+      <header className="bg-white border-b border-slate-200 py-3 px-6 sm:px-12 flex items-center justify-between">
+        <div className="flex items-center gap-4 sm:gap-5 shrink-0">
+          <div className="h-14 sm:h-16 flex items-center shrink-0">
+            <img
+              src="/srm_ramapuram-removebg-preview.svg"
+              alt="SRM Institute of Science and Technology"
+              className="h-12 sm:h-14 w-auto object-contain max-h-14 shrink-0"
+            />
+          </div>
+          <div className="h-10 w-[1.5px] bg-slate-200 hidden sm:block"></div>
           <div className="hidden sm:block leading-tight">
-            <span className="text-xs sm:text-sm font-black text-slate-900 tracking-tight block">
+            <span className="text-sm sm:text-base font-black text-slate-900 tracking-tight block">
               SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
             </span>
-            <p className="text-[11px] text-slate-500 font-medium">
-              Faculty Performance Appraisal System
+            <p className="text-xs text-slate-500 font-extrabold mt-0.5 tracking-wide">
+              Faculty Performance &amp; Analytics Portal
             </p>
           </div>
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="px-3 py-1 rounded-full text-[11px] font-extrabold bg-slate-100 text-slate-700 border border-slate-200">
+          <span className="px-3.5 py-1.5 rounded-full text-xs font-black bg-slate-100 text-slate-700 border border-slate-200">
             Institutional Portal 2025
           </span>
         </div>
       </header>
+
 
       {/* ── CENTERED MINIMALIST LOGIN PORTAL ── */}
       <main className="flex-1 flex items-center justify-center p-6 my-6">
@@ -155,7 +158,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
 
           {/* 1. ROLE SWITCHER TABS */}
           <div className="space-y-1.5">
-            <label className="block text-[10px] font-black uppercase tracking-wider text-slate-400">
+            <label className="block text-xs font-black uppercase tracking-wider text-slate-400">
               Select Login Role
             </label>
             <div className="grid grid-cols-2 gap-1.5 bg-slate-100/90 p-1.5 rounded-2xl border border-slate-200/80">
@@ -191,9 +194,9 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
           {/* 2. DEMO PROFILE SELECTOR DROPDOWN */}
           {(selectedRole === 'TEACHER' || selectedRole === 'HOD') && (
             <div className="space-y-1.5">
-              <label className="block text-[10px] font-black uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <label className="block text-xs font-black uppercase tracking-wider text-slate-400 flex items-center justify-between">
                 <span>Select Faculty Profile</span>
-                <span className="text-[10px] text-blue-700 font-bold">
+                <span className="text-xs text-blue-700 font-bold">
                   {selectedRole === 'TEACHER' ? `${availableFaculty.length} Members` : `${availableHods.length} HODs`}
                 </span>
               </label>
@@ -224,22 +227,22 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
           {/* ACTIVE USER METADATA CARD */}
           <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-3.5 space-y-2 text-xs">
             <div className="flex items-center justify-between border-b border-slate-200/80 pb-2">
-              <span className="text-slate-400 font-bold text-[10px] uppercase">Active User Profile:</span>
+              <span className="text-slate-400 font-bold text-xs uppercase">Active User Profile:</span>
               <span className="font-extrabold text-slate-900">{currentUser.name}</span>
             </div>
-            <div className="grid grid-cols-2 gap-2 text-[11px]">
+            <div className="grid grid-cols-2 gap-2 text-[13px]">
               <div>
-                <span className="text-slate-400 block text-[10px]">Employee ID:</span>
+                <span className="text-slate-400 block text-xs">Employee ID:</span>
                 <span className="font-mono font-bold text-slate-800">{currentUser.empId}</span>
               </div>
               <div>
-                <span className="text-slate-400 block text-[10px]">Department:</span>
+                <span className="text-slate-400 block text-xs">Department:</span>
                 <span className="font-semibold text-slate-800 truncate block">{currentUser.department}</span>
               </div>
             </div>
             {currentUser.reportingHodName && (
               <div className="bg-blue-50 border border-blue-200/80 rounded-xl px-3 py-1.5 flex items-center justify-between text-xs mt-1">
-                <span className="text-blue-800 font-bold text-[10px]">Reporting HOD:</span>
+                <span className="text-blue-800 font-bold text-xs">Reporting HOD:</span>
                 <span className="font-extrabold text-blue-900">{currentUser.reportingHodName}</span>
               </div>
             )}
@@ -255,7 +258,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
             )}
 
             <div className="space-y-1">
-              <label className="block text-[10px] font-black uppercase tracking-wider text-slate-400">
+              <label className="block text-xs font-black uppercase tracking-wider text-slate-400">
                 Employee ID Code
               </label>
               <input
@@ -269,7 +272,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
             </div>
 
             <div className="space-y-1">
-              <label className="block text-[10px] font-black uppercase tracking-wider text-slate-400">
+              <label className="block text-xs font-black uppercase tracking-wider text-slate-400">
                 Password
               </label>
               <div className="relative">
@@ -310,7 +313,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
 
       {/* ── MINIMALIST INSTITUTIONAL FOOTER ── */}
       <footer className="border-t border-slate-200 py-4 text-center text-xs font-medium text-slate-400 bg-white/80 backdrop-blur-md">
-        SRM Institute of Science and Technology &bull; Faculty Performance Appraisal System &bull; All Rights Reserved
+        SRM Institute of Science and Technology &bull; Faculty Performance Portal System &bull; All Rights Reserved
       </footer>
 
     </div>

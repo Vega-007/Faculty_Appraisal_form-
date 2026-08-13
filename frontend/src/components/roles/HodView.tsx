@@ -31,6 +31,7 @@ import { FullAppraisalModal } from '@/components/FullAppraisalModal';
 interface HodViewProps {
   appraisals: AppraisalRecord[];
   onUpdateAppraisal: (updated: AppraisalRecord) => void;
+  onRefreshData?: () => Promise<boolean>;
 }
 
 const ALL_CRITERIA_KEYS = [
@@ -65,11 +66,12 @@ const ALL_CRITERIA_KEYS = [
   'cat3.industryUseCases',
 ];
 
-export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal }) => {
+export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal, onRefreshData }) => {
   // Filter & Search states
   const [gradeFilter, setGradeFilter] = useState<'ALL' | GradeType>('ALL');
   const [statusFilter, setStatusFilter] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
 
   // Modal / Drawer states
   const [selectedRecordId, setSelectedRecordId] = useState<string | null>(null);
@@ -94,6 +96,25 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
       setFlaggedKeys(selectedRecord.revisionFlags?.map((f) => f.key) || []);
     }
   }, [selectedRecordId, selectedRecord]);
+
+  // Refresh handler
+  const handleRefresh = async () => {
+    if (isRefreshing) return;
+    setIsRefreshing(true);
+    try {
+      if (onRefreshData) {
+        const ok = await onRefreshData();
+        if (ok) triggerToast('Refreshed HOD dashboard records from database.');
+        else triggerToast('Failed to refresh data.', 'error');
+      } else {
+        triggerToast('Refreshed HOD dashboard.');
+      }
+    } catch (err) {
+      triggerToast('Refresh failed.', 'error');
+    } finally {
+      setIsRefreshing(false);
+    }
+  };
 
   // Toast trigger
   const triggerToast = (msg: string, type: 'success' | 'error' = 'success') => {
@@ -235,7 +256,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
   };
 
   return (
-    <div className="flex flex-col h-full overflow-hidden bg-slate-50">
+    <div className="h-full bg-slate-50 text-slate-900 font-sans flex flex-col overflow-hidden text-xs">
       {/* Toast Notification */}
       {toast && (
         <div
@@ -251,19 +272,33 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
       )}
 
       {/* ── STICKY TOP HEADER BAR ── */}
-      <div className="shrink-0 bg-slate-900 border-b border-slate-800 px-5 py-3 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center shrink-0">
-            <ClipboardCheck className="w-5 h-5" />
+      <div className="shrink-0 bg-slate-900 border-b border-slate-800 px-6 py-4 flex items-center justify-between gap-4">
+        <div className="flex items-center gap-4">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center shrink-0 shadow-md">
+            <ClipboardCheck className="w-6 h-6" />
           </div>
           <div>
-            <h1 className="text-sm font-extrabold text-white tracking-tight">HOD Verification Console</h1>
-            <p className="text-[11px] text-slate-400">Verify scores, manage access, and audit department faculty appraisals.</p>
+            <h1 className="text-base sm:text-lg font-extrabold text-white tracking-tight">HOD Verification Console</h1>
+            <p className="text-xs text-slate-400 font-medium">Verify scores, manage access, and audit department faculty appraisals.</p>
           </div>
         </div>
-        <div className="flex items-center gap-2 bg-slate-800/80 border border-slate-700/60 rounded-xl px-3 py-1.5 text-xs font-bold text-slate-300">
-          <Users className="w-3.5 h-3.5 text-blue-400" />
-          <span>{totalCount} Faculty Members</span>
+
+        <div className="flex items-center gap-3">
+          {/* REFRESH BUTTON */}
+          <button
+            onClick={handleRefresh}
+            disabled={isRefreshing}
+            className="flex items-center gap-2 px-3.5 py-2 bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white font-bold rounded-xl text-xs shadow-sm transition-all active:scale-95"
+            title="Refresh latest dashboard data"
+          >
+            <RotateCcw className={`w-3.5 h-3.5 ${isRefreshing ? 'animate-spin' : ''}`} />
+            <span>{isRefreshing ? 'Refreshing...' : 'Refresh Data'}</span>
+          </button>
+
+          <div className="flex items-center gap-2 bg-slate-800/80 border border-slate-700/60 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-300">
+            <Users className="w-4 h-4 text-blue-400" />
+            <span>{totalCount} Faculty Members</span>
+          </div>
         </div>
       </div>
 
@@ -273,28 +308,28 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
           <Users className="w-7 h-7 text-slate-300 shrink-0" />
           <div>
             <p className="text-xl font-black text-slate-900">{totalCount}</p>
-            <p className="text-[10px] text-slate-400 font-bold uppercase">Total Faculty</p>
+            <p className="text-xs text-slate-400 font-bold uppercase">Total Faculty</p>
           </div>
         </div>
         <div className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-2xs flex items-center gap-3">
           <FileCheck className="w-7 h-7 text-emerald-200 shrink-0" />
           <div>
             <p className="text-xl font-black text-emerald-700">{approvedCount}</p>
-            <p className="text-[10px] text-slate-400 font-bold uppercase">HOD Approved</p>
+            <p className="text-xs text-slate-400 font-bold uppercase">HOD Approved</p>
           </div>
         </div>
         <div className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-2xs flex items-center gap-3">
           <Clock className="w-7 h-7 text-blue-200 shrink-0" />
           <div>
             <p className="text-xl font-black text-blue-700">{pendingReviewCount}</p>
-            <p className="text-[10px] text-slate-400 font-bold uppercase">Pending Review</p>
+            <p className="text-xs text-slate-400 font-bold uppercase">Pending Review</p>
           </div>
         </div>
         <div className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-2xs flex items-center gap-3">
           <Award className="w-7 h-7 text-purple-200 shrink-0" />
           <div>
             <p className="text-xl font-black text-purple-700">{gradeACount}</p>
-            <p className="text-[10px] text-slate-400 font-bold uppercase">Grade A &bull; B:{gradeBCount} C:{gradeCCount}</p>
+            <p className="text-xs text-slate-400 font-bold uppercase">Grade A &bull; B:{gradeBCount} C:{gradeCCount}</p>
           </div>
         </div>
       </div>
@@ -346,7 +381,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
         </select>
 
         {/* Count badge */}
-        <span className="ml-auto text-[11px] font-bold text-slate-400">
+        <span className="ml-auto text-[13px] font-bold text-slate-400">
           Showing {filteredAppraisals.length} of {totalCount}
         </span>
       </div>
@@ -355,7 +390,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
       <div className="flex-1 overflow-y-auto overflow-x-auto">
         <table className="w-full text-left text-xs min-w-[900px]">
           <thead className="sticky top-0 z-10">
-            <tr className="bg-slate-100 border-b border-slate-200 text-slate-600 font-extrabold uppercase text-[10px] tracking-wider">
+            <tr className="bg-slate-100 border-b border-slate-200 text-slate-600 font-extrabold uppercase text-xs tracking-wider">
               <th className="px-5 py-3 min-w-[220px]">Faculty Member</th>
               <th className="px-4 py-3 min-w-[180px]">Designation &amp; Dept</th>
               <th className="px-4 py-3 text-center min-w-[160px]">Score Summary</th>
@@ -394,24 +429,24 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
                         </div>
                         <div>
                           <p className="font-extrabold text-slate-900 leading-tight">{rec.facultyName ?? 'N/A'}</p>
-                          <p className="text-[10px] text-slate-400 font-mono mt-0.5">{rec.empId}</p>
+                          <p className="text-xs text-slate-400 font-mono mt-0.5">{rec.empId}</p>
                         </div>
                       </div>
                     </td>
 
                     {/* Designation */}
                     <td className="px-4 py-3.5 align-middle">
-                      <p className="font-bold text-slate-800 leading-snug text-[11px] truncate max-w-[160px]">{rec.designation}</p>
-                      <p className="text-[11px] text-slate-500 font-medium mt-0.5 truncate max-w-[160px]">{rec.department}</p>
+                      <p className="font-bold text-slate-800 leading-snug text-[13px] truncate max-w-[160px]">{rec.designation}</p>
+                      <p className="text-[13px] text-slate-500 font-medium mt-0.5 truncate max-w-[160px]">{rec.department}</p>
                     </td>
 
                     {/* Score Summary */}
                     <td className="px-4 py-3.5 text-center align-middle">
                       <div className="inline-flex flex-col items-center gap-1">
-                        <span className="px-2 py-0.5 rounded-md bg-slate-100 font-extrabold text-slate-800 text-[11px] border border-slate-200/80">
+                        <span className="px-2 py-0.5 rounded-md bg-slate-100 font-extrabold text-slate-800 text-[13px] border border-slate-200/80">
                           Self: {selfScore} / 350
                         </span>
-                        <span className="px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-800 font-extrabold text-[11px] border border-emerald-200/80">
+                        <span className="px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-800 font-extrabold text-[13px] border border-emerald-200/80">
                           HOD: {hodScore} / 350
                         </span>
                       </div>
@@ -419,7 +454,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
 
                     {/* Grade Badge */}
                     <td className="px-4 py-3.5 text-center align-middle">
-                      <span className={`inline-flex items-center gap-1 text-[11px] font-extrabold px-2.5 py-1 rounded-full border shadow-2xs ${
+                      <span className={`inline-flex items-center gap-1 text-[13px] font-extrabold px-2.5 py-1 rounded-full border shadow-2xs ${
                         calculatedGrade === 'Grade A'
                           ? 'bg-emerald-50 text-emerald-800 border-emerald-200'
                           : calculatedGrade === 'Grade B'
@@ -433,7 +468,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
 
                     {/* Form Status */}
                     <td className="px-4 py-3.5 text-center">
-                      <span className={`text-[10px] font-extrabold px-2.5 py-1 rounded-md border ${
+                      <span className={`text-xs font-extrabold px-2.5 py-1 rounded-md border ${
                         rec.status === 'SUBMITTED'
                           ? 'bg-blue-50 text-blue-700 border-blue-200'
                           : rec.status === 'HOD_APPROVED'
@@ -450,7 +485,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
                     <td className="px-4 py-3.5 text-center">
                       <button
                         onClick={() => handleToggleAccess(rec)}
-                        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-[11px] font-bold transition-all ${
+                        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-[13px] font-bold transition-all ${
                           isEnabled
                             ? 'bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border-emerald-200'
                             : 'bg-rose-50 hover:bg-rose-100 text-rose-700 border-rose-200'
@@ -530,19 +565,19 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
               {/* Summary Stats Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200">
                 <div>
-                  <span className="text-slate-400 block text-[10px] uppercase font-bold">Self Total</span>
+                  <span className="text-slate-400 block text-xs uppercase font-bold">Self Total</span>
                   <span className="text-sm font-black text-slate-900">{recordData.selfScoreTotal} / 350</span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block text-[10px] uppercase font-bold">HOD Verified</span>
+                  <span className="text-slate-400 block text-xs uppercase font-bold">HOD Verified</span>
                   <span className="text-sm font-black text-emerald-600">{recordData.hodScoreTotal} / 350</span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block text-[10px] uppercase font-bold">Current Grade</span>
+                  <span className="text-slate-400 block text-xs uppercase font-bold">Current Grade</span>
                   <span className="text-sm font-black text-blue-600">{recordData.grade}</span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block text-[10px] uppercase font-bold">Status</span>
+                  <span className="text-slate-400 block text-xs uppercase font-bold">Status</span>
                   <span className="text-sm font-black text-purple-600">{recordData.status}</span>
                 </div>
               </div>
@@ -551,17 +586,17 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
               <div className="border border-slate-200 rounded-xl overflow-hidden shadow-2xs">
                 <div className="px-4 py-3 bg-slate-100 border-b border-slate-200 flex items-center justify-between">
                   <h4 className="font-bold text-slate-900 text-xs">Score Verification Matrix</h4>
-                  <span className="text-[11px] text-slate-500 font-medium">Enter corrected HOD marks in the green inputs</span>
+                  <span className="text-[13px] text-slate-500 font-medium">Enter corrected HOD marks in the green inputs</span>
                 </div>
 
                 <div className="overflow-x-auto">
                   <table className="w-full text-left text-xs">
                     <thead>
                       <tr className="bg-slate-50 border-b border-slate-200">
-                        <th className="px-4 py-2.5 font-semibold text-slate-500 text-[10px] uppercase tracking-wide w-[45%]">Criteria Item</th>
-                        <th className="px-3 py-2.5 font-semibold text-slate-500 text-[10px] uppercase tracking-wide text-center">Self Score</th>
-                        <th className="px-3 py-2.5 font-semibold text-emerald-600 text-[10px] uppercase tracking-wide text-center">HOD Score ✎</th>
-                        <th className="px-3 py-2.5 font-semibold text-rose-600 text-[10px] uppercase tracking-wide text-center">
+                        <th className="px-4 py-2.5 font-semibold text-slate-500 text-xs uppercase tracking-wide w-[45%]">Criteria Item</th>
+                        <th className="px-3 py-2.5 font-semibold text-slate-500 text-xs uppercase tracking-wide text-center">Self Score</th>
+                        <th className="px-3 py-2.5 font-semibold text-emerald-600 text-xs uppercase tracking-wide text-center">HOD Score ✎</th>
+                        <th className="px-3 py-2.5 font-semibold text-rose-600 text-xs uppercase tracking-wide text-center">
                           <label className="inline-flex items-center gap-1 cursor-pointer bg-rose-100/80 px-2 py-0.5 rounded border border-rose-300">
                             <input
                               type="checkbox"
@@ -569,16 +604,16 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
                               onChange={handleToggleSelectAll}
                               className="w-3 h-3 accent-rose-600 rounded cursor-pointer"
                             />
-                            <span className="text-rose-800 font-bold text-[10px]">Flag All 🚩</span>
+                            <span className="text-rose-800 font-bold text-xs">Flag All 🚩</span>
                           </label>
                         </th>
-                        <th className="px-4 py-2.5 font-semibold text-slate-500 text-[10px] uppercase tracking-wide">Proof Link</th>
+                        <th className="px-4 py-2.5 font-semibold text-slate-500 text-xs uppercase tracking-wide">Proof Link</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100">
                       {/* Cat I Header */}
                       <tr className="bg-blue-50/80">
-                        <td colSpan={5} className="px-4 py-2 font-bold text-blue-800 text-[11px]">
+                        <td colSpan={5} className="px-4 py-2 font-bold text-blue-800 text-[13px]">
                           Category I: Teaching, Learning &amp; Evaluation (Max 110) &bull; Verified Total: {recordData.cat1.totalHodScore}
                         </td>
                       </tr>
@@ -636,7 +671,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
 
                       {/* Cat II Header */}
                       <tr className="bg-purple-50/80">
-                        <td colSpan={5} className="px-4 py-2 font-bold text-purple-800 text-[11px]">
+                        <td colSpan={5} className="px-4 py-2 font-bold text-purple-800 text-[13px]">
                           Category II: Co-Curricular &amp; Professional Activities (Max 50) &bull; Verified Total: {recordData.cat2.totalHodScore}
                         </td>
                       </tr>
@@ -692,7 +727,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
 
                       {/* Cat III Header */}
                       <tr className="bg-emerald-50/80">
-                        <td colSpan={5} className="px-4 py-2 font-bold text-emerald-800 text-[11px]">
+                        <td colSpan={5} className="px-4 py-2 font-bold text-emerald-800 text-[13px]">
                           Category III: Research, Publications &amp; Academic Contributions (Max 190) &bull; Verified Total: {recordData.cat3.totalHodScore}
                         </td>
                       </tr>
@@ -745,7 +780,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal 
                               />
                             </td>
                             <td className="px-4 py-2">
-                              <span className="text-emerald-700 font-bold text-[11px]">{count} Item(s) Verified</span>
+                              <span className="text-emerald-700 font-bold text-[13px]">{count} Item(s) Verified</span>
                             </td>
                           </tr>
                         );

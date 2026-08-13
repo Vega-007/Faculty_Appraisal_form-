@@ -33,9 +33,10 @@ import { FullAppraisalModal } from '@/components/FullAppraisalModal';
 interface HoiViewProps {
   appraisals: AppraisalRecord[];
   onUpdateAppraisal: (updated: AppraisalRecord) => void;
+  onRefreshData?: () => Promise<boolean>;
 }
 
-export const HoiView: React.FC<HoiViewProps> = ({ appraisals, onUpdateAppraisal }) => {
+export const HoiView: React.FC<HoiViewProps> = ({ appraisals, onUpdateAppraisal, onRefreshData }) => {
   // Master Filter & Search States
   const [selectedDept, setSelectedDept] = useState<string>('ALL');
   const [selectedHodName, setSelectedHodName] = useState<string>('ALL');
@@ -43,6 +44,7 @@ export const HoiView: React.FC<HoiViewProps> = ({ appraisals, onUpdateAppraisal 
   const [gradeFilter, setGradeFilter] = useState<'ALL' | GradeType>('ALL');
   const [statusFilter, setStatusFilter] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
 
   // Modal / Drawer States
   const [selectedRecordId, setSelectedRecordId] = useState<string | null>(null);
@@ -69,6 +71,25 @@ export const HoiView: React.FC<HoiViewProps> = ({ appraisals, onUpdateAppraisal 
   const triggerToast = (msg: string, type: 'success' | 'error' = 'success') => {
     setToast({ msg, type });
     setTimeout(() => setToast(null), 3500);
+  };
+
+  // Refresh handler
+  const handleRefresh = async () => {
+    if (isRefreshing) return;
+    setIsRefreshing(true);
+    try {
+      if (onRefreshData) {
+        const ok = await onRefreshData();
+        if (ok) triggerToast('Refreshed HOI institutional dashboard data.');
+        else triggerToast('Failed to refresh data.', 'error');
+      } else {
+        triggerToast('Refreshed HOI dashboard.');
+      }
+    } catch (err) {
+      triggerToast('Refresh failed.', 'error');
+    } finally {
+      setIsRefreshing(false);
+    }
   };
 
   // Grade calculate helper
@@ -198,19 +219,33 @@ export const HoiView: React.FC<HoiViewProps> = ({ appraisals, onUpdateAppraisal 
       )}
 
       {/* ── STICKY TOP HEADER BAR ── */}
-      <div className="shrink-0 bg-slate-900 border-b border-slate-800 px-5 py-3 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-purple-600 to-blue-600 text-white flex items-center justify-center shrink-0">
-            <Building2 className="w-5 h-5" />
+      <div className="shrink-0 bg-slate-900 border-b border-slate-800 px-6 py-4 flex items-center justify-between gap-4">
+        <div className="flex items-center gap-4">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 to-blue-600 text-white flex items-center justify-center shrink-0 shadow-md">
+            <Building2 className="w-6 h-6" />
           </div>
           <div>
-            <h1 className="text-sm font-extrabold text-white tracking-tight">HOI / Dean Executive Console</h1>
-            <p className="text-[11px] text-slate-400">Institutional oversight across all departments — final HOI sign-off authority.</p>
+            <h1 className="text-base sm:text-lg font-extrabold text-white tracking-tight">HOI / Dean Executive Console</h1>
+            <p className="text-xs text-slate-400 font-medium">Institutional oversight across all departments — final HOI sign-off authority.</p>
           </div>
         </div>
-        <div className="flex items-center gap-2 bg-slate-800/80 border border-slate-700/60 rounded-xl px-3 py-1.5 text-xs font-bold text-slate-300">
-          <School className="w-3.5 h-3.5 text-purple-400" />
-          <span>{totalCount} Total Faculty</span>
+
+        <div className="flex items-center gap-3">
+          {/* REFRESH BUTTON */}
+          <button
+            onClick={handleRefresh}
+            disabled={isRefreshing}
+            className="flex items-center gap-2 px-3.5 py-2 bg-purple-600 hover:bg-purple-500 disabled:opacity-50 text-white font-bold rounded-xl text-xs shadow-sm transition-all active:scale-95"
+            title="Refresh latest institutional data"
+          >
+            <RotateCcw className={`w-3.5 h-3.5 ${isRefreshing ? 'animate-spin' : ''}`} />
+            <span>{isRefreshing ? 'Refreshing...' : 'Refresh Data'}</span>
+          </button>
+
+          <div className="flex items-center gap-2 bg-slate-800/80 border border-slate-700/60 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-300">
+            <School className="w-4 h-4 text-purple-400" />
+            <span>{totalCount} Total Faculty</span>
+          </div>
         </div>
       </div>
 
@@ -220,28 +255,28 @@ export const HoiView: React.FC<HoiViewProps> = ({ appraisals, onUpdateAppraisal 
           <Users className="w-7 h-7 text-slate-300 shrink-0" />
           <div>
             <p className="text-xl font-black text-slate-900">{totalCount}</p>
-            <p className="text-[10px] text-slate-400 font-bold uppercase">Total Faculty</p>
+            <p className="text-xs text-slate-400 font-bold uppercase">Total Faculty</p>
           </div>
         </div>
         <div className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-2xs flex items-center gap-3">
           <CheckCircle2 className="w-7 h-7 text-purple-200 shrink-0" />
           <div>
             <p className="text-xl font-black text-purple-700">{hoiApprovedCount}</p>
-            <p className="text-[10px] text-slate-400 font-bold uppercase">HOI Approved</p>
+            <p className="text-xs text-slate-400 font-bold uppercase">HOI Approved</p>
           </div>
         </div>
         <div className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-2xs flex items-center gap-3">
           <Clock className="w-7 h-7 text-blue-200 shrink-0" />
           <div>
             <p className="text-xl font-black text-blue-700">{pendingHoiCount}</p>
-            <p className="text-[10px] text-slate-400 font-bold uppercase">Pending HOI Review</p>
+            <p className="text-xs text-slate-400 font-bold uppercase">Pending HOI Review</p>
           </div>
         </div>
         <div className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-2xs flex items-center gap-3">
           <Award className="w-7 h-7 text-emerald-200 shrink-0" />
           <div>
             <p className="text-xl font-black text-emerald-700">{gradeACount}</p>
-            <p className="text-[10px] text-slate-400 font-bold uppercase">Grade A &bull; B:{gradeBCount} C:{gradeCCount}</p>
+            <p className="text-xs text-slate-400 font-bold uppercase">Grade A &bull; B:{gradeBCount} C:{gradeCCount}</p>
           </div>
         </div>
       </div>
@@ -317,7 +352,7 @@ export const HoiView: React.FC<HoiViewProps> = ({ appraisals, onUpdateAppraisal 
           ))}
         </div>
 
-        <span className="ml-auto text-[11px] font-bold text-slate-400">
+        <span className="ml-auto text-[13px] font-bold text-slate-400">
           {filteredAppraisals.length} / {totalCount} shown
         </span>
       </div>
@@ -326,7 +361,7 @@ export const HoiView: React.FC<HoiViewProps> = ({ appraisals, onUpdateAppraisal 
       <div className="flex-1 overflow-y-auto overflow-x-auto">
         <table className="w-full text-left text-xs min-w-[900px]">
           <thead className="sticky top-0 z-10">
-            <tr className="bg-slate-100 border-b border-slate-200 text-slate-600 font-extrabold uppercase text-[10px] tracking-wider">
+            <tr className="bg-slate-100 border-b border-slate-200 text-slate-600 font-extrabold uppercase text-xs tracking-wider">
               <th className="px-5 py-3 min-w-[220px]">Faculty Member</th>
               <th className="px-4 py-3 min-w-[180px]">Department &amp; Designation</th>
               <th className="px-4 py-3 min-w-[160px]">Reporting HOD</th>
@@ -360,31 +395,31 @@ export const HoiView: React.FC<HoiViewProps> = ({ appraisals, onUpdateAppraisal 
                         </div>
                         <div>
                           <p className="font-extrabold text-slate-900 leading-tight">{rec.facultyName ?? 'N/A'}</p>
-                          <p className="text-[10px] text-slate-400 font-mono mt-0.5">{rec.empId}</p>
+                          <p className="text-xs text-slate-400 font-mono mt-0.5">{rec.empId}</p>
                         </div>
                       </div>
                     </td>
                     <td className="px-4 py-3.5 align-middle">
-                      <p className="font-bold text-slate-800 text-[11px] truncate max-w-[160px]">{rec.department}</p>
-                      <p className="text-[11px] text-slate-500 font-medium mt-0.5 truncate max-w-[160px]">{rec.designation}</p>
+                      <p className="font-bold text-slate-800 text-[13px] truncate max-w-[160px]">{rec.department}</p>
+                      <p className="text-[13px] text-slate-500 font-medium mt-0.5 truncate max-w-[160px]">{rec.designation}</p>
                     </td>
                     <td className="px-4 py-3.5 align-middle">
-                      <span className="font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200/80 inline-block text-[11px] truncate max-w-[140px]">
+                      <span className="font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200/80 inline-block text-[13px] truncate max-w-[140px]">
                         {rec.generalDetails?.reportingHodName || '—'}
                       </span>
                     </td>
                     <td className="px-4 py-3.5 text-center align-middle">
                       <div className="inline-flex flex-col items-center gap-1">
-                        <span className="px-2 py-0.5 rounded-md bg-slate-100 font-extrabold text-slate-800 text-[11px] border border-slate-200/80">
+                        <span className="px-2 py-0.5 rounded-md bg-slate-100 font-extrabold text-slate-800 text-[13px] border border-slate-200/80">
                           Self: {selfScore}/350
                         </span>
-                        <span className="px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-800 font-extrabold text-[11px] border border-emerald-200/80">
+                        <span className="px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-800 font-extrabold text-[13px] border border-emerald-200/80">
                           HOD: {hodScore}/350
                         </span>
                       </div>
                     </td>
                     <td className="px-4 py-3.5 text-center align-middle">
-                      <span className={`inline-flex items-center gap-1 text-[11px] font-extrabold px-2.5 py-1 rounded-full border ${
+                      <span className={`inline-flex items-center gap-1 text-[13px] font-extrabold px-2.5 py-1 rounded-full border ${
                         calculatedGrade === 'Grade A' ? 'bg-emerald-50 text-emerald-800 border-emerald-200'
                           : calculatedGrade === 'Grade B' ? 'bg-amber-50 text-amber-800 border-amber-200'
                           : 'bg-rose-50 text-rose-800 border-rose-200'
@@ -394,7 +429,7 @@ export const HoiView: React.FC<HoiViewProps> = ({ appraisals, onUpdateAppraisal 
                       </span>
                     </td>
                     <td className="px-4 py-3.5 text-center">
-                      <span className={`text-[10px] font-extrabold px-2.5 py-1 rounded-md border ${
+                      <span className={`text-xs font-extrabold px-2.5 py-1 rounded-md border ${
                         rec.status === 'HOI_APPROVED' ? 'bg-purple-50 text-purple-700 border-purple-200'
                           : rec.status === 'HOD_APPROVED' ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
                           : rec.status === 'SUBMITTED' ? 'bg-blue-50 text-blue-700 border-blue-200'
@@ -458,19 +493,19 @@ export const HoiView: React.FC<HoiViewProps> = ({ appraisals, onUpdateAppraisal 
             <div className="p-6 overflow-y-auto flex-1 space-y-6 text-xs text-slate-800">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-purple-50/60 p-4 rounded-xl border border-purple-200">
                 <div>
-                  <span className="text-slate-400 block text-[10px] uppercase font-bold">Reporting HOD</span>
+                  <span className="text-slate-400 block text-xs uppercase font-bold">Reporting HOD</span>
                   <span className="text-xs font-bold text-slate-900">{recordData.generalDetails?.reportingHodName || '—'}</span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block text-[10px] uppercase font-bold">Verified HOD Score</span>
+                  <span className="text-slate-400 block text-xs uppercase font-bold">Verified HOD Score</span>
                   <span className="text-sm font-black text-emerald-700">{Math.min(recordData.hodScoreTotal ?? 0, 350)} / 350</span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block text-[10px] uppercase font-bold">Calculated Grade</span>
+                  <span className="text-slate-400 block text-xs uppercase font-bold">Calculated Grade</span>
                   <span className="text-sm font-black text-purple-700">{recordData.grade}</span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block text-[10px] uppercase font-bold">Current Status</span>
+                  <span className="text-slate-400 block text-xs uppercase font-bold">Current Status</span>
                   <span className="text-sm font-black text-blue-700">{recordData.status?.replace(/_/g, ' ')}</span>
                 </div>
               </div>
@@ -478,21 +513,21 @@ export const HoiView: React.FC<HoiViewProps> = ({ appraisals, onUpdateAppraisal 
                 <h4 className="font-bold text-slate-900 text-xs border-b border-slate-200 pb-2">Category Score Breakdown (HOD Verified)</h4>
                 <div className="grid grid-cols-3 gap-3 text-center pt-1">
                   <div className="p-2.5 bg-white rounded-lg border border-slate-200">
-                    <span className="text-slate-400 block text-[10px] font-bold uppercase">Cat I: Teaching</span>
+                    <span className="text-slate-400 block text-xs font-bold uppercase">Cat I: Teaching</span>
                     <span className="text-sm font-black text-blue-700">{recordData.cat1?.totalHodScore ?? 0} / 110</span>
                   </div>
                   <div className="p-2.5 bg-white rounded-lg border border-slate-200">
-                    <span className="text-slate-400 block text-[10px] font-bold uppercase">Cat II: Co-Curricular</span>
+                    <span className="text-slate-400 block text-xs font-bold uppercase">Cat II: Co-Curricular</span>
                     <span className="text-sm font-black text-purple-700">{recordData.cat2?.totalHodScore ?? 0} / 50</span>
                   </div>
                   <div className="p-2.5 bg-white rounded-lg border border-slate-200">
-                    <span className="text-slate-400 block text-[10px] font-bold uppercase">Cat III: Research</span>
+                    <span className="text-slate-400 block text-xs font-bold uppercase">Cat III: Research</span>
                     <span className="text-sm font-black text-amber-700">{recordData.cat3?.totalHodScore ?? 0} / 190</span>
                   </div>
                 </div>
               </div>
               <div className="bg-slate-50 border border-slate-200 rounded-xl p-3.5 space-y-1">
-                <span className="text-[10px] font-bold uppercase text-slate-400">HOD Reviewer Remarks:</span>
+                <span className="text-xs font-bold uppercase text-slate-400">HOD Reviewer Remarks:</span>
                 <p className="text-slate-800 italic font-medium">{recordData.hodRemarks || 'HOD verified criteria scores and approved submission.'}</p>
               </div>
               <div className="space-y-1.5">

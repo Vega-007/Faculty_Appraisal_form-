@@ -37,36 +37,37 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 h-22 flex items-center justify-between gap-4 sm:gap-8">
+    <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm py-2">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 h-20 sm:h-22 flex items-center justify-between gap-4 sm:gap-8">
 
         {/* Official SRM Campus Logo & Name Branding */}
-        <div className="flex items-center gap-4 shrink-0">
-          <div className="h-16 sm:h-18 flex items-center shrink-0">
+        <div className="flex items-center gap-4 sm:gap-5 shrink-0">
+          <div className="h-14 sm:h-16 flex items-center shrink-0">
             <img
               src="/srm_ramapuram-removebg-preview.svg"
               alt="SRM Institute of Science and Technology Logo"
-              className="h-full w-auto object-contain max-w-[280px] shrink-0"
+              className="h-12 sm:h-14 w-auto object-contain max-h-14 shrink-0"
             />
           </div>
           <div className="h-10 w-[1.5px] bg-slate-200 hidden md:block"></div>
           <div className="leading-tight hidden md:block">
-            <span className="text-xs sm:text-sm font-black text-slate-900 tracking-tight block">
+            <span className="text-sm sm:text-base font-black text-slate-900 tracking-tight block">
               SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
             </span>
-            <p className="text-[11px] text-slate-500 font-bold mt-0.5">
-              Ramapuram Campus &bull; Faculty Performance Appraisal &amp; Analytics Portal
+            <p className="text-xs text-slate-500 font-extrabold mt-0.5 tracking-wide">
+              Faculty Performance &amp; Analytics Portal
             </p>
           </div>
         </div>
 
+
         {/* Center: Month Selection + Submission Window Status */}
-        <div className="flex items-center gap-2.5 sm:gap-4">
+        <div className="flex items-center gap-3 sm:gap-5">
           <div className="relative flex items-center">
             <select
               value={activeMonth}
               onChange={(e) => onMonthChange(e.target.value)}
-              className="appearance-none bg-slate-50 border border-slate-200 text-slate-900 text-xs font-black rounded-xl pl-3.5 pr-8 py-2.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors shadow-2xs"
+              className="appearance-none bg-slate-50 border border-slate-200 text-slate-900 text-xs sm:text-sm font-black rounded-xl pl-4 pr-9 py-2.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors shadow-2xs"
             >
               {windows.map((w) => (
                 <option key={w.monthYear} value={w.monthYear}>
@@ -74,16 +75,16 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
                 </option>
               ))}
             </select>
-            <ChevronDown className="absolute right-2.5 w-4 h-4 text-slate-400 pointer-events-none" />
+            <ChevronDown className="absolute right-3 w-4 h-4 text-slate-400 pointer-events-none" />
           </div>
 
           {isOpen ? (
-            <span className="inline-flex items-center gap-1.5 text-xs font-black bg-emerald-50 text-emerald-700 border border-emerald-200 px-3.5 py-2 rounded-full shadow-2xs">
+            <span className="inline-flex items-center gap-2 text-xs sm:text-sm font-black bg-emerald-50 text-emerald-700 border border-emerald-200 px-4 py-2.5 rounded-full shadow-2xs">
               <Circle className="w-2.5 h-2.5 fill-emerald-500 text-emerald-500 animate-pulse" />
               <span>Window Open</span>
             </span>
           ) : (
-            <span className="inline-flex items-center gap-1.5 text-xs font-black bg-rose-50 text-rose-700 border border-rose-200 px-3.5 py-2 rounded-full shadow-2xs">
+            <span className="inline-flex items-center gap-2 text-xs sm:text-sm font-black bg-rose-50 text-rose-700 border border-rose-200 px-4 py-2.5 rounded-full shadow-2xs">
               <Circle className="w-2.5 h-2.5 fill-rose-500 text-rose-500" />
               <span>Window Locked</span>
             </span>
@@ -91,22 +92,22 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
         </div>
 
         {/* Right: User Profile & Logout */}
-        <div className="flex items-center gap-3 shrink-0">
-          <div className="flex items-center gap-2.5">
-            <div className="w-10 h-10 rounded-full bg-blue-100 text-blue-900 font-black text-sm flex items-center justify-center border border-blue-200 shadow-2xs select-none shrink-0">
+        <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+          <div className="flex items-center gap-3">
+            <div className="w-11 h-11 rounded-full bg-blue-100 text-blue-900 font-black text-base flex items-center justify-center border-2 border-blue-200 shadow-2xs select-none shrink-0">
               {user.name.charAt(0)}
             </div>
             <div className="hidden xl:block text-right">
-              <p className="text-xs font-black text-slate-900 leading-none">{user.name}</p>
-              <p className="text-[10px] text-slate-400 font-mono font-bold mt-1">{user.empId}</p>
+              <p className="text-xs sm:text-sm font-black text-slate-900 leading-none">{user.name}</p>
+              <p className="text-[13px] text-slate-500 font-mono font-extrabold mt-1">{user.empId}</p>
             </div>
           </div>
-          <span className={`text-[11px] font-black px-3 py-1.5 rounded-lg border hidden sm:inline-block ${roleBadgeClass(user.role)}`}>
+          <span className={`text-xs font-black px-3.5 py-2 rounded-xl border hidden sm:inline-block ${roleBadgeClass(user.role)}`}>
             {roleLabel(user.role)}
           </span>
           <button
             onClick={onLogout}
-            className="flex items-center gap-1.5 text-xs font-black text-slate-700 hover:text-rose-600 bg-slate-100 hover:bg-rose-50 px-3.5 py-2 rounded-xl border border-slate-200 hover:border-rose-200 transition-colors"
+            className="flex items-center gap-2 text-xs sm:text-sm font-black text-slate-700 hover:text-rose-600 bg-slate-100 hover:bg-rose-50 px-4 py-2.5 rounded-xl border border-slate-200 hover:border-rose-200 transition-colors"
             title="Sign Out"
           >
             <LogOut className="w-4 h-4" />
@@ -116,5 +117,6 @@ export const AppHeader: React.FC<AppHeaderProps> = ({
 
       </div>
     </header>
+
   );
 };

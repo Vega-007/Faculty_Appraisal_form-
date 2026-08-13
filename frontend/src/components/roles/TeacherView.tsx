@@ -78,7 +78,7 @@ const StatusBadge: React.FC<{ status: string }> = ({ status }) => {
     LOCKED: 'bg-red-50 text-red-700',
   };
   return (
-    <span className={`inline-block text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded ${map[status] ?? 'bg-slate-100 text-slate-600'}`}>
+    <span className={`inline-block text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded ${map[status] ?? 'bg-slate-100 text-slate-600'}`}>
       {status.replace('_', ' ')}
     </span>
   );
@@ -118,7 +118,7 @@ const Field: React.FC<{ label: string; children: React.ReactNode; hint?: string;
       {label} {required && <span className="text-red-500">*</span>}
     </label>
     {children}
-    {hint && <p className="text-[11px] text-slate-400 leading-snug">{hint}</p>}
+    {hint && <p className="text-[13px] text-slate-400 leading-snug">{hint}</p>}
   </div>
 );
 
@@ -840,7 +840,7 @@ function ScoringGuideModal({ isOpen, onClose, guideKey }: ScoringGuideModalProps
             </span>
             <div>
               <h3 className="text-sm font-bold text-white leading-tight">{guide.title}</h3>
-              <p className="text-[11px] text-slate-300">Official API 2025 Appraisal Scoring Rule</p>
+              <p className="text-[13px] text-slate-300">Official API 2025 Appraisal Scoring Rule</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -871,13 +871,13 @@ function ScoringGuideModal({ isOpen, onClose, guideKey }: ScoringGuideModalProps
 
           {guide.items && guide.items.length > 0 && (
             <div>
-              <h4 className="font-bold text-slate-800 uppercase text-[10px] tracking-wider mb-2">Points Allocation Matrix</h4>
+              <h4 className="font-bold text-slate-800 uppercase text-xs tracking-wider mb-2">Points Allocation Matrix</h4>
               <div className="grid grid-cols-1 gap-1.5">
                 {guide.items.map((item, idx) => (
                   <div key={idx} className="flex items-start justify-between gap-3 bg-slate-50 border border-slate-200 p-2.5 rounded-lg">
                     <div className="flex-1">
                       <p className="font-semibold text-slate-900">{item.label}</p>
-                      {item.desc && <p className="text-[11px] text-slate-500 mt-0.5">{item.desc}</p>}
+                      {item.desc && <p className="text-[13px] text-slate-500 mt-0.5">{item.desc}</p>}
                     </div>
                     <span className="shrink-0 bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded text-xs">
                       {item.pts}
@@ -891,7 +891,7 @@ function ScoringGuideModal({ isOpen, onClose, guideKey }: ScoringGuideModalProps
           {guide.notes && guide.notes.length > 0 && (
             <div className="bg-amber-50/90 border border-amber-200 rounded-lg p-3 space-y-1">
               <p className="font-bold text-amber-900 text-xs">⚠️ Verification &amp; Proof Notes:</p>
-              <ul className="list-disc ml-4 space-y-1 text-[11px] text-amber-800">
+              <ul className="list-disc ml-4 space-y-1 text-[13px] text-amber-800">
                 {guide.notes.map((n, i) => (
                   <li key={i}>{n}</li>
                 ))}
@@ -946,7 +946,7 @@ function RevisionHistoryModal({
             </span>
             <div>
               <h3 className="text-sm font-bold leading-tight">ⓘ Flag &amp; Revision History</h3>
-              <p className="text-[11px] text-red-200 mt-0.5">Reviewer feedback &amp; score comparison</p>
+              <p className="text-[13px] text-red-200 mt-0.5">Reviewer feedback &amp; score comparison</p>
             </div>
           </div>
           <button onClick={onClose} className="p-1 rounded-full text-white/80 hover:text-white hover:bg-white/10 transition-colors">
@@ -957,12 +957,12 @@ function RevisionHistoryModal({
         {/* Modal Content */}
         <div className="p-5 space-y-4 text-xs text-slate-700">
           <div>
-            <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400 font-bold">Target Criterion</span>
+            <span className="text-xs font-mono uppercase tracking-wider text-slate-400 font-bold">Target Criterion</span>
             <p className="text-sm font-bold text-slate-900 mt-0.5">{criterionTitle}</p>
           </div>
 
           <div className="bg-red-50 border border-red-200 rounded-xl p-3.5 space-y-1">
-            <span className="text-[10px] font-bold text-red-700 uppercase tracking-wide flex items-center gap-1">
+            <span className="text-xs font-bold text-red-700 uppercase tracking-wide flex items-center gap-1">
               ⚠️ Reviewer Flag Reason ({flagItem.flaggedBy || 'HOD/HOI'})
             </span>
             <p className="text-xs text-red-900 italic font-medium leading-relaxed">
@@ -975,11 +975,11 @@ function RevisionHistoryModal({
             <div className="flex items-center justify-between">
               <span className="font-bold text-slate-800 text-xs">Score &amp; Proof Comparison</span>
               {isChanged ? (
-                <span className="text-[10px] font-bold bg-green-100 text-green-700 px-2 py-0.5 rounded-full border border-green-300">
+                <span className="text-xs font-bold bg-green-100 text-green-700 px-2 py-0.5 rounded-full border border-green-300">
                   ✓ Updated by Faculty
                 </span>
               ) : (
-                <span className="text-[10px] font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full border border-amber-300">
+                <span className="text-xs font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full border border-amber-300">
                   Pending Faculty Edit
                 </span>
               )}
@@ -988,33 +988,33 @@ function RevisionHistoryModal({
             <div className="grid grid-cols-2 gap-3 bg-slate-50 p-3 rounded-xl border border-slate-200">
               {/* Previous / Older */}
               <div className="space-y-1.5 border-r border-slate-200 pr-2">
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wide block">Previous (Older)</span>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wide block">Previous (Older)</span>
                 <div>
-                  <span className="text-[10px] text-slate-500 block">Self Score</span>
+                  <span className="text-xs text-slate-500 block">Self Score</span>
                   <span className="font-mono font-bold text-slate-600 text-xs">{origScore} Pts</span>
                 </div>
                 <div>
-                  <span className="text-[10px] text-slate-500 block">Proof Link</span>
-                  <span className="font-mono text-[10px] text-slate-500 truncate block max-w-[140px]" title={String(origProof)}>{String(origProof)}</span>
+                  <span className="text-xs text-slate-500 block">Proof Link</span>
+                  <span className="font-mono text-xs text-slate-500 truncate block max-w-[140px]" title={String(origProof)}>{String(origProof)}</span>
                 </div>
               </div>
 
               {/* Current / Updated */}
               <div className="space-y-1.5 pl-1">
-                <span className="text-[10px] font-bold text-blue-600 uppercase tracking-wide block">Current (Updated)</span>
+                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide block">Current (Updated)</span>
                 <div>
-                  <span className="text-[10px] text-slate-500 block">Self Score</span>
+                  <span className="text-xs text-slate-500 block">Self Score</span>
                   <span className="font-mono font-bold text-blue-700 text-xs">{currentSelfScore} Pts</span>
                 </div>
                 <div>
-                  <span className="text-[10px] text-slate-500 block">Proof Link</span>
-                  <span className="font-mono text-[10px] text-blue-600 truncate block max-w-[140px]" title={currentProofUrl}>{currentProofUrl || '—'}</span>
+                  <span className="text-xs text-slate-500 block">Proof Link</span>
+                  <span className="font-mono text-xs text-blue-600 truncate block max-w-[140px]" title={currentProofUrl}>{currentProofUrl || '—'}</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <p className="text-[11px] text-slate-400 text-center italic">
+          <p className="text-[13px] text-slate-400 text-center italic">
             This field will remain highlighted in red until verified and approved by HOD/HOI.
           </p>
         </div>
@@ -1069,7 +1069,7 @@ function CriteriaRow({
                   type="button"
                   onClick={() => onOpenGuide(scoringGuideKey)}
                   title="View detailed scoring rules & excel instructions"
-                  className="inline-flex items-center gap-1 text-[11px] font-medium text-blue-600 hover:text-blue-800 bg-blue-50 hover:bg-blue-100 border border-blue-200 px-2 py-0.5 rounded-full transition-colors shrink-0"
+                  className="inline-flex items-center gap-1 text-[13px] font-medium text-blue-600 hover:text-blue-800 bg-blue-50 hover:bg-blue-100 border border-blue-200 px-2 py-0.5 rounded-full transition-colors shrink-0"
                 >
                   <Info className="w-3 h-3 text-blue-600" />
                   <span>Scoring Rules</span>
@@ -1077,14 +1077,14 @@ function CriteriaRow({
               )}
               {isFlagged && (
                 <div className="inline-flex items-center gap-1.5 flex-wrap">
-                  <span className="text-[10px] font-extrabold bg-red-600 text-white px-2 py-0.5 rounded-full animate-pulse shadow-xs">
+                  <span className="text-xs font-extrabold bg-red-600 text-white px-2 py-0.5 rounded-full animate-pulse shadow-xs">
                     ⚠️ Revision Flagged
                   </span>
                   {flagItem && (
                     <button
                       type="button"
                       onClick={() => setShowHistoryModal(true)}
-                      className="inline-flex items-center gap-1 text-[11px] font-bold text-red-700 hover:text-red-900 bg-white hover:bg-red-50 border border-red-300 px-2.5 py-0.5 rounded-full transition-colors shadow-2xs cursor-pointer"
+                      className="inline-flex items-center gap-1 text-[13px] font-bold text-red-700 hover:text-red-900 bg-white hover:bg-red-50 border border-red-300 px-2.5 py-0.5 rounded-full transition-colors shadow-2xs cursor-pointer"
                       title="Click to view previous vs updated score & proof history"
                     >
                       <Info className="w-3 h-3 text-red-600" />
@@ -1102,7 +1102,7 @@ function CriteriaRow({
                   <button
                     type="button"
                     onClick={() => setShowHistoryModal(true)}
-                    className="text-[10px] text-red-600 underline font-bold hover:text-red-800 shrink-0"
+                    className="text-xs text-red-600 underline font-bold hover:text-red-800 shrink-0"
                   >
                     View Details →
                   </button>
@@ -1113,7 +1113,7 @@ function CriteriaRow({
         </div>
       </div>
       <div className="flex sm:flex-col items-center justify-between sm:justify-center gap-2 sm:col-span-3 lg:col-span-2 bg-slate-50 sm:bg-transparent p-2 sm:p-0 rounded-md">
-        <label className="text-[10px] text-slate-400 font-semibold uppercase tracking-wide">Self Score</label>
+        <label className="text-xs text-slate-400 font-semibold uppercase tracking-wide">Self Score</label>
         <div className="flex items-center gap-1.5">
           <input
             type="number"
@@ -1129,7 +1129,7 @@ function CriteriaRow({
         </div>
       </div>
       <div className="sm:col-span-3 lg:col-span-3">
-        <label className="text-[10px] text-slate-400 font-semibold uppercase tracking-wide block mb-1">Proof URL (Drive Link)</label>
+        <label className="text-xs text-slate-400 font-semibold uppercase tracking-wide block mb-1">Proof URL (Drive Link)</label>
         <input
           type="text"
           value={proofUrl}
@@ -1183,14 +1183,14 @@ function DynamicTable({ id, title, subtitle, addLabel, onAdd, headers, rows, emp
                 type="button"
                 onClick={() => onOpenGuide(scoringGuideKey)}
                 title="View scoring rules"
-                className="inline-flex items-center gap-1 text-[11px] font-medium text-blue-600 hover:text-blue-800 bg-blue-50 hover:bg-blue-100 border border-blue-200 px-2 py-0.5 rounded-full transition-colors"
+                className="inline-flex items-center gap-1 text-[13px] font-medium text-blue-600 hover:text-blue-800 bg-blue-50 hover:bg-blue-100 border border-blue-200 px-2 py-0.5 rounded-full transition-colors"
               >
                 <Info className="w-3 h-3 text-blue-600" />
                 <span>Scoring Rules</span>
               </button>
             )}
             {isFlagged && (
-              <span className="text-[10px] font-extrabold bg-red-600 text-white px-2 py-0.5 rounded-full animate-pulse shadow-xs">
+              <span className="text-xs font-extrabold bg-red-600 text-white px-2 py-0.5 rounded-full animate-pulse shadow-xs">
                 ⚠️ Revision Flagged
               </span>
             )}
@@ -1625,7 +1625,7 @@ export const TeacherView: React.FC<TeacherViewProps> = ({
           id="sec-general"
           icon={<User className="w-4 h-4" />}
           title="1. General Details & Profile"
-          subtitle="Annual Performance Appraisal Report — Faculty Self-Appraisal Form (API 2025)"
+          subtitle="Annual Performance Report — Faculty Self-Performance Form (API 2025)"
         />
 
         <div className="bg-white border border-slate-200 rounded-lg shadow-sm p-6 mb-8 space-y-6">
@@ -1994,7 +1994,7 @@ export const TeacherView: React.FC<TeacherViewProps> = ({
           <div className="mt-6 pt-4 border-t border-slate-200 bg-blue-50/80 border border-blue-200 rounded-lg p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm">
             <div>
               <span className="text-xs font-bold text-blue-900 uppercase tracking-wide">Category I Total Self Score (Teaching &amp; Evaluation)</span>
-              <p className="text-[11px] text-blue-700 font-medium">Dynamically calculated as you enter scores &amp; proof links above</p>
+              <p className="text-[13px] text-blue-700 font-medium">Dynamically calculated as you enter scores &amp; proof links above</p>
             </div>
             <div className="flex items-center gap-2 bg-white px-4 py-1.5 rounded-lg border border-blue-200 shadow-xs">
               <span className="text-lg font-black text-blue-700">{cat1Self.toFixed(1)}</span>
@@ -2032,7 +2032,7 @@ export const TeacherView: React.FC<TeacherViewProps> = ({
           <div className="mt-6 pt-4 border-t border-slate-200 bg-purple-50/80 border border-purple-200 rounded-lg p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm">
             <div>
               <span className="text-xs font-bold text-purple-900 uppercase tracking-wide">Category II Total Self Score (Co-Curricular &amp; Professional)</span>
-              <p className="text-[11px] text-purple-700 font-medium">Dynamically calculated as you enter scores &amp; proof links above</p>
+              <p className="text-[13px] text-purple-700 font-medium">Dynamically calculated as you enter scores &amp; proof links above</p>
             </div>
             <div className="flex items-center gap-2 bg-white px-4 py-1.5 rounded-lg border border-purple-200 shadow-xs">
               <span className="text-lg font-black text-purple-700">{cat2Self.toFixed(1)}</span>
@@ -2210,7 +2210,7 @@ export const TeacherView: React.FC<TeacherViewProps> = ({
           <div className="mt-6 pt-4 border-t border-slate-200 bg-amber-50/80 border border-amber-200 rounded-lg p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm">
             <div>
               <span className="text-xs font-bold text-amber-900 uppercase tracking-wide">Category III Total Self Score (Research &amp; Contributions)</span>
-              <p className="text-[11px] text-amber-700 font-medium">Dynamically calculated across publications, patents, consultancy &amp; projects</p>
+              <p className="text-[13px] text-amber-700 font-medium">Dynamically calculated across publications, patents, consultancy &amp; projects</p>
             </div>
             <div className="flex items-center gap-2 bg-white px-4 py-1.5 rounded-lg border border-amber-200 shadow-xs">
               <span className="text-lg font-black text-amber-700">{cat3Self.toFixed(1)}</span>
@@ -2260,7 +2260,7 @@ export const TeacherView: React.FC<TeacherViewProps> = ({
         <div className="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden mb-8">
           <div className="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <div>
-              <h3 className="text-sm font-bold tracking-wide uppercase">Faculty Appraisal Form 2025 — Grand Performance Summary</h3>
+              <h3 className="text-sm font-bold tracking-wide uppercase">Faculty Performance Form 2025 — Grand Performance Summary</h3>
               <p className="text-xs text-slate-300 mt-0.5">Faculty Name: {data.facultyName} ({data.empId}) &bull; Dept: {data.department}</p>
             </div>
             <div className="flex items-center gap-2 bg-slate-800 border border-slate-700 px-3 py-1.5 rounded-lg text-xs">
@@ -2275,10 +2275,10 @@ export const TeacherView: React.FC<TeacherViewProps> = ({
             <table className="w-full text-left text-xs border border-slate-200 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-slate-100 border-b border-slate-200">
-                  <th className="px-4 py-3 font-bold text-slate-700 uppercase tracking-wider text-[11px] w-[50%]">Category Description</th>
-                  <th className="px-4 py-3 font-bold text-slate-700 uppercase tracking-wider text-[11px] text-center">Maximum Points</th>
-                  <th className="px-4 py-3 font-bold text-blue-700 uppercase tracking-wider text-[11px] text-center">Self-Score Gained ✎</th>
-                  <th className="px-4 py-3 font-bold text-emerald-700 uppercase tracking-wider text-[11px] text-center">% Attained</th>
+                  <th className="px-4 py-3 font-bold text-slate-700 uppercase tracking-wider text-[13px] w-[50%]">Category Description</th>
+                  <th className="px-4 py-3 font-bold text-slate-700 uppercase tracking-wider text-[13px] text-center">Maximum Points</th>
+                  <th className="px-4 py-3 font-bold text-blue-700 uppercase tracking-wider text-[13px] text-center">Self-Score Gained ✎</th>
+                  <th className="px-4 py-3 font-bold text-emerald-700 uppercase tracking-wider text-[13px] text-center">% Attained</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
@@ -2321,19 +2321,19 @@ export const TeacherView: React.FC<TeacherViewProps> = ({
           {/* Official Excel Grading Scale Box */}
           <div className="px-6 pb-6 pt-2">
             <div className="border border-slate-200 rounded-lg bg-slate-50 p-4 space-y-2">
-              <h4 className="text-xs font-bold text-slate-700 uppercase tracking-wide">Official Faculty Appraisal Form 2025 Grade Qualification Parameters</h4>
+              <h4 className="text-xs font-bold text-slate-700 uppercase tracking-wide">Official Faculty Performance Form 2025 Grade Qualification Parameters</h4>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
                 <div className={`p-3 rounded-md border ${totalSelfScore >= 245 ? 'bg-emerald-100 border-emerald-400 text-emerald-900 font-bold' : 'bg-white border-slate-200 text-slate-600'}`}>
                   <p className="font-extrabold text-sm">Grade A (&ge; 245 Pts)</p>
-                  <p className="text-[11px] font-normal mt-0.5">&ge; 70% Overall Score — Outstanding Performance</p>
+                  <p className="text-[13px] font-normal mt-0.5">&ge; 70% Overall Score — Outstanding Performance</p>
                 </div>
                 <div className={`p-3 rounded-md border ${totalSelfScore >= 175 && totalSelfScore < 245 ? 'bg-blue-100 border-blue-400 text-blue-900 font-bold' : 'bg-white border-slate-200 text-slate-600'}`}>
                   <p className="font-extrabold text-sm">Grade B (175 – 244 Pts)</p>
-                  <p className="text-[11px] font-normal mt-0.5">50% – 69.9% Overall Score — Good / Satisfactory</p>
+                  <p className="text-[13px] font-normal mt-0.5">50% – 69.9% Overall Score — Good / Satisfactory</p>
                 </div>
                 <div className={`p-3 rounded-md border ${totalSelfScore < 175 ? 'bg-amber-100 border-amber-400 text-amber-900 font-bold' : 'bg-white border-slate-200 text-slate-600'}`}>
                   <p className="font-extrabold text-sm">Grade C (&lt; 175 Pts)</p>
-                  <p className="text-[11px] font-normal mt-0.5">&lt; 50% Overall Score — Needs Improvement / Revision</p>
+                  <p className="text-[13px] font-normal mt-0.5">&lt; 50% Overall Score — Needs Improvement / Revision</p>
                 </div>
               </div>
             </div>

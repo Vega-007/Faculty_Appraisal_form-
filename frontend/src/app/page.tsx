@@ -154,6 +154,24 @@ export default function Home() {
     logAuditEventApi(newLog);
   };
 
+  /* ── Data Refresh Callback ── */
+  const handleRefreshData = async (): Promise<boolean> => {
+    try {
+      const wins = await fetchWindows();
+      setWindows(wins);
+      const dbAppraisals = await fetchAppraisalsApi();
+      if (dbAppraisals && dbAppraisals.length > 0) {
+        setAppraisals(dbAppraisals);
+      }
+      const logs = await fetchAuditLogsApi();
+      setAuditLogs(logs);
+      return true;
+    } catch (err) {
+      console.warn('[page] Refresh failed:', err);
+      return false;
+    }
+  };
+
   /* ── Derived values ── */
   const activeWin = windows.find((w) => w.monthYear === activeMonth);
   const isWindowOpen = activeWin ? activeWin.isOpen : true;
@@ -165,7 +183,7 @@ export default function Home() {
       )
     : undefined;
 
-  // HOD sees the 4 faculty members under their department for active month
+  // HOD sees faculty members under their department / reporting HOD for active month
   const hodAppraisals = appraisals.filter((a) => {
     if (a.monthYear !== activeMonth) return false;
     if (loggedInUser?.role === 'HOD') {
@@ -234,6 +252,7 @@ export default function Home() {
             <HodView
               appraisals={hodAppraisals}
               onUpdateAppraisal={handleUpdateAppraisal}
+              onRefreshData={handleRefreshData}
             />
           </ErrorBoundary>
         )}
@@ -244,6 +263,7 @@ export default function Home() {
             <HoiView
               appraisals={hodAppraisals}
               onUpdateAppraisal={handleUpdateAppraisal}
+              onRefreshData={handleRefreshData}
             />
           </ErrorBoundary>
         )}
@@ -257,13 +277,14 @@ export default function Home() {
               appraisals={appraisals}
               auditLogs={auditLogs}
               onUpdateAppraisal={handleUpdateAppraisal}
+              onRefreshData={handleRefreshData}
             />
           </ErrorBoundary>
         )}
       </main>
 
       <footer className="shrink-0 border-t border-slate-200 py-2.5 text-center text-xs text-slate-400 bg-white">
-        SRM Institute of Science and Technology — Faculty Performance Appraisal &amp; Analytics System 2025
+        SRM Institute of Science and Technology — Faculty Performance &amp; Analytics System 2025
       </footer>
     </div>
   );

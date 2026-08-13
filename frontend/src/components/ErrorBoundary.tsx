@@ -48,7 +48,7 @@ export class ErrorBoundary extends Component<Props, State> {
                 A rendering exception occurred. Your data is safe. Try reloading this section.
               </p>
               {this.state.errorMessage && (
-                <p className="text-[11px] font-mono text-rose-600 bg-rose-50 border border-rose-100 rounded-xl px-3 py-2 mt-3 text-left break-words">
+                <p className="text-[13px] font-mono text-rose-600 bg-rose-50 border border-rose-100 rounded-xl px-3 py-2 mt-3 text-left break-words">
                   {this.state.errorMessage}
                 </p>
               )}

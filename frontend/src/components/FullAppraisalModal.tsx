@@ -38,7 +38,7 @@ export const FullAppraisalModal: React.FC<FullAppraisalModalProps> = ({ record, 
                 }`}>
                   {record.grade}
                 </span>
-                <span className={`px-2 py-0.5 rounded-md text-[11px] font-bold border ${
+                <span className={`px-2 py-0.5 rounded-md text-[13px] font-bold border ${
                   record.status === 'SUBMITTED' ? 'bg-blue-500/20 text-blue-300 border-blue-500/40' :
                   record.status === 'HOD_APPROVED' ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' :
                   'bg-slate-800 text-slate-300 border-slate-700'
@@ -47,7 +47,7 @@ export const FullAppraisalModal: React.FC<FullAppraisalModalProps> = ({ record, 
                 </span>
               </div>
               <p className="text-xs text-slate-400 mt-0.5">
-                {record.designation} &bull; {record.department} &bull; Period: {record.monthYear} &bull; Complete Faculty Appraisal Form View
+                {record.designation} &bull; {record.department} &bull; Period: {record.monthYear} &bull; Complete Faculty Performance Form View
               </p>
             </div>
           </div>
@@ -68,7 +68,7 @@ export const FullAppraisalModal: React.FC<FullAppraisalModalProps> = ({ record, 
           </div>
         </div>
 
-        {/* Modal Body: Complete Faculty Login Form View */}
+        {/* Modal Body: Complete Faculty Performance Form View */}
         <div className="overflow-y-auto flex-1 p-3 sm:p-6 bg-slate-50">
           <TeacherView
             appraisal={record}
@@ -80,7 +80,7 @@ export const FullAppraisalModal: React.FC<FullAppraisalModalProps> = ({ record, 
         {/* Sticky Footer */}
         <div className="px-6 py-3 border-t border-slate-200 bg-white flex items-center justify-between shrink-0">
           <span className="text-xs text-slate-500 font-medium">
-            Viewing Complete Faculty Appraisal Form for <strong className="text-slate-900">{record.facultyName}</strong> ({record.empId})
+            Viewing Complete Faculty Performance Form for <strong className="text-slate-900">{record.facultyName}</strong> ({record.empId})
           </span>
           <button
             onClick={onClose}

@@ -54,21 +54,21 @@ export const PersonalInfoModal: React.FC<PersonalInfoModalProps> = ({ record, on
               <User className="w-4 h-4" /> 1.1 Basic &amp; Contact Information
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              <div><span className="text-slate-400 block text-[11px]">Institution</span><span className="font-semibold">{g.institutionName || 'SRMIST'}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Faculty Name</span><span className="font-semibold">{record.facultyName}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Employee ID</span><span className="font-semibold font-mono">{record.empId}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Qualifications</span><span className="font-semibold">{g.qualifications || '—'}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Department</span><span className="font-semibold">{record.department}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Date of Joining</span><span className="font-semibold">{g.dateOfJoining || '—'}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Designation at Joining</span><span className="font-semibold">{g.designationAtJoining || '—'}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Present Designation</span><span className="font-semibold text-blue-600">{record.designation}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Mobile Number</span><span className="font-semibold">{g.mobileNumber || '—'}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Official Email</span><span className="font-semibold">{g.officialEmail || '—'}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Personal Email</span><span className="font-semibold">{g.personalEmail || '—'}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Google Scholar</span><span className="font-semibold text-blue-600">{g.googleScholarUrl ? <a href={g.googleScholarUrl} target="_blank" rel="noreferrer" className="underline">Profile Link</a> : '—'}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Scopus Author ID</span><span className="font-semibold">{g.scopusAuthorId || '—'}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">ORCID ID</span><span className="font-semibold">{g.orcidId || '—'}</span></div>
-              <div><span className="text-slate-400 block text-[11px]">Reporting HoD</span><span className="font-semibold">{g.reportingHodName || '—'}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Institution</span><span className="font-semibold">{g.institutionName || 'SRMIST'}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Faculty Name</span><span className="font-semibold">{record.facultyName}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Employee ID</span><span className="font-semibold font-mono">{record.empId}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Qualifications</span><span className="font-semibold">{g.qualifications || '—'}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Department</span><span className="font-semibold">{record.department}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Date of Joining</span><span className="font-semibold">{g.dateOfJoining || '—'}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Designation at Joining</span><span className="font-semibold">{g.designationAtJoining || '—'}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Present Designation</span><span className="font-semibold text-blue-600">{record.designation}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Mobile Number</span><span className="font-semibold">{g.mobileNumber || '—'}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Official Email</span><span className="font-semibold">{g.officialEmail || '—'}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Personal Email</span><span className="font-semibold">{g.personalEmail || '—'}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Google Scholar</span><span className="font-semibold text-blue-600">{g.googleScholarUrl ? <a href={g.googleScholarUrl} target="_blank" rel="noreferrer" className="underline">Profile Link</a> : '—'}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Scopus Author ID</span><span className="font-semibold">{g.scopusAuthorId || '—'}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">ORCID ID</span><span className="font-semibold">{g.orcidId || '—'}</span></div>
+              <div><span className="text-slate-400 block text-[13px]">Reporting HoD</span><span className="font-semibold">{g.reportingHodName || '—'}</span></div>
             </div>
           </div>
 
@@ -119,12 +119,12 @@ export const PersonalInfoModal: React.FC<PersonalInfoModalProps> = ({ record, on
           <div className="border border-slate-200 rounded-lg p-4 bg-slate-50/50">
             <h5 className="font-bold text-slate-800 mb-2">1.5 Leave Details (Calendar Year {g.leaveDetails.calendarYear})</h5>
             <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 text-center">
-              <div className="p-2 bg-white rounded border border-slate-200"><span className="text-slate-400 block text-[10px]">Working Days</span><span className="font-bold text-slate-800">{g.leaveDetails.workingDays}</span></div>
-              <div className="p-2 bg-white rounded border border-slate-200"><span className="text-slate-400 block text-[10px]">CL Availed</span><span className="font-bold text-slate-800">{g.leaveDetails.cl}</span></div>
-              <div className="p-2 bg-white rounded border border-slate-200"><span className="text-slate-400 block text-[10px]">EL Availed</span><span className="font-bold text-slate-800">{g.leaveDetails.el}</span></div>
-              <div className="p-2 bg-white rounded border border-slate-200"><span className="text-slate-400 block text-[10px]">ML Availed</span><span className="font-bold text-slate-800">{g.leaveDetails.ml}</span></div>
-              <div className="p-2 bg-white rounded border border-slate-200"><span className="text-slate-400 block text-[10px]">LoP Availed</span><span className="font-bold text-slate-800">{g.leaveDetails.lop}</span></div>
-              <div className="p-2 bg-white rounded border border-slate-200"><span className="text-slate-400 block text-[10px]">Attendance %</span><span className="font-bold text-green-600">{g.leaveDetails.attendancePercentage}%</span></div>
+              <div className="p-2 bg-white rounded border border-slate-200"><span className="text-slate-400 block text-xs">Working Days</span><span className="font-bold text-slate-800">{g.leaveDetails.workingDays}</span></div>
+              <div className="p-2 bg-white rounded border border-slate-200"><span className="text-slate-400 block text-xs">CL Availed</span><span className="font-bold text-slate-800">{g.leaveDetails.cl}</span></div>
+              <div className="p-2 bg-white rounded border border-slate-200"><span className="text-slate-400 block text-xs">EL Availed</span><span className="font-bold text-slate-800">{g.leaveDetails.el}</span></div>
+              <div className="p-2 bg-white rounded border border-slate-200"><span className="text-slate-400 block text-xs">ML Availed</span><span className="font-bold text-slate-800">{g.leaveDetails.ml}</span></div>
+              <div className="p-2 bg-white rounded border border-slate-200"><span className="text-slate-400 block text-xs">LoP Availed</span><span className="font-bold text-slate-800">{g.leaveDetails.lop}</span></div>
+              <div className="p-2 bg-white rounded border border-slate-200"><span className="text-slate-400 block text-xs">Attendance %</span><span className="font-bold text-green-600">{g.leaveDetails.attendancePercentage}%</span></div>
             </div>
           </div>
 

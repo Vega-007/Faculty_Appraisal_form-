@@ -25,6 +25,106 @@
   --text-h: #0F172A;
   --social-bg: #F1F5F9;
   --shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+
+  /* Typography Design Tokens (Dean Presentation Scale) */
+  --font-display-xl: 120px;
+  --font-display-lg: 90px;
+  --font-display-md: 64px;
+  --font-display-sm: 48px;
+  --font-title-lg: 36px;
+  --font-title-md: 28px;
+  --font-title-sm: 24px;
+  --font-label-uppercase: 18px;
+  --font-body-md: 22px;
+  --font-body-sm: 18px;
+  --font-caption: 16px;
+  --font-button: 18px;
+  --font-nav-link: 18px;
+}
+
+html {
+  font-size: 18px;
+}
+
+/* Design System Typography Utilities */
+.text-display-xl {
+  font-size: var(--font-display-xl);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.text-display-lg {
+  font-size: var(--font-display-lg);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+.text-display-md {
+  font-size: var(--font-display-md);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+.text-display-sm {
+  font-size: var(--font-display-sm);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+.text-title-lg {
+  font-size: var(--font-title-lg);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+.text-title-md {
+  font-size: var(--font-title-md);
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+.text-title-sm {
+  font-size: var(--font-title-sm);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.text-label-uppercase {
+  font-size: var(--font-label-uppercase);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.text-body-md {
+  font-size: var(--font-body-md);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.text-body-sm {
+  font-size: var(--font-body-sm);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.text-caption {
+  font-size: var(--font-caption);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+.text-button {
+  font-size: var(--font-button);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.5px;
+}
+.text-nav-link {
+  font-size: var(--font-nav-link);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
 }
 
 * {
