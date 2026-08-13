@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Supabase BaaS Backend configuration and database migrations for SRM Faculty Appraisal System",
   "scripts": {
-    "start": "echo 'Supabase BaaS Backend Ready' && exit 0",
+    "start": "node server.js",
     "supabase:init": "supabase init",
     "supabase:start": "supabase start",
     "supabase:db:push": "supabase db push",
