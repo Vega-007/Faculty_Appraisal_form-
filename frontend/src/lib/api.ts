@@ -99,7 +99,7 @@ export async function fetchAppraisalsApi(): Promise<AppraisalRecord[]> {
 
   // Initialize map with all 85 seed appraisals from Excel dataset
   const appraisalMap = new Map<string, AppraisalRecord>();
-  SEED_APPRAISALS.forEach((rec) => {
+  SEED_APPRAISALS.forEach((rec: AppraisalRecord) => {
     appraisalMap.set(rec.id, rec);
   });
 
@@ -225,7 +225,7 @@ export async function logAuditEventApi(log: AuditLog): Promise<void> {
 
 /* ─── HELPER MAPPERS ──────────────────────────────────────── */
 function dbRecordToAppraisal(db: any): AppraisalRecord {
-  const seed = SEED_APPRAISALS.find((s) => s.empId === db.emp_id) || SEED_APPRAISALS[0];
+  const seed = SEED_APPRAISALS.find((s: AppraisalRecord) => s.empId === db.emp_id) || SEED_APPRAISALS[0];
   const defaultGen = seed ? seed.generalDetails : emptyGeneralDetails(db.faculty_name, db.emp_id, db.department, db.designation);
   const defaultCat1 = seed ? seed.cat1 : emptyCat1();
   const defaultCat2 = seed ? seed.cat2 : emptyCat2();

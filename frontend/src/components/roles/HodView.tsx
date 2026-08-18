@@ -5,31 +5,30 @@ import { AppraisalRecord, GradeType } from '@/types/appraisal';
 import { calculateCategory1, calculateCategory2, calculateCategory3, calculateGrade } from '@/lib/scoring';
 import {
   CheckCircle2,
-  AlertCircle,
   ExternalLink,
   Users,
   ClipboardCheck,
   RotateCcw,
-  User,
-  Printer,
   Search,
-  Filter,
   Eye,
   Award,
-  TrendingUp,
   X,
-  ChevronRight,
-  Sparkles,
-  ShieldAlert,
   FileCheck,
   Clock,
   Lock,
   Unlock,
+  ArrowLeft,
 } from 'lucide-react';
 import { FullAppraisalModal } from '@/components/FullAppraisalModal';
+import { GradeDetailModal } from '@/components/GradeDetailModal';
+import { Button } from '@/components/ui/Button';
+import { StatusPill } from '@/components/ui/StatusPill';
+import { GradeBadge } from '@/components/ui/GradeBadge';
+import { StatCard } from '@/components/ui/StatCard';
+import { typography, tableTokens } from '@/lib/design-tokens';
 
 interface HodViewProps {
-  appraisals: AppraisalRecord[];
+  appraisals?: AppraisalRecord[];
   onUpdateAppraisal: (updated: AppraisalRecord) => void;
   onRefreshData?: () => Promise<boolean>;
 }
@@ -66,12 +65,15 @@ const ALL_CRITERIA_KEYS = [
   'cat3.industryUseCases',
 ];
 
-export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal, onRefreshData }) => {
+export const HodView: React.FC<HodViewProps> = ({ appraisals = [], onUpdateAppraisal, onRefreshData }) => {
   // Filter & Search states
   const [gradeFilter, setGradeFilter] = useState<'ALL' | GradeType>('ALL');
+  const [selectedGradeModal, setSelectedGradeModal] = useState<GradeType | null>(null);
   const [statusFilter, setStatusFilter] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
+
+  const safeAppraisals = useMemo(() => Array.isArray(appraisals) ? appraisals : [], [appraisals]);
 
   // Modal / Drawer states
   const [selectedRecordId, setSelectedRecordId] = useState<string | null>(null);
@@ -80,8 +82,8 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
 
   // Verification state for active selected record
   const selectedRecord = useMemo(
-    () => appraisals.find((a) => a.id === selectedRecordId) || appraisals[0],
-    [appraisals, selectedRecordId]
+    () => safeAppraisals.find((a) => a.id === selectedRecordId) || safeAppraisals[0],
+    [safeAppraisals, selectedRecordId]
   );
 
   const [recordData, setRecordData] = useState<AppraisalRecord | undefined>(selectedRecord);
@@ -124,22 +126,24 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
 
   // Grade calculate helper
   const getCalculatedGrade = (rec: AppraisalRecord): GradeType => {
+    if (!rec) return 'Grade C';
     if (rec.grade) return rec.grade as GradeType;
-    const c1 = calculateCategory1(rec.cat1).hodTotal;
-    const c2 = calculateCategory2(rec.cat2).hodTotal;
-    const c3 = calculateCategory3(rec.cat3).hodTotal;
+    const c1 = calculateCategory1(rec.cat1 || ({} as any)).hodTotal;
+    const c2 = calculateCategory2(rec.cat2 || ({} as any)).hodTotal;
+    const c3 = calculateCategory3(rec.cat3 || ({} as any)).hodTotal;
     return calculateGrade(rec.designation, c1 + c2 + c3);
   };
 
   // Filtered appraisals list
   const filteredAppraisals = useMemo(() => {
-    return appraisals.filter((a) => {
+    return safeAppraisals.filter((a) => {
+      if (!a) return false;
       // Search
       const matchesSearch =
         searchQuery === '' ||
-        a.facultyName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        a.empId.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        a.department.toLowerCase().includes(searchQuery.toLowerCase());
+        (a.facultyName && a.facultyName.toLowerCase().includes(searchQuery.toLowerCase())) ||
+        (a.empId && a.empId.toLowerCase().includes(searchQuery.toLowerCase())) ||
+        (a.department && a.department.toLowerCase().includes(searchQuery.toLowerCase()));
 
       // Grade Filter
       const calculatedGrade = getCalculatedGrade(a);
@@ -150,15 +154,15 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
 
       return matchesSearch && matchesGrade && matchesStatus;
     });
-  }, [appraisals, searchQuery, gradeFilter, statusFilter]);
+  }, [safeAppraisals, searchQuery, gradeFilter, statusFilter]);
 
   // KPI Calculations
-  const totalCount = appraisals.length;
-  const approvedCount = appraisals.filter((a) => a.status === 'HOD_APPROVED' || a.status === 'HOI_APPROVED').length;
-  const pendingReviewCount = appraisals.filter((a) => a.status === 'SUBMITTED').length;
-  const gradeACount = appraisals.filter((a) => getCalculatedGrade(a) === 'Grade A').length;
-  const gradeBCount = appraisals.filter((a) => getCalculatedGrade(a) === 'Grade B').length;
-  const gradeCCount = appraisals.filter((a) => getCalculatedGrade(a) === 'Grade C').length;
+  const totalCount = safeAppraisals.length;
+  const approvedCount = safeAppraisals.filter((a) => a && (a.status === 'HOD_APPROVED' || a.status === 'HOI_APPROVED')).length;
+  const pendingReviewCount = safeAppraisals.filter((a) => a && a.status === 'SUBMITTED').length;
+  const gradeACount = safeAppraisals.filter((a) => a && getCalculatedGrade(a) === 'Grade A').length;
+  const gradeBCount = safeAppraisals.filter((a) => a && getCalculatedGrade(a) === 'Grade B').length;
+  const gradeCCount = safeAppraisals.filter((a) => a && getCalculatedGrade(a) === 'Grade C').length;
 
   // Toggle access logic
   const handleToggleAccess = (rec: AppraisalRecord) => {
@@ -174,7 +178,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
     }
     onUpdateAppraisal(updated);
     triggerToast(
-      `Appraisal form access for ${rec.facultyName} has been ${nextAccess ? 'ENABLED ✅' : 'DISABLED 🔒'}.`,
+      `Appraisal form access for ${rec.facultyName} has been ${nextAccess ? 'ENABLED' : 'LOCKED'}.`,
       nextAccess ? 'success' : 'error'
     );
   };
@@ -252,115 +256,145 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
     setRecordData(updated);
     onUpdateAppraisal(updated);
     setIsVerificationOpen(false);
-    triggerToast(`Revision requested for ${updated.facultyName}. Sent back to Faculty login.`, 'error');
+    triggerToast(`Revision requested for ${updated.facultyName}. Returned to Faculty login.`, 'error');
   };
 
   return (
-    <div className="h-full bg-slate-50 text-slate-900 font-sans flex flex-col overflow-hidden text-xs">
+    <div className="flex-1 flex flex-col bg-slate-50 text-slate-900 font-sans overflow-hidden text-xs min-h-0">
       {/* Toast Notification */}
       {toast && (
         <div
-          className={`fixed top-16 right-5 z-[150] flex items-center gap-2.5 px-4 py-3 rounded-xl shadow-xl text-xs font-bold border animate-in slide-in-from-top-2 duration-200 ${
+          className={`fixed top-16 right-5 z-[160] flex items-center gap-2 px-4 py-2.5 rounded-xl shadow-lg text-xs font-semibold border animate-in slide-in-from-top-2 duration-200 ${
             toast.type === 'success'
-              ? 'bg-emerald-900 text-emerald-100 border-emerald-700'
-              : 'bg-rose-900 text-rose-100 border-rose-700'
+              ? 'bg-emerald-50 text-emerald-800 border-emerald-200'
+              : 'bg-rose-50 text-rose-800 border-rose-200'
           }`}
         >
-          <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+          <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
           <span>{toast.msg}</span>
         </div>
       )}
 
       {/* ── STICKY TOP HEADER BAR ── */}
-      <div className="shrink-0 bg-slate-900 border-b border-slate-800 px-6 py-4 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-4">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center shrink-0 shadow-md">
-            <ClipboardCheck className="w-6 h-6" />
+      <div className="shrink-0 bg-white border-b border-slate-200 px-4 sm:px-6 py-3 flex items-center justify-between gap-3 flex-wrap">
+        <div className="flex items-center gap-3 min-w-0">
+          <div className="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 border border-blue-100 flex items-center justify-center shrink-0 shadow-2xs">
+            <ClipboardCheck className="w-5 h-5" />
           </div>
-          <div>
-            <h1 className="text-base sm:text-lg font-extrabold text-white tracking-tight">HOD Verification Console</h1>
-            <p className="text-xs text-slate-400 font-medium">Verify scores, manage access, and audit department faculty appraisals.</p>
+          <div className="min-w-0">
+            <h1 className={typography.h1}>HOD Verification Console</h1>
+            <p className={typography.caption}>Verify scores, manage access, and audit department faculty appraisals.</p>
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
-          {/* REFRESH BUTTON */}
-          <button
+        <div className="flex items-center gap-2.5 shrink-0">
+          <Button
+            variant="secondary"
+            size="sm"
             onClick={handleRefresh}
             disabled={isRefreshing}
-            className="flex items-center gap-2 px-3.5 py-2 bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white font-bold rounded-xl text-xs shadow-sm transition-all active:scale-95"
-            title="Refresh latest dashboard data"
+            icon={<RotateCcw className={`w-3.5 h-3.5 ${isRefreshing ? 'animate-spin' : ''}`} />}
           >
-            <RotateCcw className={`w-3.5 h-3.5 ${isRefreshing ? 'animate-spin' : ''}`} />
             <span>{isRefreshing ? 'Refreshing...' : 'Refresh Data'}</span>
-          </button>
+          </Button>
 
-          <div className="flex items-center gap-2 bg-slate-800/80 border border-slate-700/60 rounded-xl px-3.5 py-2 text-xs font-bold text-slate-300">
-            <Users className="w-4 h-4 text-blue-400" />
+          <span className="hidden sm:inline-flex items-center gap-1.5 bg-slate-100 border border-slate-200 rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700">
+            <Users className="w-3.5 h-3.5 text-blue-600 shrink-0" />
             <span>{totalCount} Faculty Members</span>
-          </div>
+          </span>
         </div>
       </div>
 
-      {/* ── KPI CARDS ROW (fixed height) ── */}
-      <div className="shrink-0 grid grid-cols-2 sm:grid-cols-4 gap-3 px-5 py-3 bg-slate-50 border-b border-slate-200">
-        <div className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-2xs flex items-center gap-3">
-          <Users className="w-7 h-7 text-slate-300 shrink-0" />
-          <div>
-            <p className="text-xl font-black text-slate-900">{totalCount}</p>
-            <p className="text-xs text-slate-400 font-bold uppercase">Total Faculty</p>
+      {/* ── GRADE FILTER BANNER (SHOWN DIRECTLY ABOVE THE 4 KPI/GRADE BOXES) ── */}
+      {gradeFilter !== 'ALL' && (
+        <div className="shrink-0 bg-blue-50 border-b border-blue-200 px-4 sm:px-6 py-2.5 flex items-center justify-between gap-3 animate-in fade-in duration-150">
+          <div className="flex items-center gap-2.5 min-w-0">
+            <Award className="w-4 h-4 text-blue-600 shrink-0" />
+            <span className="text-xs font-semibold text-slate-800 truncate">
+              Filtered Grade View: <strong className="text-blue-900 font-bold">{gradeFilter}</strong> ({filteredAppraisals.length} faculty matched)
+            </span>
+          </div>
+          <div className="flex items-center gap-2 shrink-0">
+            <Button
+              variant="secondary"
+              size="sm"
+              onClick={() => setSelectedGradeModal(gradeFilter as GradeType)}
+              icon={<Eye className="w-3.5 h-3.5 text-blue-600" />}
+            >
+              <span>View {gradeFilter} Report</span>
+            </Button>
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={() => setGradeFilter('ALL')}
+              icon={<ArrowLeft className="w-3.5 h-3.5" />}
+            >
+              <span>Back to All Grades</span>
+            </Button>
           </div>
         </div>
-        <div className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-2xs flex items-center gap-3">
-          <FileCheck className="w-7 h-7 text-emerald-200 shrink-0" />
-          <div>
-            <p className="text-xl font-black text-emerald-700">{approvedCount}</p>
-            <p className="text-xs text-slate-400 font-bold uppercase">HOD Approved</p>
-          </div>
-        </div>
-        <div className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-2xs flex items-center gap-3">
-          <Clock className="w-7 h-7 text-blue-200 shrink-0" />
-          <div>
-            <p className="text-xl font-black text-blue-700">{pendingReviewCount}</p>
-            <p className="text-xs text-slate-400 font-bold uppercase">Pending Review</p>
-          </div>
-        </div>
-        <div className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-2xs flex items-center gap-3">
-          <Award className="w-7 h-7 text-purple-200 shrink-0" />
-          <div>
-            <p className="text-xl font-black text-purple-700">{gradeACount}</p>
-            <p className="text-xs text-slate-400 font-bold uppercase">Grade A &bull; B:{gradeBCount} C:{gradeCCount}</p>
-          </div>
-        </div>
+      )}
+
+      {/* ── KPI CARDS ROW ── */}
+      <div className="shrink-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 px-4 sm:px-6 py-3 bg-slate-50 border-b border-slate-200">
+        <StatCard
+          icon={<Users className="w-5 h-5 text-blue-600" />}
+          label="Total Faculty"
+          value={totalCount}
+          iconBg="bg-blue-50 text-blue-600 border border-blue-100"
+          onClick={() => setGradeFilter('ALL')}
+          className={gradeFilter === 'ALL' ? 'border-blue-400 ring-2 ring-blue-500/20 bg-blue-50/30' : ''}
+        />
+        <StatCard
+          icon={<FileCheck className="w-5 h-5 text-emerald-600" />}
+          label="HOD Approved"
+          value={approvedCount}
+          iconBg="bg-emerald-50 text-emerald-600 border border-emerald-100"
+        />
+        <StatCard
+          icon={<Clock className="w-5 h-5 text-blue-600" />}
+          label="Pending Review"
+          value={pendingReviewCount}
+          iconBg="bg-blue-50 text-blue-600 border border-blue-100"
+        />
+        <StatCard
+          icon={<Award className="w-5 h-5 text-emerald-600" />}
+          label="Grade A Faculty"
+          value={gradeACount}
+          subtext={`Grade B: ${gradeBCount} · Grade C: ${gradeCCount}`}
+          iconBg="bg-emerald-50 text-emerald-600 border border-emerald-100"
+          onClick={() => setGradeFilter(gradeFilter === 'Grade A' ? 'ALL' : 'Grade A')}
+          className={gradeFilter === 'Grade A' ? 'border-emerald-500 ring-2 ring-emerald-500/25 bg-emerald-50/50' : 'hover:border-emerald-300'}
+        />
       </div>
 
-      {/* ── TABLE TOOLBAR (fixed height) ── */}
-      <div className="shrink-0 px-5 py-2.5 bg-white border-b border-slate-200 flex flex-wrap items-center gap-2.5">
+      {/* ── TABLE TOOLBAR ── */}
+      <div className="shrink-0 px-4 sm:px-6 py-2.5 bg-white border-b border-slate-200 flex flex-wrap items-center gap-2.5">
         {/* Search */}
-        <div className="relative flex-1 min-w-[200px] max-w-xs">
-          <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+        <div className="relative flex-1 min-w-[180px] max-w-xs">
+          <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search faculty name, ID..."
-            className="w-full text-xs bg-slate-50 border border-slate-200 rounded-xl pl-8 pr-3 py-2 text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+            className="w-full text-xs bg-slate-50 border border-slate-200 rounded-xl pl-8 pr-7 py-2 text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all shadow-2xs font-medium"
           />
           {searchQuery && (
             <button onClick={() => setSearchQuery('')} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
-              <X className="w-3 h-3" />
+              <X className="w-3.5 h-3.5" />
             </button>
           )}
         </div>
 
         {/* Grade Segmented Pills */}
-        <div className="flex items-center gap-1 bg-slate-100 border border-slate-200 rounded-xl p-1">
+        <div className="flex items-center gap-1 bg-slate-100 border border-slate-200 rounded-xl p-1 shadow-2xs">
           {(['ALL', 'Grade A', 'Grade B', 'Grade C'] as const).map((g) => (
             <button
               key={g}
               onClick={() => setGradeFilter(g)}
-              className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${
-                gradeFilter === g ? 'bg-slate-900 text-white shadow-sm' : 'text-slate-500 hover:text-slate-900 hover:bg-slate-200/60'
+              className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                gradeFilter === g ? 'bg-blue-600 text-white shadow-2xs' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
               }`}
             >
               {g === 'ALL' ? 'All Grades' : g}
@@ -372,7 +406,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
         <select
           value={statusFilter}
           onChange={(e) => setStatusFilter(e.target.value)}
-          className="text-xs font-bold text-slate-700 bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 outline-none cursor-pointer"
+          className="text-xs font-medium text-slate-700 bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 outline-none cursor-pointer shadow-2xs"
         >
           <option value="ALL">All Statuses</option>
           <option value="SUBMITTED">SUBMITTED</option>
@@ -381,29 +415,29 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
         </select>
 
         {/* Count badge */}
-        <span className="ml-auto text-[13px] font-bold text-slate-400">
+        <span className="ml-auto text-xs text-slate-400 font-medium">
           Showing {filteredAppraisals.length} of {totalCount}
         </span>
       </div>
 
       {/* ── SCROLLABLE FACULTY TABLE ── */}
       <div className="flex-1 overflow-y-auto overflow-x-auto">
-        <table className="w-full text-left text-xs min-w-[900px]">
+        <table className="w-full text-left min-w-[920px] border-collapse">
           <thead className="sticky top-0 z-10">
-            <tr className="bg-slate-100 border-b border-slate-200 text-slate-600 font-extrabold uppercase text-xs tracking-wider">
-              <th className="px-5 py-3 min-w-[220px]">Faculty Member</th>
-              <th className="px-4 py-3 min-w-[180px]">Designation &amp; Dept</th>
-              <th className="px-4 py-3 text-center min-w-[160px]">Score Summary</th>
-              <th className="px-4 py-3 text-center min-w-[120px]">Performance Grade</th>
-              <th className="px-4 py-3 text-center min-w-[130px]">Form Status</th>
-              <th className="px-4 py-3 text-center min-w-[140px]">Appraisal Access</th>
-              <th className="px-5 py-3 text-right min-w-[220px]">Actions</th>
+            <tr>
+              <th className={tableTokens.th}>Faculty Member</th>
+              <th className={tableTokens.th}>Designation &amp; Dept</th>
+              <th className={tableTokens.thCenter}>Score Summary</th>
+              <th className={tableTokens.thCenter}>Grade</th>
+              <th className={tableTokens.thCenter}>Form Status</th>
+              <th className={tableTokens.thCenter}>Appraisal Access</th>
+              <th className={tableTokens.thRight}>Actions</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100 bg-white">
             {filteredAppraisals.length === 0 ? (
               <tr>
-                <td colSpan={7} className="px-5 py-16 text-center text-slate-400 font-medium text-xs">
+                <td colSpan={7} className="px-5 py-16 text-center text-slate-400 font-medium text-sm">
                   No faculty members found matching your filter criteria.
                 </td>
               </tr>
@@ -419,16 +453,16 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
                 return (
                   <tr
                     key={rec.id}
-                    className={`hover:bg-slate-50/80 transition-colors ${isSelected ? 'bg-blue-50/40' : ''}`}
+                    className={`${tableTokens.tr} ${isSelected ? 'bg-blue-50/30' : ''}`}
                   >
                     {/* Faculty Info */}
-                    <td className="px-5 py-3.5 align-middle">
+                    <td className="px-4 py-3.5 align-middle">
                       <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-800 font-black text-sm flex items-center justify-center shrink-0 border border-blue-200">
+                        <div className="w-9 h-9 rounded-xl bg-blue-50 text-blue-700 font-bold text-sm flex items-center justify-center shrink-0 border border-blue-200 shadow-2xs">
                           {rec.facultyName?.charAt(0) ?? '?'}
                         </div>
                         <div>
-                          <p className="font-extrabold text-slate-900 leading-tight">{rec.facultyName ?? 'N/A'}</p>
+                          <p className="font-semibold text-sm text-slate-900 leading-tight">{rec.facultyName ?? 'N/A'}</p>
                           <p className="text-xs text-slate-400 font-mono mt-0.5">{rec.empId}</p>
                         </div>
                       </div>
@@ -436,17 +470,17 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
 
                     {/* Designation */}
                     <td className="px-4 py-3.5 align-middle">
-                      <p className="font-bold text-slate-800 leading-snug text-[13px] truncate max-w-[160px]">{rec.designation}</p>
-                      <p className="text-[13px] text-slate-500 font-medium mt-0.5 truncate max-w-[160px]">{rec.department}</p>
+                      <p className="font-medium text-slate-800 leading-snug text-sm truncate max-w-[180px]">{rec.designation}</p>
+                      <p className="text-xs text-slate-500 mt-0.5 truncate max-w-[180px]">{rec.department}</p>
                     </td>
 
                     {/* Score Summary */}
                     <td className="px-4 py-3.5 text-center align-middle">
                       <div className="inline-flex flex-col items-center gap-1">
-                        <span className="px-2 py-0.5 rounded-md bg-slate-100 font-extrabold text-slate-800 text-[13px] border border-slate-200/80">
+                        <span className="px-2 py-0.5 rounded-md bg-slate-100 font-semibold text-slate-800 text-xs border border-slate-200">
                           Self: {selfScore} / 350
                         </span>
-                        <span className="px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-800 font-extrabold text-[13px] border border-emerald-200/80">
+                        <span className="px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-800 font-semibold text-xs border border-emerald-200">
                           HOD: {hodScore} / 350
                         </span>
                       </div>
@@ -454,63 +488,51 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
 
                     {/* Grade Badge */}
                     <td className="px-4 py-3.5 text-center align-middle">
-                      <span className={`inline-flex items-center gap-1 text-[13px] font-extrabold px-2.5 py-1 rounded-full border shadow-2xs ${
-                        calculatedGrade === 'Grade A'
-                          ? 'bg-emerald-50 text-emerald-800 border-emerald-200'
-                          : calculatedGrade === 'Grade B'
-                          ? 'bg-amber-50 text-amber-800 border-amber-200'
-                          : 'bg-rose-50 text-rose-800 border-rose-200'
-                      }`}>
-                        <Award className="w-3 h-3" />
-                        {calculatedGrade}
-                      </span>
+                      <GradeBadge
+                        grade={calculatedGrade}
+                        onClick={() => setSelectedGradeModal(calculatedGrade as GradeType)}
+                      />
                     </td>
 
                     {/* Form Status */}
-                    <td className="px-4 py-3.5 text-center">
-                      <span className={`text-xs font-extrabold px-2.5 py-1 rounded-md border ${
-                        rec.status === 'SUBMITTED'
-                          ? 'bg-blue-50 text-blue-700 border-blue-200'
-                          : rec.status === 'HOD_APPROVED'
-                          ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
-                          : rec.status === 'HOI_APPROVED'
-                          ? 'bg-purple-50 text-purple-700 border-purple-200'
-                          : 'bg-slate-100 text-slate-600 border-slate-200'
-                      }`}>
-                        {rec.status?.replace(/_/g, ' ') ?? 'DRAFT'}
-                      </span>
+                    <td className="px-4 py-3.5 text-center align-middle">
+                      <StatusPill status={rec.status} />
                     </td>
 
                     {/* Access Switch */}
-                    <td className="px-4 py-3.5 text-center">
+                    <td className="px-4 py-3.5 text-center align-middle">
                       <button
                         onClick={() => handleToggleAccess(rec)}
-                        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-[13px] font-bold transition-all ${
+                        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border text-xs font-semibold transition-all shadow-2xs cursor-pointer ${
                           isEnabled
-                            ? 'bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border-emerald-200'
-                            : 'bg-rose-50 hover:bg-rose-100 text-rose-700 border-rose-200'
+                            ? 'bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border-emerald-200'
+                            : 'bg-rose-50 hover:bg-rose-100 text-rose-800 border-rose-200'
                         }`}
                       >
-                        {isEnabled ? <Unlock className="w-3 h-3" /> : <Lock className="w-3 h-3" />}
+                        {isEnabled ? <Unlock className="w-3.5 h-3.5 text-emerald-600" /> : <Lock className="w-3.5 h-3.5 text-rose-600" />}
                         <span>{isEnabled ? 'Enabled' : 'Locked'}</span>
                       </button>
                     </td>
 
                     {/* Actions */}
-                    <td className="px-5 py-3.5 text-right">
+                    <td className="px-4 py-3.5 text-right align-middle">
                       <div className="flex items-center justify-end gap-1.5">
-                        <button
+                        <Button
+                          variant="secondary"
+                          size="sm"
                           onClick={() => setViewFullModalRecord(rec)}
-                          className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-xs border border-blue-200 transition-colors"
+                          icon={<Eye className="w-3.5 h-3.5 text-blue-600" />}
                         >
-                          <Eye className="w-3 h-3" /> View Details
-                        </button>
-                        <button
+                          View Details
+                        </Button>
+                        <Button
+                          variant="primary"
+                          size="sm"
                           onClick={() => { setSelectedRecordId(rec.id); setIsVerificationOpen(true); }}
-                          className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition-colors"
+                          icon={<FileCheck className="w-3.5 h-3.5" />}
                         >
-                          <FileCheck className="w-3 h-3" /> Verify
-                        </button>
+                          Verify
+                        </Button>
                       </div>
                     </td>
                   </tr>
@@ -521,99 +543,104 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
         </table>
       </div>
 
-
       {/* ── SCORE VERIFICATION & REVIEW MODAL/DRAWER ── */}
       {isVerificationOpen && recordData && (
-        <div className="fixed inset-0 z-[130] bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-5 animate-in fade-in duration-200">
-          <div className="bg-white border border-slate-200 rounded-2xl shadow-2xl w-full max-w-5xl max-h-[92vh] flex flex-col overflow-hidden">
+        <div className="fixed inset-0 z-[130] bg-slate-900/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4 md:p-6 animate-in fade-in duration-200">
+          <div className="bg-white border border-slate-200 rounded-t-2xl sm:rounded-2xl shadow-2xl w-full max-w-5xl max-h-[96vh] sm:max-h-[92vh] flex flex-col overflow-hidden animate-in zoom-in-95 duration-150 my-0 sm:my-auto">
             
-            {/* Drawer Header */}
-            <div className="px-6 py-4 border-b border-slate-200 bg-slate-900 text-white flex items-center justify-between shrink-0">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-lg bg-emerald-600 text-white font-bold text-base flex items-center justify-center shrink-0">
+            {/* Modal Header */}
+            <div className="px-5 py-4 border-b border-slate-200 bg-slate-50 flex items-center justify-between gap-3 shrink-0">
+              <div className="flex items-center gap-3 min-w-0">
+                <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 font-bold text-base flex items-center justify-center shrink-0 border border-blue-200 shadow-2xs">
                   {recordData.facultyName.charAt(0)}
                 </div>
-                <div>
-                  <h3 className="text-sm sm:text-base font-bold text-white">
+                <div className="min-w-0">
+                  <h3 className={`${typography.h1} truncate`}>
                     Score Verification &amp; Review — {recordData.facultyName}
                   </h3>
-                  <p className="text-xs text-slate-400">
+                  <p className={typography.caption}>
                     {recordData.empId} &bull; {recordData.designation} &bull; {recordData.department}
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2">
-                <button
+              <div className="flex items-center gap-2 shrink-0 no-print">
+                <Button
+                  variant="secondary"
+                  size="sm"
                   onClick={() => setViewFullModalRecord(recordData)}
-                  className="flex items-center gap-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors"
+                  icon={<Eye className="w-3.5 h-3.5 text-blue-600" />}
                 >
-                  <Eye className="w-3.5 h-3.5" /> View Full Profile
-                </button>
+                  Full Profile
+                </Button>
                 <button
                   onClick={() => setIsVerificationOpen(false)}
-                  className="text-slate-400 hover:text-white p-1 rounded-lg"
+                  className="p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-200/60 rounded-xl transition-colors cursor-pointer"
                 >
                   <X className="w-5 h-5" />
                 </button>
               </div>
             </div>
 
-            {/* Drawer Content */}
-            <div className="p-6 overflow-y-auto flex-1 space-y-6 text-xs text-slate-800">
+            {/* Modal Content */}
+            <div className="p-4 sm:p-6 overflow-y-auto flex-1 space-y-4 sm:space-y-5 text-xs text-slate-800 bg-slate-50/50">
               
               {/* Summary Stats Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-white p-4 rounded-xl border border-slate-200 shadow-2xs">
                 <div>
-                  <span className="text-slate-400 block text-xs uppercase font-bold">Self Total</span>
-                  <span className="text-sm font-black text-slate-900">{recordData.selfScoreTotal} / 350</span>
+                  <span className={typography.labelMicro}>Self Total</span>
+                  <span className="text-sm font-bold text-slate-900 mt-0.5 block">{recordData.selfScoreTotal} / 350</span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block text-xs uppercase font-bold">HOD Verified</span>
-                  <span className="text-sm font-black text-emerald-600">{recordData.hodScoreTotal} / 350</span>
+                  <span className={typography.labelMicro}>HOD Verified</span>
+                  <span className="text-sm font-bold text-emerald-700 mt-0.5 block">{recordData.hodScoreTotal} / 350</span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block text-xs uppercase font-bold">Current Grade</span>
-                  <span className="text-sm font-black text-blue-600">{recordData.grade}</span>
+                  <span className={typography.labelMicro}>Current Grade</span>
+                  <span className="mt-1 block">
+                    <GradeBadge grade={recordData.grade} size="sm" />
+                  </span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block text-xs uppercase font-bold">Status</span>
-                  <span className="text-sm font-black text-purple-600">{recordData.status}</span>
+                  <span className={typography.labelMicro}>Status</span>
+                  <span className="mt-1 block">
+                    <StatusPill status={recordData.status} size="sm" />
+                  </span>
                 </div>
               </div>
 
               {/* Score Matrix Table */}
-              <div className="border border-slate-200 rounded-xl overflow-hidden shadow-2xs">
-                <div className="px-4 py-3 bg-slate-100 border-b border-slate-200 flex items-center justify-between">
-                  <h4 className="font-bold text-slate-900 text-xs">Score Verification Matrix</h4>
-                  <span className="text-[13px] text-slate-500 font-medium">Enter corrected HOD marks in the green inputs</span>
+              <div className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-2xs">
+                <div className="px-4 py-3 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+                  <h4 className={typography.h3}>Score Verification Matrix</h4>
+                  <span className="text-xs text-slate-500 font-medium">Enter corrected HOD marks in the score inputs</span>
                 </div>
 
                 <div className="overflow-x-auto">
-                  <table className="w-full text-left text-xs">
+                  <table className="w-full text-left text-xs min-w-[650px]">
                     <thead>
-                      <tr className="bg-slate-50 border-b border-slate-200">
-                        <th className="px-4 py-2.5 font-semibold text-slate-500 text-xs uppercase tracking-wide w-[45%]">Criteria Item</th>
-                        <th className="px-3 py-2.5 font-semibold text-slate-500 text-xs uppercase tracking-wide text-center">Self Score</th>
-                        <th className="px-3 py-2.5 font-semibold text-emerald-600 text-xs uppercase tracking-wide text-center">HOD Score ✎</th>
-                        <th className="px-3 py-2.5 font-semibold text-rose-600 text-xs uppercase tracking-wide text-center">
-                          <label className="inline-flex items-center gap-1 cursor-pointer bg-rose-100/80 px-2 py-0.5 rounded border border-rose-300">
+                      <tr>
+                        <th className={`${tableTokens.th} w-[45%]`}>Criteria Item</th>
+                        <th className={tableTokens.thCenter}>Self Score</th>
+                        <th className={tableTokens.thCenter}>HOD Score ✎</th>
+                        <th className={tableTokens.thCenter}>
+                          <label className="inline-flex items-center gap-1 cursor-pointer bg-rose-50 text-rose-800 border border-rose-200 px-2 py-0.5 rounded-lg">
                             <input
                               type="checkbox"
                               checked={allKeysFlagged}
                               onChange={handleToggleSelectAll}
-                              className="w-3 h-3 accent-rose-600 rounded cursor-pointer"
+                              className="w-3.5 h-3.5 accent-rose-600 rounded cursor-pointer"
                             />
-                            <span className="text-rose-800 font-bold text-xs">Flag All 🚩</span>
+                            <span className="font-semibold text-xs">Flag All 🚩</span>
                           </label>
                         </th>
-                        <th className="px-4 py-2.5 font-semibold text-slate-500 text-xs uppercase tracking-wide">Proof Link</th>
+                        <th className={tableTokens.th}>Proof Link</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100">
                       {/* Cat I Header */}
-                      <tr className="bg-blue-50/80">
-                        <td colSpan={5} className="px-4 py-2 font-bold text-blue-800 text-[13px]">
+                      <tr className="bg-slate-50 font-bold text-slate-800">
+                        <td colSpan={5} className="px-4 py-2 text-xs border-y border-slate-200">
                           Category I: Teaching, Learning &amp; Evaluation (Max 110) &bull; Verified Total: {recordData.cat1.totalHodScore}
                         </td>
                       </tr>
@@ -647,7 +674,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
                                 max={max}
                                 placeholder="0"
                                 onChange={(e) => updateHodScore('cat1', rawKey, Math.min(max, Number(e.target.value)))}
-                                className="w-14 text-center text-xs font-bold text-emerald-700 border border-emerald-300 rounded px-1 py-1 bg-emerald-50 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                                className="w-14 text-center text-xs font-semibold text-slate-900 border border-slate-300 rounded-lg px-1 py-1 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-2xs"
                               />
                             </td>
                             <td className="px-3 py-2 text-center">
@@ -660,7 +687,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
                             </td>
                             <td className="px-4 py-2">
                               {field.proofUrl && field.proofUrl !== 'NA' ? (
-                                <a href={field.proofUrl} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline flex items-center gap-1 font-semibold">
+                                <a href={field.proofUrl} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline inline-flex items-center gap-1 font-medium">
                                   View <ExternalLink className="w-3 h-3" />
                                 </a>
                               ) : <span className="text-slate-300">—</span>}
@@ -670,8 +697,8 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
                       })}
 
                       {/* Cat II Header */}
-                      <tr className="bg-purple-50/80">
-                        <td colSpan={5} className="px-4 py-2 font-bold text-purple-800 text-[13px]">
+                      <tr className="bg-slate-50 font-bold text-slate-800">
+                        <td colSpan={5} className="px-4 py-2 text-xs border-y border-slate-200">
                           Category II: Co-Curricular &amp; Professional Activities (Max 50) &bull; Verified Total: {recordData.cat2.totalHodScore}
                         </td>
                       </tr>
@@ -703,7 +730,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
                                 max={max}
                                 placeholder="0"
                                 onChange={(e) => updateHodScore('cat2', rawKey, Math.min(max, Number(e.target.value)))}
-                                className="w-14 text-center text-xs font-bold text-emerald-700 border border-emerald-300 rounded px-1 py-1 bg-emerald-50 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                                className="w-14 text-center text-xs font-semibold text-slate-900 border border-slate-300 rounded-lg px-1 py-1 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-2xs"
                               />
                             </td>
                             <td className="px-3 py-2 text-center">
@@ -716,7 +743,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
                             </td>
                             <td className="px-4 py-2">
                               {field.proofUrl && field.proofUrl !== 'NA' ? (
-                                <a href={field.proofUrl} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline flex items-center gap-1 font-semibold">
+                                <a href={field.proofUrl} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline inline-flex items-center gap-1 font-medium">
                                   View <ExternalLink className="w-3 h-3" />
                                 </a>
                               ) : <span className="text-slate-300">—</span>}
@@ -726,8 +753,8 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
                       })}
 
                       {/* Cat III Header */}
-                      <tr className="bg-emerald-50/80">
-                        <td colSpan={5} className="px-4 py-2 font-bold text-emerald-800 text-[13px]">
+                      <tr className="bg-slate-50 font-bold text-slate-800">
+                        <td colSpan={5} className="px-4 py-2 text-xs border-y border-slate-200">
                           Category III: Research, Publications &amp; Academic Contributions (Max 190) &bull; Verified Total: {recordData.cat3.totalHodScore}
                         </td>
                       </tr>
@@ -768,7 +795,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
                                     };
                                   });
                                 }}
-                                className="w-14 text-center text-xs font-bold text-emerald-700 border border-emerald-300 rounded px-1 py-1 bg-emerald-50 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                                className="w-14 text-center text-xs font-semibold text-slate-900 border border-slate-300 rounded-lg px-1 py-1 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-2xs"
                               />
                             </td>
                             <td className="px-3 py-2 text-center">
@@ -780,7 +807,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
                               />
                             </td>
                             <td className="px-4 py-2">
-                              <span className="text-emerald-700 font-bold text-[13px]">{count} Item(s) Verified</span>
+                              <span className="text-emerald-700 font-semibold">{count} Item(s) Verified</span>
                             </td>
                           </tr>
                         );
@@ -792,7 +819,7 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
 
               {/* HOD Remarks Textarea */}
               <div className="space-y-1.5">
-                <label className="block text-xs font-bold text-slate-700">
+                <label className={typography.labelMicro}>
                   HOD Review Comments &amp; Verification Remarks:
                 </label>
                 <textarea
@@ -800,36 +827,40 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
                   onChange={(e) => setRemarks(e.target.value)}
                   placeholder="Enter evaluation notes, adjustment rationale, or revision details..."
                   rows={3}
-                  className="w-full text-xs border border-slate-200 rounded-xl p-3 bg-slate-50/50 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                  className="w-full text-xs border border-slate-200 rounded-xl p-3 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none shadow-2xs"
                 />
               </div>
 
             </div>
 
-            {/* Drawer Footer Actions */}
-            <div className="px-6 py-4 border-t border-slate-200 bg-slate-50 flex items-center justify-between shrink-0">
-              <button
+            {/* Modal Footer Actions */}
+            <div className="px-5 py-3.5 border-t border-slate-200 bg-white flex items-center justify-between shrink-0 no-print">
+              <Button
+                variant="secondary"
+                size="sm"
                 onClick={() => setIsVerificationOpen(false)}
-                className="px-4 py-2 border border-slate-200 rounded-xl text-slate-700 font-semibold hover:bg-slate-100 transition-colors"
               >
                 Cancel
-              </button>
+              </Button>
 
-              <div className="flex items-center gap-3">
-                <button
+              <div className="flex items-center gap-2">
+                <Button
+                  variant="danger"
+                  size="sm"
                   onClick={handleRequestRevision}
                   disabled={recordData.status !== 'SUBMITTED'}
-                  className="flex items-center gap-1.5 px-4 py-2 rounded-xl border border-rose-200 text-rose-700 bg-rose-50 hover:bg-rose-100 font-bold disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
                 >
-                  <RotateCcw className="w-4 h-4" /> Request Revision
-                </button>
-                <button
+                  Request Revision
+                </Button>
+                <Button
+                  variant="success"
+                  size="sm"
                   onClick={handleApprove}
                   disabled={recordData.status !== 'SUBMITTED'}
-                  className="flex items-center gap-1.5 px-5 py-2 rounded-xl bg-emerald-600 text-white font-bold hover:bg-emerald-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors shadow-md"
+                  icon={<CheckCircle2 className="w-4 h-4" />}
                 >
-                  <CheckCircle2 className="w-4 h-4" /> Approve &amp; Verify Marks
-                </button>
+                  Approve &amp; Verify Marks
+                </Button>
               </div>
             </div>
 
@@ -837,7 +868,17 @@ export const HodView: React.FC<HodViewProps> = ({ appraisals, onUpdateAppraisal,
         </div>
       )}
 
-      {/* ── END-TO-END A-Z FULL APPRAISAL MODAL ── */}
+      {/* ── GRADE DETAIL MODAL ── */}
+      {selectedGradeModal && (
+        <GradeDetailModal
+          grade={selectedGradeModal}
+          appraisals={appraisals}
+          onClose={() => setSelectedGradeModal(null)}
+          onSelectRecord={(rec) => setViewFullModalRecord(rec)}
+        />
+      )}
+
+      {/* ── END-TO-END FULL APPRAISAL MODAL ── */}
       {viewFullModalRecord && (
         <FullAppraisalModal
           record={viewFullModalRecord}

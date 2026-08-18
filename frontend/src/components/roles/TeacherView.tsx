@@ -40,7 +40,10 @@ import {
   IndustryUseCaseEntry,
   LastYearComplianceEntry,
   RevisionFlagItem,
+  GradeType,
 } from '@/types/appraisal';
+import { SEED_APPRAISALS } from '@/lib/mockSeedData';
+import { GradeDetailModal } from '@/components/GradeDetailModal';
 import { calculateCategory1, calculateCategory2, calculateCategory3, calculateGrade } from '@/lib/scoring';
 import {
   Lock,
@@ -67,21 +70,13 @@ import {
   AlertTriangle,
   ArrowDown,
 } from 'lucide-react';
+import { StatusPill } from '@/components/ui/StatusPill';
+import { Button } from '@/components/ui/Button';
 
 /* ─── UI Atoms ─────────────────────────────────────────────── */
 
 const StatusBadge: React.FC<{ status: string }> = ({ status }) => {
-  const map: Record<string, string> = {
-    DRAFT: 'bg-slate-100 text-slate-600',
-    SUBMITTED: 'bg-blue-50 text-blue-700',
-    HOD_APPROVED: 'bg-green-50 text-green-700',
-    LOCKED: 'bg-red-50 text-red-700',
-  };
-  return (
-    <span className={`inline-block text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded ${map[status] ?? 'bg-slate-100 text-slate-600'}`}>
-      {status.replace('_', ' ')}
-    </span>
-  );
+  return <StatusPill status={status} size="sm" />;
 };
 
 const SectionHeader: React.FC<{ id: string; icon: React.ReactNode; title: string; subtitle?: string; maxPts?: number }> = ({
@@ -1277,14 +1272,114 @@ export const TeacherView: React.FC<TeacherViewProps> = ({
   isWindowOpen = true,
   readOnly = false,
 }) => {
-  const [data, setData] = useState<AppraisalRecord>(appraisal);
+  const normalizeAppraisal = (app: AppraisalRecord): AppraisalRecord => {
+    if (!app) return {} as any;
+    return {
+      ...app,
+      facultyName: app.facultyName || '',
+      empId: app.empId || '',
+      department: app.department || '',
+      designation: app.designation || '',
+      status: app.status || 'DRAFT',
+      generalDetails: {
+        ...(app.generalDetails || {}),
+        teachingExperience: app.generalDetails?.teachingExperience || [],
+        industryExperience: app.generalDetails?.industryExperience || [],
+        academicCourseResults: app.generalDetails?.academicCourseResults || [],
+        leaveDetails: app.generalDetails?.leaveDetails ? {
+          ...app.generalDetails.leaveDetails,
+        } : {
+          calendarYear: '',
+          workingDays: 0,
+          cl: 0,
+          el: 0,
+          ml: 0,
+          lop: 0,
+          vl: 0,
+          totalLeaveAvailed: 0,
+          onDutyAvailed: 0,
+          effectiveAttendance: 0,
+          attendancePercentage: 0,
+        } as any,
+        mentoring: app.generalDetails?.mentoring ? {
+          ...app.generalDetails.mentoring,
+        } : {
+          studentsAllotted: 0,
+          slowLearnersIdentified: 0,
+          top10Performers: 0,
+          nilArrears: 0,
+          moreThan2Arrears: 0,
+          coachingClassAllotted: 0,
+          coachingAvgAttendancePct: 0,
+          eligiblePlacement: 0,
+          participatedCompetitions: 0,
+          wonPrizeCompetitions: 0,
+          placedAsOnDate: 0,
+          higherStudiesOrEntrepreneur: 0,
+          counselingSessionsNos: 0,
+          parentCommunicationCount: 0,
+          outcomeOfMentoring: '',
+          actionPlanAcademicImprovement: '',
+          actionPlanPlacementImprovement: '',
+        } as any,
+        phdProfile: app.generalDetails?.phdProfile ? {
+          ...app.generalDetails.phdProfile,
+        } : {
+          status: 'Not Registered',
+          universityOrInstitution: '',
+          probableCompletionYear: '',
+          guideshipRecognized: false,
+          universityRecognizedBy: '',
+          specializationArea: '',
+          ongoingScholarsPT: 0,
+          ongoingScholarsFT: 0,
+          completedScholars: 0,
+        } as any,
+        industryCollab: app.generalDetails?.industryCollab ? {
+          ...app.generalDetails.industryCollab,
+        } : {
+          industriesIdentified: 0,
+          industriesContacted: 0,
+          convertedToCollaboration: 0,
+          studentsPlacedConnect: 0,
+          internshipsWithStipend: 0,
+          internshipsWithoutStipend: 0,
+          liveProjectsInvolved: 0,
+        } as any,
+      } as any,
+      duties: {
+        ...(app.duties || {}),
+      } as any,
+      cat1: {
+        ...(app.cat1 || {}),
+        teachingLoadTable: app.cat1?.teachingLoadTable || [],
+        learningMaterialsTable: app.cat1?.learningMaterialsTable || [],
+        copoTable: app.cat1?.copoTable || [],
+      } as any,
+      cat2: {
+        ...(app.cat2 || {}),
+      } as any,
+      cat3: {
+        ...(app.cat3 || {}),
+        journals: app.cat3?.journals || [],
+        consultancy: app.cat3?.consultancy || [],
+        patents: app.cat3?.patents || [],
+        fundedProjects: app.cat3?.fundedProjects || [],
+        industryUseCases: app.cat3?.industryUseCases || [],
+      } as any,
+      revisionFlags: app.revisionFlags || [],
+    };
+  };
+
+  const [data, setData] = useState<AppraisalRecord>(() => normalizeAppraisal(appraisal));
 
   useEffect(() => {
-    setData(appraisal);
+    setData(normalizeAppraisal(appraisal));
   }, [appraisal]);
 
   const [toast, setToast] = useState<{ msg: string; type: 'success' | 'error' } | null>(null);
   const [guideKey, setGuideKey] = useState<string | null>(null);
+  const [selectedGradeModal, setSelectedGradeModal] = useState<GradeType | null>(null);
 
   const handleOpenGuide = (key: string) => setGuideKey(key);
 
@@ -1362,22 +1457,43 @@ export const TeacherView: React.FC<TeacherViewProps> = ({
     showToast('Appraisal submitted for HOD review.', 'success');
   };
 
-  /* Helper to patch GeneralDetails */
+  /* Helper to patch GeneralDetails with defensive deep merging */
   const patchGeneral = (patch: Partial<AppraisalRecord['generalDetails']>) =>
-    setData((d) => ({ ...d, generalDetails: { ...d.generalDetails, ...patch } }));
+    setData((d) => {
+      const gd = d.generalDetails || {} as any;
+      return {
+        ...d,
+        generalDetails: {
+          ...gd,
+          ...patch,
+          mentoring: patch.mentoring
+            ? { ...(gd.mentoring || {}), ...patch.mentoring }
+            : gd.mentoring,
+          leaveDetails: patch.leaveDetails
+            ? { ...(gd.leaveDetails || {}), ...patch.leaveDetails }
+            : gd.leaveDetails,
+          phdProfile: patch.phdProfile
+            ? { ...(gd.phdProfile || {}), ...patch.phdProfile }
+            : gd.phdProfile,
+          industryCollab: patch.industryCollab
+            ? { ...(gd.industryCollab || {}), ...patch.industryCollab }
+            : gd.industryCollab,
+        },
+      };
+    });
 
   /* Helper to patch Cat1 score fields */
   const updateCat1Score = (key: string, patch: object) =>
     setData((d) => ({
       ...d,
-      cat1: { ...d.cat1, [key]: { ...((d.cat1 as any)[key] || {}), ...patch } },
+      cat1: { ...(d.cat1 || {}), [key]: { ...(((d.cat1 as any) || {})[key] || {}), ...patch } },
     }));
 
   /* Helper to patch Cat2 score fields */
   const updateCat2Score = (key: string, patch: object) =>
     setData((d) => ({
       ...d,
-      cat2: { ...d.cat2, [key]: { ...((d.cat2 as any)[key] || {}), ...patch } },
+      cat2: { ...(d.cat2 || {}), [key]: { ...(((d.cat2 as any) || {})[key] || {}), ...patch } },
     }));
 
   /* ─── REVISION FLAGGING HELPERS ────────────────────────── */
@@ -2263,12 +2379,16 @@ export const TeacherView: React.FC<TeacherViewProps> = ({
               <h3 className="text-sm font-bold tracking-wide uppercase">Faculty Performance Form 2025 — Grand Performance Summary</h3>
               <p className="text-xs text-slate-300 mt-0.5">Faculty Name: {data.facultyName} ({data.empId}) &bull; Dept: {data.department}</p>
             </div>
-            <div className="flex items-center gap-2 bg-slate-800 border border-slate-700 px-3 py-1.5 rounded-lg text-xs">
+            <button
+              onClick={() => setSelectedGradeModal(calculateGrade(data.designation, totalSelfScore))}
+              title="Click to view detailed Grade report & print"
+              className="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 px-3 py-1.5 rounded-lg text-xs transition-all cursor-pointer hover:scale-105"
+            >
               <span className="text-slate-400 font-medium">Assessment Grade:</span>
               <span className="font-extrabold text-amber-400 text-sm">
                 {calculateGrade(data.designation, totalSelfScore)}
               </span>
-            </div>
+            </button>
           </div>
 
           <div className="overflow-x-auto p-6">
@@ -2323,17 +2443,17 @@ export const TeacherView: React.FC<TeacherViewProps> = ({
             <div className="border border-slate-200 rounded-lg bg-slate-50 p-4 space-y-2">
               <h4 className="text-xs font-bold text-slate-700 uppercase tracking-wide">Official Faculty Performance Form 2025 Grade Qualification Parameters</h4>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
-                <div className={`p-3 rounded-md border ${totalSelfScore >= 245 ? 'bg-emerald-100 border-emerald-400 text-emerald-900 font-bold' : 'bg-white border-slate-200 text-slate-600'}`}>
-                  <p className="font-extrabold text-sm">Grade A (&ge; 245 Pts)</p>
-                  <p className="text-[13px] font-normal mt-0.5">&ge; 70% Overall Score — Outstanding Performance</p>
+                <div className={`p-3 rounded-xl border ${totalSelfScore >= 245 ? 'bg-emerald-50 border-emerald-200 text-emerald-900 font-bold shadow-2xs' : 'bg-white border-slate-200 text-slate-600'}`}>
+                  <p className="font-bold text-sm text-emerald-800">Grade A (&ge; 245 Pts)</p>
+                  <p className="text-[11px] font-normal mt-0.5 text-emerald-700">&ge; 70% Overall Score — Outstanding Performance</p>
                 </div>
-                <div className={`p-3 rounded-md border ${totalSelfScore >= 175 && totalSelfScore < 245 ? 'bg-blue-100 border-blue-400 text-blue-900 font-bold' : 'bg-white border-slate-200 text-slate-600'}`}>
-                  <p className="font-extrabold text-sm">Grade B (175 – 244 Pts)</p>
-                  <p className="text-[13px] font-normal mt-0.5">50% – 69.9% Overall Score — Good / Satisfactory</p>
+                <div className={`p-3 rounded-xl border ${totalSelfScore >= 175 && totalSelfScore < 245 ? 'bg-amber-50 border-amber-200 text-amber-900 font-bold shadow-2xs' : 'bg-white border-slate-200 text-slate-600'}`}>
+                  <p className="font-bold text-sm text-amber-800">Grade B (175 – 244 Pts)</p>
+                  <p className="text-[11px] font-normal mt-0.5 text-amber-700">50% – 69.9% Overall Score — Good / Satisfactory</p>
                 </div>
-                <div className={`p-3 rounded-md border ${totalSelfScore < 175 ? 'bg-amber-100 border-amber-400 text-amber-900 font-bold' : 'bg-white border-slate-200 text-slate-600'}`}>
-                  <p className="font-extrabold text-sm">Grade C (&lt; 175 Pts)</p>
-                  <p className="text-[13px] font-normal mt-0.5">&lt; 50% Overall Score — Needs Improvement / Revision</p>
+                <div className={`p-3 rounded-xl border ${totalSelfScore < 175 ? 'bg-rose-50 border-rose-200 text-rose-900 font-bold shadow-2xs' : 'bg-white border-slate-200 text-slate-600'}`}>
+                  <p className="font-bold text-sm text-rose-800">Grade C (&lt; 175 Pts)</p>
+                  <p className="text-[11px] font-normal mt-0.5 text-rose-700">&lt; 50% Overall Score — Needs Improvement / Revision</p>
                 </div>
               </div>
             </div>
@@ -2460,6 +2580,13 @@ export const TeacherView: React.FC<TeacherViewProps> = ({
       {/* ── Scoring Guide Modal Popup ── */}
       </div>{/* end scrollable form content */}
       <ScoringGuideModal isOpen={Boolean(guideKey)} onClose={() => setGuideKey(null)} guideKey={guideKey} />
+      {selectedGradeModal && (
+        <GradeDetailModal
+          grade={selectedGradeModal}
+          appraisals={SEED_APPRAISALS}
+          onClose={() => setSelectedGradeModal(null)}
+        />
+      )}
     </div>
   );
 };

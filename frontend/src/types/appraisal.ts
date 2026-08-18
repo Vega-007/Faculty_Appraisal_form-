@@ -634,10 +634,7 @@ export type CampusName = 'SRM Ramapuram Campus' | 'SRM Trichy Campus';
 export type InstitutionName =
   | 'SRM Institute of Science & Technology (SRMIST)'
   | 'Easwari Engineering College (EEC)'
-  | 'SRM School of Environment, Architecture & Design (SEAD)'
-  | 'SRMIST College of Science & Humanities (S&H)'
-  | 'SRM Dental College & Hospital (SRMDC)'
-  | 'SRM Prime Hospital (SPH)'
+  | 'SRM Dental College (SRMDC)'
   | 'Easwari Engineering College'
   | 'SRM Dental College'
   | 'SRM IST'
@@ -651,7 +648,7 @@ export interface SchoolNode {
 
 export interface InstitutionNode {
   name: InstitutionName;
-  /** Sub-schools (E&T, S&H, Management, B.Arch) — only for SRM IST-type institutions */
+  /** Sub-schools (E&T, FLABS, Management, B.Arch) — only for SRM IST-type institutions */
   schools?: SchoolNode[];
   /** Flat department list — for institutions without school sub-grouping */
   departments?: string[];
@@ -683,7 +680,7 @@ export const CAMPUS_HIERARCHY: CampusHierarchyNode[] = [
             ],
           },
           {
-            name: 'S&H',
+            name: 'FLABS',
             departments: [
               'COMMERCE',
               'Commerce - PA, ISM, IAF& SF',
@@ -708,7 +705,7 @@ export const CAMPUS_HIERARCHY: CampusHierarchyNode[] = [
               'Economics',
               'Computer Science & Applications',
               'English',
-              'Science & Humanities (S&H)',
+              'FLABS',
             ],
           },
           {
@@ -720,7 +717,7 @@ export const CAMPUS_HIERARCHY: CampusHierarchyNode[] = [
           {
             name: 'B.Arch',
             departments: [
-              'Architecture',
+              'SEAD',
             ],
           },
         ],
@@ -750,26 +747,7 @@ export const CAMPUS_HIERARCHY: CampusHierarchyNode[] = [
         ],
       },
       {
-        name: 'SRM School of Environment, Architecture & Design (SEAD)',
-        departments: ['Architecture', 'Design', 'Environment'],
-      },
-      {
-        name: 'SRMIST College of Science & Humanities (S&H)',
-        departments: [
-          'Computer Science & Applications',
-          'Commerce',
-          'English',
-          'Biotechnology',
-          'Psychology',
-          'Economics',
-          'Media / Visual Communication',
-          'Mathematics',
-          'Physics',
-          'Chemistry',
-        ],
-      },
-      {
-        name: 'SRM Dental College & Hospital (SRMDC)',
+        name: 'SRM Dental College (SRMDC)',
         departments: [
           'Conservative Dentistry & Endodontics',
           'Prosthodontics & Crown & Bridge',
@@ -780,21 +758,6 @@ export const CAMPUS_HIERARCHY: CampusHierarchyNode[] = [
           'Oral Pathology & Microbiology',
           'Pediatric & Preventive Dentistry',
           'Public Health Dentistry',
-        ],
-      },
-      {
-        name: 'SRM Prime Hospital (SPH)',
-        departments: [
-          'General Medicine',
-          'General Surgery',
-          'Orthopaedics',
-          'Obstetrics & Gynaecology',
-          'Paediatrics',
-          'Radiology',
-          'Anaesthesiology',
-          'Emergency & Critical Care',
-          'Pathology / Laboratory',
-          'Dental',
         ],
       },
     ],

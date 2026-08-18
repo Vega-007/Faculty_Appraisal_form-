@@ -197,13 +197,28 @@ export default function Home() {
     return true;
   });
 
+  // HOI sees faculty members across their institution for active month
+  const hoiAppraisals = appraisals.filter((a) => {
+    if (a.monthYear !== activeMonth) return false;
+    if (loggedInUser?.role === 'HOI') {
+      if (loggedInUser.institution && loggedInUser.institution !== 'SRM IST') {
+        return a.institution === loggedInUser.institution;
+      }
+      if (loggedInUser.campus && loggedInUser.campus !== 'ALL') {
+        return a.campus === loggedInUser.campus;
+      }
+      return true;
+    }
+    return true;
+  });
+
   /* ── Render ── */
   if (!loggedInUser) {
     return <LoginPage onLogin={handleLogin} />;
   }
 
   return (
-    <div className="h-screen bg-slate-50 text-slate-900 flex flex-col font-sans antialiased overflow-hidden">
+    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans antialiased">
       <AppHeader
         user={loggedInUser}
         activeMonth={activeMonth}
@@ -234,7 +249,7 @@ export default function Home() {
         onLogout={handleLogout}
       />
 
-      <main className="flex-1 overflow-hidden flex flex-col">
+      <main className="flex-1 flex flex-col min-w-0">
         {/* TEACHER VIEW */}
         {loggedInUser.role === 'TEACHER' && teacherAppraisal && (
           <ErrorBoundary portalName="Faculty Portal">
@@ -261,7 +276,7 @@ export default function Home() {
         {loggedInUser.role === 'HOI' && (
           <ErrorBoundary portalName="HOI Institutional Portal">
             <HoiView
-              appraisals={hodAppraisals}
+              appraisals={hoiAppraisals}
               onUpdateAppraisal={handleUpdateAppraisal}
               onRefreshData={handleRefreshData}
             />
@@ -283,7 +298,7 @@ export default function Home() {
         )}
       </main>
 
-      <footer className="shrink-0 border-t border-slate-200 py-2.5 text-center text-xs text-slate-400 bg-white">
+      <footer className="mt-auto shrink-0 border-t border-slate-200 py-3 text-center text-xs text-slate-400 bg-white">
         SRM Institute of Science and Technology — Faculty Performance &amp; Analytics System 2025
       </footer>
     </div>
