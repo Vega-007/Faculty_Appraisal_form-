@@ -203,10 +203,9 @@ export const AdminChairmanView: React.FC<AdminChairmanViewProps> = ({
 
       const matchesCampus =
         selectedCampus === 'ALL' ||
-        !aCampus ||
-        aCampus === selectedCampus ||
         (selectedCampus === 'SRM Ramapuram Campus' && (!aCampus || aCampus.includes('Ramapuram'))) ||
-        (selectedCampus === 'SRM Trichy Campus' && aCampus.includes('Trichy'));
+        (selectedCampus === 'SRM Trichy Campus' && aCampus && aCampus.includes('Trichy')) ||
+        (selectedCampus !== 'SRM Ramapuram Campus' && selectedCampus !== 'SRM Trichy Campus' && aCampus === selectedCampus);
 
       const matchesInst =
         selectedInstitution === 'ALL' ||
@@ -244,10 +243,9 @@ export const AdminChairmanView: React.FC<AdminChairmanViewProps> = ({
 
       const matchesCampus =
         selectedCampus === 'ALL' ||
-        !aCampus ||
-        aCampus === selectedCampus ||
         (selectedCampus === 'SRM Ramapuram Campus' && (!aCampus || aCampus.includes('Ramapuram'))) ||
-        (selectedCampus === 'SRM Trichy Campus' && aCampus.includes('Trichy'));
+        (selectedCampus === 'SRM Trichy Campus' && aCampus && aCampus.includes('Trichy')) ||
+        (selectedCampus !== 'SRM Ramapuram Campus' && selectedCampus !== 'SRM Trichy Campus' && aCampus === selectedCampus);
 
       const matchesInst =
         selectedInstitution === 'ALL' ||
@@ -817,7 +815,7 @@ export const AdminChairmanView: React.FC<AdminChairmanViewProps> = ({
             <span className={`text-[11px] font-bold rounded-full px-2 py-0.5 ${
               selectionLevel === 'ALL' ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-600'
             }`}>
-              {executiveMetrics.totalCount}
+              {campusCollegeMetrics.overall.totalCount}
             </span>
           </button>
 
@@ -1534,7 +1532,7 @@ export const AdminChairmanView: React.FC<AdminChairmanViewProps> = ({
                   <Button
                     variant="secondary"
                     size="sm"
-                    onClick={() => handleSelectInstitution('SRM Ramapuram Campus', 'SRM Dental College (SRMDC)')}
+                    onClick={() => handleSelectInstitution('SRM Ramapuram Campus', 'SRM Dental College')}
                     className="w-full justify-between mt-2"
                     icon={<ChevronRight className="w-4 h-4 text-slate-400" />}
                   >
@@ -1707,261 +1705,227 @@ export const AdminChairmanView: React.FC<AdminChairmanViewProps> = ({
               </div>
             )}
 
-            {/* ── SRMIST SUB-SCHOOLS 4-CARD BOX GRID ── */}
-            {(selectedInstitution.includes('SRMIST') || selectedSchool !== 'ALL') && (
-              <div className="space-y-3 bg-slate-100/70 p-4 rounded-2xl border border-slate-200 shadow-2xs">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <School className="w-5 h-5 text-blue-600" />
+            {/* ── SRMIST COMPACT BRANCH/TREE COMPARISON ── */}
+            {(selectedInstitution.includes('SRMIST') || selectedSchool !== 'ALL') && selectedDept === 'ALL' && (
+              <div className="bg-white border border-slate-200 rounded-2xl shadow-2xs overflow-hidden animate-in fade-in duration-150">
+                
+                {/* Header Row */}
+                <div className="bg-slate-50 border-b border-slate-200 p-4 flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 shadow-2xs">
+                      <School className="w-5 h-5" />
+                    </div>
                     <div>
-                      <h4 className="text-sm font-bold text-slate-900">SRMIST Constituent Schools Overview</h4>
-                      <p className="text-[11px] text-slate-500 font-medium">Click any school box to filter departments and view specific faculty statistics</p>
+                      <h3 className="font-bold text-slate-900 text-sm">SRM Institute of Science & Technology</h3>
+                      <p className="text-xs text-slate-500 font-medium mt-0.5">Constituent Schools Overview</p>
                     </div>
                   </div>
                   {selectedSchool !== 'ALL' && (
                     <button
                       onClick={() => handleSelectInstitution('SRM Ramapuram Campus', 'SRM Institute of Science & Technology (SRMIST)')}
-                      className="text-xs font-bold text-blue-600 hover:underline flex items-center gap-1 cursor-pointer bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-2xs"
+                      className="text-xs font-bold text-blue-600 hover:bg-blue-50 px-3 py-1.5 rounded-lg border border-transparent hover:border-blue-200 transition-colors flex items-center gap-1.5 cursor-pointer shadow-2xs bg-white"
                     >
-                      <RotateCcw className="w-3.5 h-3.5" /> Reset to All SRMIST Schools
+                      <RotateCcw className="w-3.5 h-3.5" /> Reset View
                     </button>
                   )}
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                  {/* Card 1: E&T */}
-                  <div className={`bg-white border rounded-2xl p-4 shadow-xs space-y-3.5 transition-all ${
-                    selectedSchool === 'E&T' ? 'border-blue-500 ring-2 ring-blue-500/25 bg-blue-50/20' : 'border-slate-200 hover:border-blue-300'
+                {/* Tree Rows */}
+                <div className="divide-y divide-slate-100">
+                  {/* Row 1: E&T */}
+                  <div className={`p-4 flex flex-col sm:flex-row sm:items-center gap-4 transition-colors ${
+                    selectedSchool === 'E&T' ? 'bg-blue-50/50' : 'hover:bg-slate-50'
                   }`}>
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center gap-2.5 min-w-0">
-                        <div className="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
-                          <School className="w-4 h-4" />
-                        </div>
-                        <div className="min-w-0">
-                          <h5 className="font-bold text-xs text-slate-900 truncate">E&amp;T</h5>
-                          <p className="text-[10px] text-slate-500 font-medium truncate">Engineering &amp; Tech</p>
-                        </div>
+                    <div className="flex items-center gap-3 w-48 shrink-0">
+                      <div className="w-7 h-7 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 border border-blue-200 shadow-2xs">
+                        <School className="w-3.5 h-3.5" />
                       </div>
-                      <span className="px-2 py-0.5 rounded-full text-[11px] font-bold bg-blue-50 text-blue-700 border border-blue-200 shrink-0">
-                        {campusCollegeMetrics.ramapuram.srmistSchools.et.totalCount} Faculty
-                      </span>
-                    </div>
-
-                    <div className="grid grid-cols-3 gap-1.5 pt-2 border-t border-slate-100 text-center">
-                      <div
-                        onClick={() => setSelectedGradeModal('Grade A')}
-                        className="p-1.5 rounded-lg bg-emerald-50/70 border border-emerald-100 cursor-pointer hover:bg-emerald-100/70 transition-colors"
-                      >
-                        <p className="text-[10px] font-bold text-emerald-800">Grade A</p>
-                        <p className="text-sm font-black text-emerald-700 mt-0.5">{campusCollegeMetrics.ramapuram.srmistSchools.et.gradeACount}</p>
-                        <p className="text-[9px] text-emerald-600 font-medium">{campusCollegeMetrics.ramapuram.srmistSchools.et.gradeAPct}%</p>
-                      </div>
-                      <div
-                        onClick={() => setSelectedGradeModal('Grade B')}
-                        className="p-1.5 rounded-lg bg-amber-50/70 border border-amber-100 cursor-pointer hover:bg-amber-100/70 transition-colors"
-                      >
-                        <p className="text-[10px] font-bold text-amber-800">Grade B</p>
-                        <p className="text-sm font-black text-amber-700 mt-0.5">{campusCollegeMetrics.ramapuram.srmistSchools.et.gradeBCount}</p>
-                        <p className="text-[9px] text-amber-600 font-medium">{campusCollegeMetrics.ramapuram.srmistSchools.et.gradeBPct}%</p>
-                      </div>
-                      <div
-                        onClick={() => setSelectedGradeModal('Grade C')}
-                        className="p-1.5 rounded-lg bg-rose-50/70 border border-rose-100 cursor-pointer hover:bg-rose-100/70 transition-colors"
-                      >
-                        <p className="text-[10px] font-bold text-rose-800">Grade C</p>
-                        <p className="text-sm font-black text-rose-700 mt-0.5">{campusCollegeMetrics.ramapuram.srmistSchools.et.gradeCCount}</p>
-                        <p className="text-[9px] text-rose-600 font-medium">{campusCollegeMetrics.ramapuram.srmistSchools.et.gradeCPct}%</p>
+                      <div className="min-w-0">
+                        <p className={`text-xs font-bold truncate ${selectedSchool === 'E&T' ? 'text-blue-800' : 'text-slate-800'}`}>E&amp;T</p>
+                        <p className="text-[10px] text-slate-500 truncate">Engineering &amp; Tech</p>
                       </div>
                     </div>
 
-                    <Button
-                      variant={selectedSchool === 'E&T' ? 'primary' : 'secondary'}
-                      size="sm"
-                      onClick={() => handleSelectSchool('SRM Ramapuram Campus', 'SRM Institute of Science & Technology (SRMIST)', 'E&T')}
-                      className="w-full justify-between mt-1 text-xs"
-                      icon={<ChevronRight className="w-3.5 h-3.5" />}
-                    >
-                      <span>Explore E&amp;T Departments</span>
-                    </Button>
+                    <div className="flex-1 flex flex-wrap items-center gap-x-6 gap-y-2">
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Total</span>
+                        <span className="text-sm font-black text-slate-700">{campusCollegeMetrics.ramapuram.srmistSchools.et.totalCount}</span>
+                      </div>
+                      <div className="w-px h-6 bg-slate-200 hidden sm:block" />
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-emerald-600 uppercase tracking-wider">Grade A</span>
+                        <span className="text-sm font-black text-emerald-700">{campusCollegeMetrics.ramapuram.srmistSchools.et.gradeACount} <span className="text-[10px] font-bold text-emerald-500">({campusCollegeMetrics.ramapuram.srmistSchools.et.gradeAPct}%)</span></span>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-amber-600 uppercase tracking-wider">Grade B</span>
+                        <span className="text-sm font-black text-amber-700">{campusCollegeMetrics.ramapuram.srmistSchools.et.gradeBCount} <span className="text-[10px] font-bold text-amber-500">({campusCollegeMetrics.ramapuram.srmistSchools.et.gradeBPct}%)</span></span>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-rose-600 uppercase tracking-wider">Grade C</span>
+                        <span className="text-sm font-black text-rose-700">{campusCollegeMetrics.ramapuram.srmistSchools.et.gradeCCount} <span className="text-[10px] font-bold text-rose-500">({campusCollegeMetrics.ramapuram.srmistSchools.et.gradeCPct}%)</span></span>
+                      </div>
+                    </div>
+
+                    <div className="shrink-0">
+                      <Button
+                        variant={selectedSchool === 'E&T' ? 'primary' : 'secondary'}
+                        size="sm"
+                        onClick={() => handleSelectSchool('SRM Ramapuram Campus', 'SRM Institute of Science & Technology (SRMIST)', 'E&T')}
+                        className="w-full sm:w-auto text-xs py-1.5 px-3"
+                        icon={<ChevronRight className="w-3.5 h-3.5" />}
+                      >
+                        <span>{selectedSchool === 'E&T' ? 'Viewing E&T' : 'Explore E&T'}</span>
+                      </Button>
+                    </div>
                   </div>
 
-                  {/* Card 2: FLABS */}
-                  <div className={`bg-white border rounded-2xl p-4 shadow-xs space-y-3.5 transition-all ${
-                    selectedSchool === 'FLABS' ? 'border-blue-500 ring-2 ring-blue-500/25 bg-blue-50/20' : 'border-slate-200 hover:border-blue-300'
+                  {/* Row 2: FLABS */}
+                  <div className={`p-4 flex flex-col sm:flex-row sm:items-center gap-4 transition-colors ${
+                    selectedSchool === 'FLABS' ? 'bg-indigo-50/50' : 'hover:bg-slate-50'
                   }`}>
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center gap-2.5 min-w-0">
-                        <div className="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0">
-                          <Building2 className="w-4 h-4" />
-                        </div>
-                        <div className="min-w-0">
-                          <h5 className="font-bold text-xs text-slate-900 truncate">FLABS</h5>
-                          <p className="text-[10px] text-slate-500 font-medium truncate">Liberal Arts &amp; Biz</p>
-                        </div>
+                    <div className="flex items-center gap-3 w-48 shrink-0">
+                      <div className="w-7 h-7 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 border border-indigo-200 shadow-2xs">
+                        <Building2 className="w-3.5 h-3.5" />
                       </div>
-                      <span className="px-2 py-0.5 rounded-full text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200 shrink-0">
-                        {campusCollegeMetrics.ramapuram.srmistSchools.flabs.totalCount} Faculty
-                      </span>
-                    </div>
-
-                    <div className="grid grid-cols-3 gap-1.5 pt-2 border-t border-slate-100 text-center">
-                      <div
-                        onClick={() => setSelectedGradeModal('Grade A')}
-                        className="p-1.5 rounded-lg bg-emerald-50/70 border border-emerald-100 cursor-pointer hover:bg-emerald-100/70 transition-colors"
-                      >
-                        <p className="text-[10px] font-bold text-emerald-800">Grade A</p>
-                        <p className="text-sm font-black text-emerald-700 mt-0.5">{campusCollegeMetrics.ramapuram.srmistSchools.flabs.gradeACount}</p>
-                        <p className="text-[9px] text-emerald-600 font-medium">{campusCollegeMetrics.ramapuram.srmistSchools.flabs.gradeAPct}%</p>
-                      </div>
-                      <div
-                        onClick={() => setSelectedGradeModal('Grade B')}
-                        className="p-1.5 rounded-lg bg-amber-50/70 border border-amber-100 cursor-pointer hover:bg-amber-100/70 transition-colors"
-                      >
-                        <p className="text-[10px] font-bold text-amber-800">Grade B</p>
-                        <p className="text-sm font-black text-amber-700 mt-0.5">{campusCollegeMetrics.ramapuram.srmistSchools.flabs.gradeBCount}</p>
-                        <p className="text-[9px] text-amber-600 font-medium">{campusCollegeMetrics.ramapuram.srmistSchools.flabs.gradeBPct}%</p>
-                      </div>
-                      <div
-                        onClick={() => setSelectedGradeModal('Grade C')}
-                        className="p-1.5 rounded-lg bg-rose-50/70 border border-rose-100 cursor-pointer hover:bg-rose-100/70 transition-colors"
-                      >
-                        <p className="text-[10px] font-bold text-rose-800">Grade C</p>
-                        <p className="text-sm font-black text-rose-700 mt-0.5">{campusCollegeMetrics.ramapuram.srmistSchools.flabs.gradeCCount}</p>
-                        <p className="text-[9px] text-rose-600 font-medium">{campusCollegeMetrics.ramapuram.srmistSchools.flabs.gradeCPct}%</p>
+                      <div className="min-w-0">
+                        <p className={`text-xs font-bold truncate ${selectedSchool === 'FLABS' ? 'text-indigo-800' : 'text-slate-800'}`}>FLABS</p>
+                        <p className="text-[10px] text-slate-500 truncate">Liberal Arts &amp; Biz</p>
                       </div>
                     </div>
 
-                    <Button
-                      variant={selectedSchool === 'FLABS' ? 'primary' : 'secondary'}
-                      size="sm"
-                      onClick={() => handleSelectSchool('SRM Ramapuram Campus', 'SRM Institute of Science & Technology (SRMIST)', 'FLABS')}
-                      className="w-full justify-between mt-1 text-xs"
-                      icon={<ChevronRight className="w-3.5 h-3.5" />}
-                    >
-                      <span>Explore FLABS Departments</span>
-                    </Button>
+                    <div className="flex-1 flex flex-wrap items-center gap-x-6 gap-y-2">
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Total</span>
+                        <span className="text-sm font-black text-slate-700">{campusCollegeMetrics.ramapuram.srmistSchools.flabs.totalCount}</span>
+                      </div>
+                      <div className="w-px h-6 bg-slate-200 hidden sm:block" />
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-emerald-600 uppercase tracking-wider">Grade A</span>
+                        <span className="text-sm font-black text-emerald-700">{campusCollegeMetrics.ramapuram.srmistSchools.flabs.gradeACount} <span className="text-[10px] font-bold text-emerald-500">({campusCollegeMetrics.ramapuram.srmistSchools.flabs.gradeAPct}%)</span></span>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-amber-600 uppercase tracking-wider">Grade B</span>
+                        <span className="text-sm font-black text-amber-700">{campusCollegeMetrics.ramapuram.srmistSchools.flabs.gradeBCount} <span className="text-[10px] font-bold text-amber-500">({campusCollegeMetrics.ramapuram.srmistSchools.flabs.gradeBPct}%)</span></span>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-rose-600 uppercase tracking-wider">Grade C</span>
+                        <span className="text-sm font-black text-rose-700">{campusCollegeMetrics.ramapuram.srmistSchools.flabs.gradeCCount} <span className="text-[10px] font-bold text-rose-500">({campusCollegeMetrics.ramapuram.srmistSchools.flabs.gradeCPct}%)</span></span>
+                      </div>
+                    </div>
+
+                    <div className="shrink-0">
+                      <Button
+                        variant={selectedSchool === 'FLABS' ? 'primary' : 'secondary'}
+                        size="sm"
+                        onClick={() => handleSelectSchool('SRM Ramapuram Campus', 'SRM Institute of Science & Technology (SRMIST)', 'FLABS')}
+                        className="w-full sm:w-auto text-xs py-1.5 px-3"
+                        icon={<ChevronRight className="w-3.5 h-3.5" />}
+                      >
+                        <span>{selectedSchool === 'FLABS' ? 'Viewing FLABS' : 'Explore FLABS'}</span>
+                      </Button>
+                    </div>
                   </div>
 
-                  {/* Card 3: Management */}
-                  <div className={`bg-white border rounded-2xl p-4 shadow-xs space-y-3.5 transition-all ${
-                    selectedSchool === 'Management' ? 'border-blue-500 ring-2 ring-blue-500/25 bg-blue-50/20' : 'border-slate-200 hover:border-blue-300'
+                  {/* Row 3: Management */}
+                  <div className={`p-4 flex flex-col sm:flex-row sm:items-center gap-4 transition-colors ${
+                    selectedSchool === 'Management' ? 'bg-emerald-50/50' : 'hover:bg-slate-50'
                   }`}>
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center gap-2.5 min-w-0">
-                        <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
-                          <Users className="w-4 h-4" />
-                        </div>
-                        <div className="min-w-0">
-                          <h5 className="font-bold text-xs text-slate-900 truncate">Management</h5>
-                          <p className="text-[10px] text-slate-500 font-medium truncate">School of Management</p>
-                        </div>
+                    <div className="flex items-center gap-3 w-48 shrink-0">
+                      <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-200 shadow-2xs">
+                        <Users className="w-3.5 h-3.5" />
                       </div>
-                      <span className="px-2 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 shrink-0">
-                        {campusCollegeMetrics.ramapuram.srmistSchools.management.totalCount} Faculty
-                      </span>
-                    </div>
-
-                    <div className="grid grid-cols-3 gap-1.5 pt-2 border-t border-slate-100 text-center">
-                      <div
-                        onClick={() => setSelectedGradeModal('Grade A')}
-                        className="p-1.5 rounded-lg bg-emerald-50/70 border border-emerald-100 cursor-pointer hover:bg-emerald-100/70 transition-colors"
-                      >
-                        <p className="text-[10px] font-bold text-emerald-800">Grade A</p>
-                        <p className="text-sm font-black text-emerald-700 mt-0.5">{campusCollegeMetrics.ramapuram.srmistSchools.management.gradeACount}</p>
-                        <p className="text-[9px] text-emerald-600 font-medium">{campusCollegeMetrics.ramapuram.srmistSchools.management.gradeAPct}%</p>
-                      </div>
-                      <div
-                        onClick={() => setSelectedGradeModal('Grade B')}
-                        className="p-1.5 rounded-lg bg-amber-50/70 border border-amber-100 cursor-pointer hover:bg-amber-100/70 transition-colors"
-                      >
-                        <p className="text-[10px] font-bold text-amber-800">Grade B</p>
-                        <p className="text-sm font-black text-amber-700 mt-0.5">{campusCollegeMetrics.ramapuram.srmistSchools.management.gradeBCount}</p>
-                        <p className="text-[9px] text-amber-600 font-medium">{campusCollegeMetrics.ramapuram.srmistSchools.management.gradeBPct}%</p>
-                      </div>
-                      <div
-                        onClick={() => setSelectedGradeModal('Grade C')}
-                        className="p-1.5 rounded-lg bg-rose-50/70 border border-rose-100 cursor-pointer hover:bg-rose-100/70 transition-colors"
-                      >
-                        <p className="text-[10px] font-bold text-rose-800">Grade C</p>
-                        <p className="text-sm font-black text-rose-700 mt-0.5">{campusCollegeMetrics.ramapuram.srmistSchools.management.gradeCCount}</p>
-                        <p className="text-[9px] text-rose-600 font-medium">{campusCollegeMetrics.ramapuram.srmistSchools.management.gradeCPct}%</p>
+                      <div className="min-w-0">
+                        <p className={`text-xs font-bold truncate ${selectedSchool === 'Management' ? 'text-emerald-800' : 'text-slate-800'}`}>Management</p>
+                        <p className="text-[10px] text-slate-500 truncate">School of Management</p>
                       </div>
                     </div>
 
-                    <Button
-                      variant={selectedSchool === 'Management' ? 'primary' : 'secondary'}
-                      size="sm"
-                      onClick={() => handleSelectSchool('SRM Ramapuram Campus', 'SRM Institute of Science & Technology (SRMIST)', 'Management')}
-                      className="w-full justify-between mt-1 text-xs"
-                      icon={<ChevronRight className="w-3.5 h-3.5" />}
-                    >
-                      <span>Explore Management Depts</span>
-                    </Button>
+                    <div className="flex-1 flex flex-wrap items-center gap-x-6 gap-y-2">
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Total</span>
+                        <span className="text-sm font-black text-slate-700">{campusCollegeMetrics.ramapuram.srmistSchools.management.totalCount}</span>
+                      </div>
+                      <div className="w-px h-6 bg-slate-200 hidden sm:block" />
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-emerald-600 uppercase tracking-wider">Grade A</span>
+                        <span className="text-sm font-black text-emerald-700">{campusCollegeMetrics.ramapuram.srmistSchools.management.gradeACount} <span className="text-[10px] font-bold text-emerald-500">({campusCollegeMetrics.ramapuram.srmistSchools.management.gradeAPct}%)</span></span>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-amber-600 uppercase tracking-wider">Grade B</span>
+                        <span className="text-sm font-black text-amber-700">{campusCollegeMetrics.ramapuram.srmistSchools.management.gradeBCount} <span className="text-[10px] font-bold text-amber-500">({campusCollegeMetrics.ramapuram.srmistSchools.management.gradeBPct}%)</span></span>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-rose-600 uppercase tracking-wider">Grade C</span>
+                        <span className="text-sm font-black text-rose-700">{campusCollegeMetrics.ramapuram.srmistSchools.management.gradeCCount} <span className="text-[10px] font-bold text-rose-500">({campusCollegeMetrics.ramapuram.srmistSchools.management.gradeCPct}%)</span></span>
+                      </div>
+                    </div>
+
+                    <div className="shrink-0">
+                      <Button
+                        variant={selectedSchool === 'Management' ? 'primary' : 'secondary'}
+                        size="sm"
+                        onClick={() => handleSelectSchool('SRM Ramapuram Campus', 'SRM Institute of Science & Technology (SRMIST)', 'Management')}
+                        className="w-full sm:w-auto text-xs py-1.5 px-3"
+                        icon={<ChevronRight className="w-3.5 h-3.5" />}
+                      >
+                        <span>{selectedSchool === 'Management' ? 'Viewing Mgmt' : 'Explore Mgmt'}</span>
+                      </Button>
+                    </div>
                   </div>
 
-                  {/* Card 4: B.Arch */}
-                  <div className={`bg-white border rounded-2xl p-4 shadow-xs space-y-3.5 transition-all ${
-                    selectedSchool === 'B.Arch' ? 'border-blue-500 ring-2 ring-blue-500/25 bg-blue-50/20' : 'border-slate-200 hover:border-blue-300'
+                  {/* Row 4: B.Arch */}
+                  <div className={`p-4 flex flex-col sm:flex-row sm:items-center gap-4 transition-colors ${
+                    selectedSchool === 'B.Arch' ? 'bg-amber-50/50' : 'hover:bg-slate-50'
                   }`}>
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center gap-2.5 min-w-0">
-                        <div className="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
-                          <Award className="w-4 h-4" />
-                        </div>
-                        <div className="min-w-0">
-                          <h5 className="font-bold text-xs text-slate-900 truncate">B.Arch</h5>
-                          <p className="text-[10px] text-slate-500 font-medium truncate">SEAD Architecture</p>
-                        </div>
+                    <div className="flex items-center gap-3 w-48 shrink-0">
+                      <div className="w-7 h-7 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center shrink-0 border border-amber-200 shadow-2xs">
+                        <Award className="w-3.5 h-3.5" />
                       </div>
-                      <span className="px-2 py-0.5 rounded-full text-[11px] font-bold bg-amber-50 text-amber-700 border border-amber-200 shrink-0">
-                        {campusCollegeMetrics.ramapuram.srmistSchools.barch.totalCount} Faculty
-                      </span>
-                    </div>
-
-                    <div className="grid grid-cols-3 gap-1.5 pt-2 border-t border-slate-100 text-center">
-                      <div
-                        onClick={() => setSelectedGradeModal('Grade A')}
-                        className="p-1.5 rounded-lg bg-emerald-50/70 border border-emerald-100 cursor-pointer hover:bg-emerald-100/70 transition-colors"
-                      >
-                        <p className="text-[10px] font-bold text-emerald-800">Grade A</p>
-                        <p className="text-sm font-black text-emerald-700 mt-0.5">{campusCollegeMetrics.ramapuram.srmistSchools.barch.gradeACount}</p>
-                        <p className="text-[9px] text-emerald-600 font-medium">{campusCollegeMetrics.ramapuram.srmistSchools.barch.gradeAPct}%</p>
-                      </div>
-                      <div
-                        onClick={() => setSelectedGradeModal('Grade B')}
-                        className="p-1.5 rounded-lg bg-amber-50/70 border border-amber-100 cursor-pointer hover:bg-amber-100/70 transition-colors"
-                      >
-                        <p className="text-[10px] font-bold text-amber-800">Grade B</p>
-                        <p className="text-sm font-black text-amber-700 mt-0.5">{campusCollegeMetrics.ramapuram.srmistSchools.barch.gradeBCount}</p>
-                        <p className="text-[9px] text-amber-600 font-medium">{campusCollegeMetrics.ramapuram.srmistSchools.barch.gradeBPct}%</p>
-                      </div>
-                      <div
-                        onClick={() => setSelectedGradeModal('Grade C')}
-                        className="p-1.5 rounded-lg bg-rose-50/70 border border-rose-100 cursor-pointer hover:bg-rose-100/70 transition-colors"
-                      >
-                        <p className="text-[10px] font-bold text-rose-800">Grade C</p>
-                        <p className="text-sm font-black text-rose-700 mt-0.5">{campusCollegeMetrics.ramapuram.srmistSchools.barch.gradeCCount}</p>
-                        <p className="text-[9px] text-rose-600 font-medium">{campusCollegeMetrics.ramapuram.srmistSchools.barch.gradeCPct}%</p>
+                      <div className="min-w-0">
+                        <p className={`text-xs font-bold truncate ${selectedSchool === 'B.Arch' ? 'text-amber-800' : 'text-slate-800'}`}>B.Arch</p>
+                        <p className="text-[10px] text-slate-500 truncate">SEAD Architecture</p>
                       </div>
                     </div>
 
-                    <Button
-                      variant={selectedSchool === 'B.Arch' ? 'primary' : 'secondary'}
-                      size="sm"
-                      onClick={() => handleSelectSchool('SRM Ramapuram Campus', 'SRM Institute of Science & Technology (SRMIST)', 'B.Arch')}
-                      className="w-full justify-between mt-1 text-xs"
-                      icon={<ChevronRight className="w-3.5 h-3.5" />}
-                    >
-                      <span>Explore SEAD Depts</span>
-                    </Button>
+                    <div className="flex-1 flex flex-wrap items-center gap-x-6 gap-y-2">
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Total</span>
+                        <span className="text-sm font-black text-slate-700">{campusCollegeMetrics.ramapuram.srmistSchools.barch.totalCount}</span>
+                      </div>
+                      <div className="w-px h-6 bg-slate-200 hidden sm:block" />
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-emerald-600 uppercase tracking-wider">Grade A</span>
+                        <span className="text-sm font-black text-emerald-700">{campusCollegeMetrics.ramapuram.srmistSchools.barch.gradeACount} <span className="text-[10px] font-bold text-emerald-500">({campusCollegeMetrics.ramapuram.srmistSchools.barch.gradeAPct}%)</span></span>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-amber-600 uppercase tracking-wider">Grade B</span>
+                        <span className="text-sm font-black text-amber-700">{campusCollegeMetrics.ramapuram.srmistSchools.barch.gradeBCount} <span className="text-[10px] font-bold text-amber-500">({campusCollegeMetrics.ramapuram.srmistSchools.barch.gradeBPct}%)</span></span>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="text-[9px] font-bold text-rose-600 uppercase tracking-wider">Grade C</span>
+                        <span className="text-sm font-black text-rose-700">{campusCollegeMetrics.ramapuram.srmistSchools.barch.gradeCCount} <span className="text-[10px] font-bold text-rose-500">({campusCollegeMetrics.ramapuram.srmistSchools.barch.gradeCPct}%)</span></span>
+                      </div>
+                    </div>
+
+                    <div className="shrink-0">
+                      <Button
+                        variant={selectedSchool === 'B.Arch' ? 'primary' : 'secondary'}
+                        size="sm"
+                        onClick={() => handleSelectSchool('SRM Ramapuram Campus', 'SRM Institute of Science & Technology (SRMIST)', 'B.Arch')}
+                        className="w-full sm:w-auto text-xs py-1.5 px-3"
+                        icon={<ChevronRight className="w-3.5 h-3.5" />}
+                      >
+                        <span>{selectedSchool === 'B.Arch' ? 'Viewing B.Arch' : 'Explore B.Arch'}</span>
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
             )}
 
             {/* ── PERFORMANCE STATISTICS (4 CARDS) ── */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 shrink-0">
+            {selectedDept === 'ALL' && selectionLevel !== 'SCHOOL' && selectionLevel !== 'DEPARTMENT' && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 shrink-0">
               
               {/* Card 1: Total Faculty */}
               <div
@@ -2052,6 +2016,7 @@ export const AdminChairmanView: React.FC<AdminChairmanViewProps> = ({
                 </div>
               </div>
             </div>
+            )}
 
         {/* ── HIGH-DENSITY DATA TABLE ── */}
         {viewMode === 'TABLE' && (

@@ -11,7 +11,7 @@ export function generateAppraisalPDF(record: AppraisalRecord) {
   doc.setTextColor(255, 255, 255);
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(16);
-  doc.text('SRM INSTITUTE OF SCIENCE AND TECHNOLOGY', 105, 14, { align: 'center' });
+  doc.text('Faculty Performance & Analytics Portal', 105, 14, { align: 'center' });
 
   doc.setFontSize(11);
   doc.setFont('helvetica', 'normal');

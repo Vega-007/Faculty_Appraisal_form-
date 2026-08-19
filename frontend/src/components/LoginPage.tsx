@@ -127,11 +127,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
           <div className="h-7 w-[1.5px] bg-slate-200 hidden sm:block" />
           <div className="hidden sm:block leading-tight">
             <span className="text-xs sm:text-sm font-bold text-slate-900 tracking-tight block">
-              SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
-            </span>
-            <p className="text-[11px] text-slate-500 font-semibold mt-0.5 tracking-wide">
               Faculty Performance &amp; Analytics Portal
-            </p>
+            </span>
           </div>
         </div>
 

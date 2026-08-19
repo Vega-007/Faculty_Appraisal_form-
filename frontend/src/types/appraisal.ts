@@ -634,9 +634,8 @@ export type CampusName = 'SRM Ramapuram Campus' | 'SRM Trichy Campus';
 export type InstitutionName =
   | 'SRM Institute of Science & Technology (SRMIST)'
   | 'Easwari Engineering College (EEC)'
-  | 'SRM Dental College (SRMDC)'
-  | 'Easwari Engineering College'
   | 'SRM Dental College'
+  | 'Easwari Engineering College'
   | 'SRM IST'
   | 'SRM Trichy Engineering College'
   | 'SRM Trichy Medical College';
@@ -747,7 +746,7 @@ export const CAMPUS_HIERARCHY: CampusHierarchyNode[] = [
         ],
       },
       {
-        name: 'SRM Dental College (SRMDC)',
+        name: 'SRM Dental College',
         departments: [
           'Conservative Dentistry & Endodontics',
           'Prosthodontics & Crown & Bridge',

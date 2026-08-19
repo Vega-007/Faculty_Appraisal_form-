@@ -66,17 +66,7 @@ export const GradeDetailModal: React.FC<GradeDetailModalProps> = ({
     return list;
   }, [gradeAppraisals, selectedDeptFilter, searchQuery]);
 
-  // Group records department-wise
-  const groupedRoster = useMemo(() => {
-    const map: Record<string, AppraisalRecord[]> = {};
-    filteredRoster.forEach((rec) => {
-      const dept = rec.department || 'Unassigned';
-      if (!map[dept]) map[dept] = [];
-      map[dept].push(rec);
-    });
-    // Return sorted entries by department name alphabetically
-    return Object.entries(map).sort(([deptA], [deptB]) => deptA.localeCompare(deptB));
-  }, [filteredRoster]);
+
 
   // Grade color theme parameters using strict semantic tokens
   const theme = useMemo(() => {
@@ -163,7 +153,7 @@ export const GradeDetailModal: React.FC<GradeDetailModalProps> = ({
         <div className="hidden print:block p-6 border-b border-slate-300 bg-white">
           <div className="flex items-center justify-between border-b-2 border-slate-900 pb-4">
             <div>
-              <h1 className="text-xl font-bold text-slate-900">SRM INSTITUTE OF SCIENCE AND TECHNOLOGY</h1>
+              <h1 className="text-xl font-bold text-slate-900">Faculty Performance &amp; Analytics Portal</h1>
               <p className="text-xs text-slate-600 font-semibold tracking-wide">FACULTY PERFORMANCE & ANALYTICS GOVERNANCE 2025</p>
               <p className="text-xs text-slate-500 mt-1">Official Department-Wise Grade Breakdown Report — <strong>{grade}</strong></p>
             </div>
@@ -180,7 +170,7 @@ export const GradeDetailModal: React.FC<GradeDetailModalProps> = ({
         <div className="overflow-y-auto flex-1 p-4 sm:p-6 bg-slate-50/50 space-y-4 sm:space-y-5">
           
           {/* Executive Stats Cards Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-2xs">
               <p className={typography.labelMicro}>Total {grade} Faculty</p>
               <div className="flex items-baseline gap-1.5 mt-1">
@@ -196,14 +186,6 @@ export const GradeDetailModal: React.FC<GradeDetailModalProps> = ({
                 <span className="text-xs text-slate-500 font-medium">of total roster</span>
               </div>
             </div>
-
-            <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-2xs">
-              <p className={typography.labelMicro}>Departments Represented</p>
-              <div className="flex items-baseline gap-1.5 mt-1">
-                <span className={typography.displayStat}>{availableModalDepts.length - 1}</span>
-                <span className="text-xs text-slate-500 font-medium">departments</span>
-              </div>
-            </div>
           </div>
 
           {/* Department-Grouped Faculty Roster Section */}
@@ -213,7 +195,7 @@ export const GradeDetailModal: React.FC<GradeDetailModalProps> = ({
               <div className="flex items-center gap-2">
                 <Users className="w-4 h-4 text-slate-500 shrink-0" />
                 <h3 className="text-xs sm:text-sm font-semibold text-slate-900">
-                  Department-Wise Breakdown — {grade} ({filteredRoster.length} listed)
+                  Faculty Roster — {grade} ({filteredRoster.length} listed)
                 </h3>
               </div>
               <div className="flex flex-wrap items-center gap-2">
@@ -244,78 +226,66 @@ export const GradeDetailModal: React.FC<GradeDetailModalProps> = ({
               </div>
             </div>
 
-            {/* Department-Grouped Content */}
+            {/* Faculty List Content */}
             <div className="p-4 sm:p-5 space-y-6">
-              {groupedRoster.length === 0 ? (
+              {filteredRoster.length === 0 ? (
                 <div className="py-12 text-center text-slate-400 font-medium italic text-xs sm:text-sm">
                   No faculty found matching your filter criteria for {grade}.
                 </div>
               ) : (
-                groupedRoster.map(([deptName, deptFaculty]) => (
-                  <div key={deptName} className="space-y-2">
-                    {/* Department Header */}
-                    <div className="flex items-center justify-between py-1.5 px-3 bg-slate-100/80 rounded-lg border border-slate-200">
-                      <div className="flex items-center gap-2">
-                        <Building2 className="w-4 h-4 text-blue-600 shrink-0" />
-                        <span className="font-bold text-xs sm:text-sm text-slate-900">{deptName}</span>
-                      </div>
-                      <span className="text-[11px] font-semibold text-slate-600 bg-white px-2.5 py-0.5 rounded-full border border-slate-200 shadow-2xs">
-                        {deptFaculty.length} {deptFaculty.length === 1 ? 'member' : 'members'}
-                      </span>
-                    </div>
-
-                    {/* Department Table */}
-                    <div className="overflow-x-auto print:overflow-visible border border-slate-200 rounded-lg">
-                      <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[650px]">
-                        <thead>
-                          <tr className="bg-slate-50/50 border-b border-slate-200">
-                            <th className={`${tableTokens.thCenter} w-10`}>#</th>
-                            <th className={tableTokens.th}>Faculty Name &amp; ID</th>
-                            <th className={tableTokens.th}>Designation</th>
-                            <th className={tableTokens.thCenter}>Total Score</th>
-                            <th className={tableTokens.thCenter}>Status</th>
-                            <th className={`${tableTokens.thRight} no-print w-24`}>Action</th>
-                          </tr>
-                        </thead>
-                        <tbody className="divide-y divide-slate-100 bg-white">
-                          {deptFaculty.map((rec, idx) => (
-                            <tr key={rec.id} className={tableTokens.tr}>
-                              <td className="px-3 py-2.5 text-center font-mono text-slate-400 text-xs">
-                                {idx + 1}
-                              </td>
-                              <td className="px-3 py-2.5">
-                                <div className="font-semibold text-xs sm:text-sm text-slate-900">{rec.facultyName}</div>
-                                <div className="text-[11px] text-slate-400 font-mono mt-0.5">{rec.empId}</div>
-                              </td>
-                              <td className="px-3 py-2.5 text-slate-600 text-xs">
-                                {rec.designation}
-                              </td>
-                              <td className="px-3 py-2.5 text-center font-mono font-bold text-slate-900 text-xs">
-                                {rec.hodScoreTotal || rec.selfScoreTotal || 0} / 350
-                              </td>
-                              <td className="px-3 py-2.5 text-center">
-                                <StatusPill status={rec.status} size="sm" />
-                              </td>
-                              <td className="px-3 py-2.5 text-right no-print">
-                                {onSelectRecord && (
-                                  <Button
-                                    variant="ghost"
-                                    size="sm"
-                                    onClick={() => onSelectRecord(rec)}
-                                    icon={<ChevronRight className="w-3.5 h-3.5" />}
-                                    title="View full faculty appraisal details"
-                                  >
-                                    <span>View</span>
-                                  </Button>
-                                )}
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                ))
+                <div className="overflow-x-auto print:overflow-visible border border-slate-200 rounded-lg">
+                  <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[650px]">
+                    <thead>
+                      <tr className="bg-slate-50/50 border-b border-slate-200">
+                        <th className={`${tableTokens.thCenter} w-10`}>#</th>
+                        <th className={tableTokens.th}>Faculty Name &amp; ID</th>
+                        <th className={tableTokens.th}>Department</th>
+                        <th className={tableTokens.th}>Designation</th>
+                        <th className={tableTokens.thCenter}>Total Score</th>
+                        <th className={tableTokens.thCenter}>Status</th>
+                        <th className={`${tableTokens.thRight} no-print w-24`}>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100 bg-white">
+                      {filteredRoster.map((rec, idx) => (
+                        <tr key={rec.id} className={tableTokens.tr}>
+                          <td className="px-3 py-2.5 text-center font-mono text-slate-400 text-xs">
+                            {idx + 1}
+                          </td>
+                          <td className="px-3 py-2.5">
+                            <div className="font-semibold text-xs sm:text-sm text-slate-900">{rec.facultyName}</div>
+                            <div className="text-[11px] text-slate-400 font-mono mt-0.5">{rec.empId}</div>
+                          </td>
+                          <td className="px-3 py-2.5 text-slate-600 text-xs font-medium">
+                            {rec.department || 'Unassigned'}
+                          </td>
+                          <td className="px-3 py-2.5 text-slate-600 text-xs">
+                            {rec.designation}
+                          </td>
+                          <td className="px-3 py-2.5 text-center font-mono font-bold text-slate-900 text-xs">
+                            {rec.hodScoreTotal || rec.selfScoreTotal || 0} / 350
+                          </td>
+                          <td className="px-3 py-2.5 text-center">
+                            <StatusPill status={rec.status} size="sm" />
+                          </td>
+                          <td className="px-3 py-2.5 text-right no-print">
+                            {onSelectRecord && (
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={() => onSelectRecord(rec)}
+                                icon={<ChevronRight className="w-3.5 h-3.5" />}
+                                title="View full faculty appraisal details"
+                              >
+                                <span>View</span>
+                              </Button>
+                            )}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               )}
             </div>
           </div>

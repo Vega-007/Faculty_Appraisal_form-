@@ -3823,7 +3823,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Vidya Joshi",
     "role": "HOD",
     "department": "Conservative Dentistry & Endodontics",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
     "password": "hod123",
@@ -3835,7 +3835,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Suresh Ranganathan",
     "role": "TEACHER",
     "department": "Conservative Dentistry & Endodontics",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -3847,7 +3847,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Lakshmi Chaudhary",
     "role": "TEACHER",
     "department": "Conservative Dentistry & Endodontics",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -3859,7 +3859,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Venkatesh Ranganathan",
     "role": "TEACHER",
     "department": "Conservative Dentistry & Endodontics",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
     "password": "teacher123",
@@ -3871,7 +3871,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Ramesh Srinivasan",
     "role": "TEACHER",
     "department": "Conservative Dentistry & Endodontics",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
     "password": "teacher123",
@@ -3883,7 +3883,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Sangeetha Menon",
     "role": "TEACHER",
     "department": "Conservative Dentistry & Endodontics",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -3895,7 +3895,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Meera Natarajan",
     "role": "TEACHER",
     "department": "Conservative Dentistry & Endodontics",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
     "password": "teacher123",
@@ -3907,7 +3907,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Sanjay Srinivasan",
     "role": "HOD",
     "department": "Prosthodontics & Crown & Bridge",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
     "password": "hod123",
@@ -3919,7 +3919,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Ananya Chawla",
     "role": "TEACHER",
     "department": "Prosthodontics & Crown & Bridge",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -3931,7 +3931,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Suresh Gupta",
     "role": "TEACHER",
     "department": "Prosthodontics & Crown & Bridge",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -3943,7 +3943,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Yamuna Nair",
     "role": "TEACHER",
     "department": "Prosthodontics & Crown & Bridge",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
     "password": "teacher123",
@@ -3955,7 +3955,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Prashanth Singh",
     "role": "TEACHER",
     "department": "Prosthodontics & Crown & Bridge",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
     "password": "teacher123",
@@ -3967,7 +3967,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Karthik Deshmukh",
     "role": "TEACHER",
     "department": "Prosthodontics & Crown & Bridge",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -3979,7 +3979,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Archana Kumar",
     "role": "TEACHER",
     "department": "Prosthodontics & Crown & Bridge",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
     "password": "teacher123",
@@ -3991,7 +3991,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Archana Banerjee",
     "role": "HOD",
     "department": "Orthodontics & Dentofacial Orthopaedics",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
     "password": "hod123",
@@ -4003,7 +4003,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Nisha Saxena",
     "role": "TEACHER",
     "department": "Orthodontics & Dentofacial Orthopaedics",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -4015,7 +4015,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Karthik Patel",
     "role": "TEACHER",
     "department": "Orthodontics & Dentofacial Orthopaedics",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -4027,7 +4027,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Divya Verma",
     "role": "TEACHER",
     "department": "Orthodontics & Dentofacial Orthopaedics",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
     "password": "teacher123",
@@ -4039,7 +4039,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Preeti Patel",
     "role": "TEACHER",
     "department": "Orthodontics & Dentofacial Orthopaedics",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
     "password": "teacher123",
@@ -4051,7 +4051,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Preeti Bhat",
     "role": "HOD",
     "department": "Periodontology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
     "password": "hod123",
@@ -4063,7 +4063,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Arjun Banerjee",
     "role": "TEACHER",
     "department": "Periodontology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -4075,7 +4075,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Murali Verma",
     "role": "TEACHER",
     "department": "Periodontology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -4087,7 +4087,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Vidya Reddy",
     "role": "TEACHER",
     "department": "Periodontology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
     "password": "teacher123",
@@ -4099,7 +4099,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Swati Balakrishnan",
     "role": "TEACHER",
     "department": "Periodontology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
     "password": "teacher123",
@@ -4111,7 +4111,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Madhavan Swaminathan",
     "role": "TEACHER",
     "department": "Periodontology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -4123,7 +4123,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Shruti Venkataraman",
     "role": "HOD",
     "department": "Oral & Maxillofacial Surgery",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
     "password": "hod123",
@@ -4135,7 +4135,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Malini Venkataraman",
     "role": "TEACHER",
     "department": "Oral & Maxillofacial Surgery",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -4147,7 +4147,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Aparna Venkataraman",
     "role": "TEACHER",
     "department": "Oral & Maxillofacial Surgery",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -4159,7 +4159,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Swati Subramanian",
     "role": "TEACHER",
     "department": "Oral & Maxillofacial Surgery",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
     "password": "teacher123",
@@ -4171,7 +4171,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Raghav Rao",
     "role": "TEACHER",
     "department": "Oral & Maxillofacial Surgery",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
     "password": "teacher123",
@@ -4183,7 +4183,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Madhavan Joshi",
     "role": "HOD",
     "department": "Oral Medicine & Radiology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
     "password": "hod123",
@@ -4195,7 +4195,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Gayathri Saxena",
     "role": "TEACHER",
     "department": "Oral Medicine & Radiology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -4207,7 +4207,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Shruti Venkataraman",
     "role": "TEACHER",
     "department": "Oral Medicine & Radiology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -4219,7 +4219,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Murali Banerjee",
     "role": "TEACHER",
     "department": "Oral Medicine & Radiology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
     "password": "teacher123",
@@ -4231,7 +4231,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Arjun Venkataraman",
     "role": "TEACHER",
     "department": "Oral Medicine & Radiology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
     "password": "teacher123",
@@ -4243,7 +4243,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Ramesh Gopalan",
     "role": "HOD",
     "department": "Oral Pathology & Microbiology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
     "password": "hod123",
@@ -4255,7 +4255,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Raghav Chaudhary",
     "role": "TEACHER",
     "department": "Oral Pathology & Microbiology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -4267,7 +4267,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Rajesh Pillai",
     "role": "TEACHER",
     "department": "Oral Pathology & Microbiology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -4279,7 +4279,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Nisha Swaminathan",
     "role": "TEACHER",
     "department": "Oral Pathology & Microbiology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
     "password": "teacher123",
@@ -4291,7 +4291,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Sriram Mukherjee",
     "role": "TEACHER",
     "department": "Oral Pathology & Microbiology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
     "password": "teacher123",
@@ -4303,7 +4303,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Manoj Singh",
     "role": "TEACHER",
     "department": "Oral Pathology & Microbiology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -4315,7 +4315,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Yamuna Menon",
     "role": "TEACHER",
     "department": "Oral Pathology & Microbiology",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
     "password": "teacher123",
@@ -4327,7 +4327,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Vidya Balakrishnan",
     "role": "HOD",
     "department": "Pediatric & Preventive Dentistry",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
     "password": "hod123",
@@ -4339,7 +4339,7 @@ export const MOCK_USERS: MockUser[] = [
     "name": "Dr. Prashanth Singh",
     "role": "TEACHER",
     "department": "Pediatric & Preventive Dentistry",
-    "institution": "SRM Dental College (SRMDC)",
+    "institution": "SRM Dental College",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
     "password": "teacher123",
@@ -5055,7 +5055,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -5328,10 +5328,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 230,
-    "hodScoreTotal": 230,
-    "hoiScoreTotal": 230,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -5343,7 +5343,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -5616,10 +5616,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 284,
-    "hodScoreTotal": 284,
-    "hoiScoreTotal": 284,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -5631,7 +5631,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -5904,10 +5904,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 284,
-    "hodScoreTotal": 284,
-    "hoiScoreTotal": 284,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -5919,7 +5919,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -6192,10 +6192,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 324,
-    "hodScoreTotal": 324,
-    "hoiScoreTotal": 324,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -6207,7 +6207,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -6480,10 +6480,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 284,
-    "hodScoreTotal": 284,
-    "hoiScoreTotal": 284,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -6495,7 +6495,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -6768,10 +6768,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 284,
-    "hodScoreTotal": 284,
-    "hoiScoreTotal": 284,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -6783,7 +6783,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -7056,9 +7056,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 272,
-    "hodScoreTotal": 272,
-    "hoiScoreTotal": 272,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -7071,7 +7071,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -7344,10 +7344,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 222,
-    "hodScoreTotal": 222,
-    "hoiScoreTotal": 222,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -7359,7 +7359,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -7632,10 +7632,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 273,
-    "hodScoreTotal": 273,
-    "hoiScoreTotal": 273,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -7647,7 +7647,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -7920,10 +7920,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 335,
-    "hodScoreTotal": 335,
-    "hoiScoreTotal": 335,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -7935,7 +7935,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -8208,10 +8208,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 282,
-    "hodScoreTotal": 282,
-    "hoiScoreTotal": 282,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -8223,7 +8223,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -8496,9 +8496,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 290,
-    "hodScoreTotal": 290,
-    "hoiScoreTotal": 290,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -8511,7 +8511,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -8784,10 +8784,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 331,
-    "hodScoreTotal": 331,
-    "hoiScoreTotal": 331,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -8799,7 +8799,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -9072,10 +9072,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 265,
-    "hodScoreTotal": 265,
-    "hoiScoreTotal": 265,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -9087,7 +9087,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -9360,9 +9360,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 294,
-    "hodScoreTotal": 294,
-    "hoiScoreTotal": 294,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -9375,7 +9375,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -9648,10 +9648,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 206,
-    "hodScoreTotal": 206,
-    "hoiScoreTotal": 206,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -9663,7 +9663,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -9936,10 +9936,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 324,
-    "hodScoreTotal": 324,
-    "hoiScoreTotal": 324,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -9951,7 +9951,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -10224,10 +10224,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -10239,7 +10239,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -10512,9 +10512,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 269,
-    "hodScoreTotal": 269,
-    "hoiScoreTotal": 269,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -10527,7 +10527,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -10800,10 +10800,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 213,
-    "hodScoreTotal": 213,
-    "hoiScoreTotal": 213,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -10815,7 +10815,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -11088,10 +11088,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 280,
-    "hodScoreTotal": 280,
-    "hoiScoreTotal": 280,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -11103,7 +11103,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -11376,9 +11376,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 281,
-    "hodScoreTotal": 281,
-    "hoiScoreTotal": 281,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -11391,7 +11391,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -11664,10 +11664,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -11679,7 +11679,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -11952,9 +11952,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 338,
-    "hodScoreTotal": 338,
-    "hoiScoreTotal": 338,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -11967,7 +11967,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -12240,10 +12240,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 272,
-    "hodScoreTotal": 272,
-    "hoiScoreTotal": 272,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -12255,7 +12255,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -12528,10 +12528,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 292,
-    "hodScoreTotal": 292,
-    "hoiScoreTotal": 292,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -12543,7 +12543,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -12816,10 +12816,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 325,
-    "hodScoreTotal": 325,
-    "hoiScoreTotal": 325,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -12831,7 +12831,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -13104,9 +13104,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 324,
-    "hodScoreTotal": 324,
-    "hoiScoreTotal": 324,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -13119,7 +13119,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -13392,10 +13392,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 284,
-    "hodScoreTotal": 284,
-    "hoiScoreTotal": 284,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -13407,7 +13407,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -13680,9 +13680,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 293,
-    "hodScoreTotal": 293,
-    "hoiScoreTotal": 293,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -13695,7 +13695,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -13968,10 +13968,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 218,
-    "hodScoreTotal": 218,
-    "hoiScoreTotal": 218,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -13983,7 +13983,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -14256,9 +14256,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 297,
-    "hodScoreTotal": 297,
-    "hoiScoreTotal": 297,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -14271,7 +14271,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -14544,10 +14544,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 297,
-    "hodScoreTotal": 297,
-    "hoiScoreTotal": 297,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -14559,7 +14559,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -14832,10 +14832,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 341,
-    "hodScoreTotal": 341,
-    "hoiScoreTotal": 341,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -14847,7 +14847,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -15120,9 +15120,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 294,
-    "hodScoreTotal": 294,
-    "hoiScoreTotal": 294,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -15135,7 +15135,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -15408,10 +15408,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 332,
-    "hodScoreTotal": 332,
-    "hoiScoreTotal": 332,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -15423,7 +15423,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -15696,10 +15696,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 326,
-    "hodScoreTotal": 326,
-    "hoiScoreTotal": 326,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -15711,7 +15711,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -15984,9 +15984,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 291,
-    "hodScoreTotal": 291,
-    "hoiScoreTotal": 291,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -15999,7 +15999,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -16272,10 +16272,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 224,
-    "hodScoreTotal": 224,
-    "hoiScoreTotal": 224,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -16287,7 +16287,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -16560,9 +16560,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -16575,7 +16575,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -16848,9 +16848,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -16863,7 +16863,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -17136,10 +17136,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 289,
-    "hodScoreTotal": 289,
-    "hoiScoreTotal": 289,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -17151,7 +17151,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -17424,9 +17424,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 288,
-    "hodScoreTotal": 288,
-    "hoiScoreTotal": 288,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -17439,7 +17439,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -17712,9 +17712,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 240,
-    "hodScoreTotal": 240,
-    "hoiScoreTotal": 240,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -17727,7 +17727,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -18000,10 +18000,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 286,
-    "hodScoreTotal": 286,
-    "hoiScoreTotal": 286,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -18015,7 +18015,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -18288,10 +18288,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 312,
-    "hodScoreTotal": 312,
-    "hoiScoreTotal": 312,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -18303,7 +18303,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -18576,10 +18576,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -18591,7 +18591,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -18864,9 +18864,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 272,
-    "hodScoreTotal": 272,
-    "hoiScoreTotal": 272,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -18879,7 +18879,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -19152,10 +19152,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 326,
-    "hodScoreTotal": 326,
-    "hoiScoreTotal": 326,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -19167,7 +19167,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -19440,9 +19440,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 283,
-    "hodScoreTotal": 283,
-    "hoiScoreTotal": 283,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -19455,7 +19455,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -19728,9 +19728,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 295,
-    "hodScoreTotal": 295,
-    "hoiScoreTotal": 295,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -19743,7 +19743,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -20016,10 +20016,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 223,
-    "hodScoreTotal": 223,
-    "hoiScoreTotal": 223,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -20031,7 +20031,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -20304,9 +20304,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 294,
-    "hodScoreTotal": 294,
-    "hoiScoreTotal": 294,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -20319,7 +20319,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -20592,10 +20592,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -20607,7 +20607,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -20880,9 +20880,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 276,
-    "hodScoreTotal": 276,
-    "hoiScoreTotal": 276,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -20895,7 +20895,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -21168,9 +21168,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 318,
-    "hodScoreTotal": 318,
-    "hoiScoreTotal": 318,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -21183,7 +21183,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -21456,10 +21456,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 289,
-    "hodScoreTotal": 289,
-    "hoiScoreTotal": 289,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -21471,7 +21471,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -21744,10 +21744,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 218,
-    "hodScoreTotal": 218,
-    "hoiScoreTotal": 218,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -21759,7 +21759,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -22032,9 +22032,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 281,
-    "hodScoreTotal": 281,
-    "hoiScoreTotal": 281,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -22047,7 +22047,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -22320,10 +22320,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 332,
-    "hodScoreTotal": 332,
-    "hoiScoreTotal": 332,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -22335,7 +22335,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -22608,9 +22608,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 277,
-    "hodScoreTotal": 277,
-    "hoiScoreTotal": 277,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -22623,7 +22623,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -22896,10 +22896,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -22911,7 +22911,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -23184,10 +23184,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 276,
-    "hodScoreTotal": 276,
-    "hoiScoreTotal": 276,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -23199,7 +23199,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -23472,10 +23472,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 229,
-    "hodScoreTotal": 229,
-    "hoiScoreTotal": 229,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -23487,7 +23487,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -23760,10 +23760,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 292,
-    "hodScoreTotal": 292,
-    "hoiScoreTotal": 292,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -23775,7 +23775,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -24048,10 +24048,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 327,
-    "hodScoreTotal": 327,
-    "hoiScoreTotal": 327,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -24063,7 +24063,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -24336,9 +24336,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 321,
-    "hodScoreTotal": 321,
-    "hoiScoreTotal": 321,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -24351,7 +24351,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -24624,10 +24624,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 217,
-    "hodScoreTotal": 217,
-    "hoiScoreTotal": 217,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -24639,7 +24639,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -24912,10 +24912,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 313,
-    "hodScoreTotal": 313,
-    "hoiScoreTotal": 313,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -24927,7 +24927,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -25200,10 +25200,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 287,
-    "hodScoreTotal": 287,
-    "hoiScoreTotal": 287,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -25215,7 +25215,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -25488,10 +25488,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 280,
-    "hodScoreTotal": 280,
-    "hoiScoreTotal": 280,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -25503,7 +25503,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -25776,9 +25776,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 271,
-    "hodScoreTotal": 271,
-    "hoiScoreTotal": 271,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -25791,7 +25791,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -26064,9 +26064,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 267,
-    "hodScoreTotal": 267,
-    "hoiScoreTotal": 267,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -26079,7 +26079,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -26352,10 +26352,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 285,
-    "hodScoreTotal": 285,
-    "hoiScoreTotal": 285,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -26367,7 +26367,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -26640,10 +26640,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 325,
-    "hodScoreTotal": 325,
-    "hoiScoreTotal": 325,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -26655,7 +26655,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -26928,9 +26928,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 275,
-    "hodScoreTotal": 275,
-    "hoiScoreTotal": 275,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -26943,7 +26943,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -27216,10 +27216,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 215,
-    "hodScoreTotal": 215,
-    "hoiScoreTotal": 215,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -27231,7 +27231,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -27504,9 +27504,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 273,
-    "hodScoreTotal": 273,
-    "hoiScoreTotal": 273,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -27519,7 +27519,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -27792,10 +27792,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 335,
-    "hodScoreTotal": 335,
-    "hoiScoreTotal": 335,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -27807,7 +27807,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -28080,10 +28080,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 276,
-    "hodScoreTotal": 276,
-    "hoiScoreTotal": 276,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -28095,7 +28095,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -28368,10 +28368,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 210,
-    "hodScoreTotal": 210,
-    "hoiScoreTotal": 210,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -28383,7 +28383,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -28656,10 +28656,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 274,
-    "hodScoreTotal": 274,
-    "hoiScoreTotal": 274,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -28671,7 +28671,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -28944,10 +28944,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 277,
-    "hodScoreTotal": 277,
-    "hoiScoreTotal": 277,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -28959,7 +28959,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -29232,9 +29232,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 288,
-    "hodScoreTotal": 288,
-    "hoiScoreTotal": 288,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -29247,7 +29247,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -29520,10 +29520,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 321,
-    "hodScoreTotal": 321,
-    "hoiScoreTotal": 321,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -29535,7 +29535,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -29808,9 +29808,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 300,
-    "hodScoreTotal": 300,
-    "hoiScoreTotal": 300,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -29823,7 +29823,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -30096,10 +30096,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 208,
-    "hodScoreTotal": 208,
-    "hoiScoreTotal": 208,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -30111,7 +30111,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -30384,10 +30384,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -30399,7 +30399,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -30672,9 +30672,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 274,
-    "hodScoreTotal": 274,
-    "hoiScoreTotal": 274,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -30687,7 +30687,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -30960,9 +30960,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 276,
-    "hodScoreTotal": 276,
-    "hoiScoreTotal": 276,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -30975,7 +30975,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -31248,9 +31248,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 341,
-    "hodScoreTotal": 341,
-    "hoiScoreTotal": 341,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -31263,7 +31263,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -31536,9 +31536,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 329,
-    "hodScoreTotal": 329,
-    "hoiScoreTotal": 329,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -31551,7 +31551,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -31824,9 +31824,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 268,
-    "hodScoreTotal": 268,
-    "hoiScoreTotal": 268,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -31839,7 +31839,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -32112,9 +32112,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 273,
-    "hodScoreTotal": 273,
-    "hoiScoreTotal": 273,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -32127,7 +32127,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -32400,10 +32400,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 218,
-    "hodScoreTotal": 218,
-    "hoiScoreTotal": 218,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -32415,7 +32415,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -32688,9 +32688,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 319,
-    "hodScoreTotal": 319,
-    "hoiScoreTotal": 319,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -32703,7 +32703,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -32976,9 +32976,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 281,
-    "hodScoreTotal": 281,
-    "hoiScoreTotal": 281,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -32991,7 +32991,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -33264,9 +33264,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 298,
-    "hodScoreTotal": 298,
-    "hoiScoreTotal": 298,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -33279,7 +33279,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -33552,10 +33552,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 288,
-    "hodScoreTotal": 288,
-    "hoiScoreTotal": 288,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -33567,7 +33567,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -33840,9 +33840,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 224,
-    "hodScoreTotal": 224,
-    "hoiScoreTotal": 224,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -33855,7 +33855,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -34128,10 +34128,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 283,
-    "hodScoreTotal": 283,
-    "hoiScoreTotal": 283,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -34143,7 +34143,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -34416,10 +34416,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 333,
-    "hodScoreTotal": 333,
-    "hoiScoreTotal": 333,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -34431,7 +34431,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -34704,10 +34704,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 342,
-    "hodScoreTotal": 342,
-    "hoiScoreTotal": 342,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -34719,7 +34719,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -34992,10 +34992,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 275,
-    "hodScoreTotal": 275,
-    "hoiScoreTotal": 275,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -35007,7 +35007,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -35280,9 +35280,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 290,
-    "hodScoreTotal": 290,
-    "hoiScoreTotal": 290,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -35295,7 +35295,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -35568,10 +35568,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 271,
-    "hodScoreTotal": 271,
-    "hoiScoreTotal": 271,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -35583,7 +35583,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -35856,10 +35856,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 273,
-    "hodScoreTotal": 273,
-    "hoiScoreTotal": 273,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -35871,7 +35871,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -36144,9 +36144,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 284,
-    "hodScoreTotal": 284,
-    "hoiScoreTotal": 284,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -36159,7 +36159,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -36432,10 +36432,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 275,
-    "hodScoreTotal": 275,
-    "hoiScoreTotal": 275,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -36447,7 +36447,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -36720,10 +36720,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 338,
-    "hodScoreTotal": 338,
-    "hoiScoreTotal": 338,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -36735,7 +36735,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -37008,10 +37008,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 208,
-    "hodScoreTotal": 208,
-    "hoiScoreTotal": 208,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -37023,7 +37023,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -37296,10 +37296,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 325,
-    "hodScoreTotal": 325,
-    "hoiScoreTotal": 325,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -37311,7 +37311,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -37584,9 +37584,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 286,
-    "hodScoreTotal": 286,
-    "hoiScoreTotal": 286,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -37599,7 +37599,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -37872,9 +37872,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 211,
-    "hodScoreTotal": 211,
-    "hoiScoreTotal": 211,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -37887,7 +37887,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -38160,10 +38160,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 296,
-    "hodScoreTotal": 296,
-    "hoiScoreTotal": 296,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -38175,7 +38175,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -38448,9 +38448,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 271,
-    "hodScoreTotal": 271,
-    "hoiScoreTotal": 271,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -38463,7 +38463,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -38736,9 +38736,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 277,
-    "hodScoreTotal": 277,
-    "hoiScoreTotal": 277,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -38751,7 +38751,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -39024,10 +39024,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 320,
-    "hodScoreTotal": 320,
-    "hoiScoreTotal": 320,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -39039,7 +39039,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -39312,9 +39312,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 269,
-    "hodScoreTotal": 269,
-    "hoiScoreTotal": 269,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -39327,7 +39327,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -39600,10 +39600,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 267,
-    "hodScoreTotal": 267,
-    "hoiScoreTotal": 267,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -39615,7 +39615,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -39888,9 +39888,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 295,
-    "hodScoreTotal": 295,
-    "hoiScoreTotal": 295,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -39903,7 +39903,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -40176,10 +40176,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 216,
-    "hodScoreTotal": 216,
-    "hoiScoreTotal": 216,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -40191,7 +40191,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -40464,10 +40464,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 339,
-    "hodScoreTotal": 339,
-    "hoiScoreTotal": 339,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -40479,7 +40479,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -40752,10 +40752,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 324,
-    "hodScoreTotal": 324,
-    "hoiScoreTotal": 324,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -40767,7 +40767,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -41040,9 +41040,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 291,
-    "hodScoreTotal": 291,
-    "hoiScoreTotal": 291,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -41055,7 +41055,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -41328,9 +41328,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 299,
-    "hodScoreTotal": 299,
-    "hoiScoreTotal": 299,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -41343,7 +41343,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -41616,10 +41616,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 286,
-    "hodScoreTotal": 286,
-    "hoiScoreTotal": 286,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -41631,7 +41631,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -41904,9 +41904,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 291,
-    "hodScoreTotal": 291,
-    "hoiScoreTotal": 291,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -41919,7 +41919,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -42192,10 +42192,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 242,
-    "hodScoreTotal": 242,
-    "hoiScoreTotal": 242,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -42207,7 +42207,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -42480,9 +42480,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 210,
-    "hodScoreTotal": 210,
-    "hoiScoreTotal": 210,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -42495,7 +42495,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -42768,10 +42768,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 330,
-    "hodScoreTotal": 330,
-    "hoiScoreTotal": 330,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -42783,7 +42783,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -43056,9 +43056,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -43071,7 +43071,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -43344,9 +43344,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 282,
-    "hodScoreTotal": 282,
-    "hoiScoreTotal": 282,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -43359,7 +43359,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -43632,9 +43632,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 290,
-    "hodScoreTotal": 290,
-    "hoiScoreTotal": 290,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -43647,7 +43647,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -43920,10 +43920,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 301,
-    "hodScoreTotal": 301,
-    "hoiScoreTotal": 301,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -43935,7 +43935,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -44208,10 +44208,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 317,
-    "hodScoreTotal": 317,
-    "hoiScoreTotal": 317,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -44223,7 +44223,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -44496,9 +44496,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 276,
-    "hodScoreTotal": 276,
-    "hoiScoreTotal": 276,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -44511,7 +44511,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -44784,10 +44784,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 214,
-    "hodScoreTotal": 214,
-    "hoiScoreTotal": 214,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -44799,7 +44799,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -45072,10 +45072,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 331,
-    "hodScoreTotal": 331,
-    "hoiScoreTotal": 331,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -45087,7 +45087,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -45360,10 +45360,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 274,
-    "hodScoreTotal": 274,
-    "hoiScoreTotal": 274,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -45375,7 +45375,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -45648,9 +45648,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 287,
-    "hodScoreTotal": 287,
-    "hoiScoreTotal": 287,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -45663,7 +45663,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -45936,10 +45936,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 277,
-    "hodScoreTotal": 277,
-    "hoiScoreTotal": 277,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -45951,7 +45951,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -46224,10 +46224,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 319,
-    "hodScoreTotal": 319,
-    "hoiScoreTotal": 319,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -46239,7 +46239,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -46512,9 +46512,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 271,
-    "hodScoreTotal": 271,
-    "hoiScoreTotal": 271,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -46527,7 +46527,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -46800,9 +46800,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 271,
-    "hodScoreTotal": 271,
-    "hoiScoreTotal": 271,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -46815,7 +46815,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -47088,9 +47088,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 322,
-    "hodScoreTotal": 322,
-    "hoiScoreTotal": 322,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -47103,7 +47103,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -47376,9 +47376,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 277,
-    "hodScoreTotal": 277,
-    "hoiScoreTotal": 277,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -47391,7 +47391,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -47679,7 +47679,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -47952,9 +47952,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 210,
-    "hodScoreTotal": 210,
-    "hoiScoreTotal": 210,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -47967,7 +47967,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -48240,9 +48240,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 271,
-    "hodScoreTotal": 271,
-    "hoiScoreTotal": 271,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -48255,7 +48255,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -48528,10 +48528,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 328,
-    "hodScoreTotal": 328,
-    "hoiScoreTotal": 328,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -48543,7 +48543,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -48816,10 +48816,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 314,
-    "hodScoreTotal": 314,
-    "hoiScoreTotal": 314,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -48831,7 +48831,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -49104,10 +49104,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 266,
-    "hodScoreTotal": 266,
-    "hoiScoreTotal": 266,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -49119,7 +49119,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -49392,10 +49392,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 294,
-    "hodScoreTotal": 294,
-    "hoiScoreTotal": 294,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -49407,7 +49407,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -49680,9 +49680,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 286,
-    "hodScoreTotal": 286,
-    "hoiScoreTotal": 286,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -49695,7 +49695,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -49968,9 +49968,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 228,
-    "hodScoreTotal": 228,
-    "hoiScoreTotal": 228,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -49983,7 +49983,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -50256,10 +50256,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 289,
-    "hodScoreTotal": 289,
-    "hoiScoreTotal": 289,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -50271,7 +50271,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -50544,10 +50544,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 270,
-    "hodScoreTotal": 270,
-    "hoiScoreTotal": 270,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -50559,7 +50559,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -50832,10 +50832,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 319,
-    "hodScoreTotal": 319,
-    "hoiScoreTotal": 319,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -50847,7 +50847,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -51120,9 +51120,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 291,
-    "hodScoreTotal": 291,
-    "hoiScoreTotal": 291,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -51135,7 +51135,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -51408,10 +51408,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 232,
-    "hodScoreTotal": 232,
-    "hoiScoreTotal": 232,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -51423,7 +51423,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -51696,10 +51696,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -51711,7 +51711,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -51984,10 +51984,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 333,
-    "hodScoreTotal": 333,
-    "hoiScoreTotal": 333,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -51999,7 +51999,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -52272,10 +52272,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 334,
-    "hodScoreTotal": 334,
-    "hoiScoreTotal": 334,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -52287,7 +52287,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -52560,9 +52560,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 281,
-    "hodScoreTotal": 281,
-    "hoiScoreTotal": 281,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -52575,7 +52575,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -52848,10 +52848,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 206,
-    "hodScoreTotal": 206,
-    "hoiScoreTotal": 206,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -52863,7 +52863,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -53136,9 +53136,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -53151,7 +53151,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -53424,10 +53424,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 300,
-    "hodScoreTotal": 300,
-    "hoiScoreTotal": 300,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -53439,7 +53439,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -53712,9 +53712,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 297,
-    "hodScoreTotal": 297,
-    "hoiScoreTotal": 297,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -53727,7 +53727,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -54000,10 +54000,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 337,
-    "hodScoreTotal": 337,
-    "hoiScoreTotal": 337,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -54015,7 +54015,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -54288,10 +54288,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -54303,7 +54303,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -54576,10 +54576,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 288,
-    "hodScoreTotal": 288,
-    "hoiScoreTotal": 288,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -54591,7 +54591,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -54864,9 +54864,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -54879,7 +54879,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -55152,10 +55152,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 323,
-    "hodScoreTotal": 323,
-    "hoiScoreTotal": 323,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -55167,7 +55167,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -55440,10 +55440,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 218,
-    "hodScoreTotal": 218,
-    "hoiScoreTotal": 218,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -55455,7 +55455,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -55728,9 +55728,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 216,
-    "hodScoreTotal": 216,
-    "hoiScoreTotal": 216,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -55743,7 +55743,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -56016,9 +56016,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 273,
-    "hodScoreTotal": 273,
-    "hoiScoreTotal": 273,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -56031,7 +56031,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -56304,9 +56304,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 293,
-    "hodScoreTotal": 293,
-    "hoiScoreTotal": 293,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -56319,7 +56319,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -56592,10 +56592,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 329,
-    "hodScoreTotal": 329,
-    "hoiScoreTotal": 329,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -56607,7 +56607,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -56880,9 +56880,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 282,
-    "hodScoreTotal": 282,
-    "hoiScoreTotal": 282,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -56895,7 +56895,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -57168,10 +57168,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 329,
-    "hodScoreTotal": 329,
-    "hoiScoreTotal": 329,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -57183,7 +57183,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -57456,9 +57456,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 283,
-    "hodScoreTotal": 283,
-    "hoiScoreTotal": 283,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -57471,7 +57471,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -57744,9 +57744,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 284,
-    "hodScoreTotal": 284,
-    "hoiScoreTotal": 284,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -57759,7 +57759,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -58032,9 +58032,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 196,
-    "hodScoreTotal": 196,
-    "hoiScoreTotal": 196,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -58047,7 +58047,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -58320,10 +58320,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 276,
-    "hodScoreTotal": 276,
-    "hoiScoreTotal": 276,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -58335,7 +58335,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -58608,9 +58608,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 285,
-    "hodScoreTotal": 285,
-    "hoiScoreTotal": 285,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -58623,7 +58623,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -58896,10 +58896,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 283,
-    "hodScoreTotal": 283,
-    "hoiScoreTotal": 283,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -58911,7 +58911,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -59184,10 +59184,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 335,
-    "hodScoreTotal": 335,
-    "hoiScoreTotal": 335,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -59199,7 +59199,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -59472,9 +59472,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 335,
-    "hodScoreTotal": 335,
-    "hoiScoreTotal": 335,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -59487,7 +59487,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -59760,10 +59760,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 294,
-    "hodScoreTotal": 294,
-    "hoiScoreTotal": 294,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -59775,7 +59775,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -60048,10 +60048,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 217,
-    "hodScoreTotal": 217,
-    "hoiScoreTotal": 217,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -60063,7 +60063,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -60336,10 +60336,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 282,
-    "hodScoreTotal": 282,
-    "hoiScoreTotal": 282,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -60351,7 +60351,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -60624,10 +60624,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 273,
-    "hodScoreTotal": 273,
-    "hoiScoreTotal": 273,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -60639,7 +60639,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -60912,10 +60912,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 324,
-    "hodScoreTotal": 324,
-    "hoiScoreTotal": 324,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -60927,7 +60927,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -61200,10 +61200,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 285,
-    "hodScoreTotal": 285,
-    "hoiScoreTotal": 285,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -61215,7 +61215,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -61488,10 +61488,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 208,
-    "hodScoreTotal": 208,
-    "hoiScoreTotal": 208,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -61503,7 +61503,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -61776,9 +61776,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -61791,7 +61791,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -62064,9 +62064,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 284,
-    "hodScoreTotal": 284,
-    "hoiScoreTotal": 284,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -62079,7 +62079,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -62352,10 +62352,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 324,
-    "hodScoreTotal": 324,
-    "hoiScoreTotal": 324,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -62367,7 +62367,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Institute of Science & Technology (SRMIST)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Institute of Science & Technology (SRMIST)",
@@ -62640,9 +62640,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 292,
-    "hodScoreTotal": 292,
-    "hoiScoreTotal": 292,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -62655,7 +62655,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -62928,9 +62928,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 209,
-    "hodScoreTotal": 209,
-    "hoiScoreTotal": 209,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -62943,7 +62943,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -63216,10 +63216,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 331,
-    "hodScoreTotal": 331,
-    "hoiScoreTotal": 331,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -63231,7 +63231,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -63504,9 +63504,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -63519,7 +63519,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -63792,10 +63792,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 288,
-    "hodScoreTotal": 288,
-    "hoiScoreTotal": 288,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -63807,7 +63807,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -64080,9 +64080,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 266,
-    "hodScoreTotal": 266,
-    "hoiScoreTotal": 266,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -64095,7 +64095,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -64368,10 +64368,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 298,
-    "hodScoreTotal": 298,
-    "hoiScoreTotal": 298,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -64383,7 +64383,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -64656,9 +64656,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 334,
-    "hodScoreTotal": 334,
-    "hoiScoreTotal": 334,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -64671,7 +64671,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -64944,9 +64944,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 295,
-    "hodScoreTotal": 295,
-    "hoiScoreTotal": 295,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -64959,7 +64959,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -65232,9 +65232,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 288,
-    "hodScoreTotal": 288,
-    "hoiScoreTotal": 288,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -65247,7 +65247,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -65520,9 +65520,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 242,
-    "hodScoreTotal": 242,
-    "hoiScoreTotal": 242,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -65535,7 +65535,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -65823,7 +65823,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -66096,10 +66096,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 280,
-    "hodScoreTotal": 280,
-    "hoiScoreTotal": 280,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -66111,7 +66111,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -66384,9 +66384,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 287,
-    "hodScoreTotal": 287,
-    "hoiScoreTotal": 287,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -66399,7 +66399,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -66672,10 +66672,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 319,
-    "hodScoreTotal": 319,
-    "hoiScoreTotal": 319,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -66687,7 +66687,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -66960,10 +66960,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 272,
-    "hodScoreTotal": 272,
-    "hoiScoreTotal": 272,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -66975,7 +66975,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -67248,10 +67248,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 194,
-    "hodScoreTotal": 194,
-    "hoiScoreTotal": 194,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -67263,7 +67263,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -67536,10 +67536,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 295,
-    "hodScoreTotal": 295,
-    "hoiScoreTotal": 295,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -67551,7 +67551,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -67824,10 +67824,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 281,
-    "hodScoreTotal": 281,
-    "hoiScoreTotal": 281,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -67839,7 +67839,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -68112,10 +68112,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 277,
-    "hodScoreTotal": 277,
-    "hoiScoreTotal": 277,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -68127,7 +68127,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -68400,9 +68400,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 230,
-    "hodScoreTotal": 230,
-    "hoiScoreTotal": 230,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -68415,7 +68415,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -68688,10 +68688,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 274,
-    "hodScoreTotal": 274,
-    "hoiScoreTotal": 274,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -68703,7 +68703,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -68976,9 +68976,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 283,
-    "hodScoreTotal": 283,
-    "hoiScoreTotal": 283,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -68991,7 +68991,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -69264,10 +69264,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 318,
-    "hodScoreTotal": 318,
-    "hoiScoreTotal": 318,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -69279,7 +69279,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -69552,9 +69552,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 289,
-    "hodScoreTotal": 289,
-    "hoiScoreTotal": 289,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -69567,7 +69567,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -69840,10 +69840,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 214,
-    "hodScoreTotal": 214,
-    "hoiScoreTotal": 214,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -69855,7 +69855,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -70128,10 +70128,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 283,
-    "hodScoreTotal": 283,
-    "hoiScoreTotal": 283,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -70143,7 +70143,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -70416,9 +70416,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 313,
-    "hodScoreTotal": 313,
-    "hoiScoreTotal": 313,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -70431,7 +70431,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -70704,10 +70704,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 298,
-    "hodScoreTotal": 298,
-    "hoiScoreTotal": 298,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -70719,7 +70719,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -70992,10 +70992,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 327,
-    "hodScoreTotal": 327,
-    "hoiScoreTotal": 327,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -71007,7 +71007,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -71280,9 +71280,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 294,
-    "hodScoreTotal": 294,
-    "hoiScoreTotal": 294,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -71295,7 +71295,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -71568,10 +71568,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 335,
-    "hodScoreTotal": 335,
-    "hoiScoreTotal": 335,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -71583,7 +71583,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -71856,9 +71856,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 302,
-    "hodScoreTotal": 302,
-    "hoiScoreTotal": 302,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -71871,7 +71871,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -72144,10 +72144,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -72159,7 +72159,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -72432,9 +72432,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 294,
-    "hodScoreTotal": 294,
-    "hoiScoreTotal": 294,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -72447,7 +72447,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -72720,10 +72720,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 205,
-    "hodScoreTotal": 205,
-    "hoiScoreTotal": 205,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -72735,7 +72735,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -73008,10 +73008,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 338,
-    "hodScoreTotal": 338,
-    "hoiScoreTotal": 338,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -73023,7 +73023,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -73296,10 +73296,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 274,
-    "hodScoreTotal": 274,
-    "hoiScoreTotal": 274,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -73311,7 +73311,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -73584,10 +73584,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 229,
-    "hodScoreTotal": 229,
-    "hoiScoreTotal": 229,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -73599,7 +73599,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -73872,9 +73872,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -73887,7 +73887,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -74160,9 +74160,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 295,
-    "hodScoreTotal": 295,
-    "hoiScoreTotal": 295,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -74175,7 +74175,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -74448,10 +74448,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 295,
-    "hodScoreTotal": 295,
-    "hoiScoreTotal": 295,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -74463,7 +74463,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -74736,9 +74736,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 332,
-    "hodScoreTotal": 332,
-    "hoiScoreTotal": 332,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -74751,7 +74751,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -75024,10 +75024,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 335,
-    "hodScoreTotal": 335,
-    "hoiScoreTotal": 335,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -75039,7 +75039,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -75312,10 +75312,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 286,
-    "hodScoreTotal": 286,
-    "hoiScoreTotal": 286,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -75327,7 +75327,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -75600,10 +75600,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 319,
-    "hodScoreTotal": 319,
-    "hoiScoreTotal": 319,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -75615,7 +75615,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -75888,10 +75888,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 202,
-    "hodScoreTotal": 202,
-    "hoiScoreTotal": 202,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -75903,7 +75903,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -76176,10 +76176,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 301,
-    "hodScoreTotal": 301,
-    "hoiScoreTotal": 301,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -76191,7 +76191,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -76464,10 +76464,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 271,
-    "hodScoreTotal": 271,
-    "hoiScoreTotal": 271,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -76479,7 +76479,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -76752,9 +76752,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 281,
-    "hodScoreTotal": 281,
-    "hoiScoreTotal": 281,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -76767,7 +76767,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -77040,9 +77040,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -77055,7 +77055,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -77328,9 +77328,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 303,
-    "hodScoreTotal": 303,
-    "hoiScoreTotal": 303,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -77343,7 +77343,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -77616,10 +77616,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 212,
-    "hodScoreTotal": 212,
-    "hoiScoreTotal": 212,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -77631,7 +77631,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -77904,10 +77904,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 320,
-    "hodScoreTotal": 320,
-    "hoiScoreTotal": 320,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -77919,7 +77919,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -78192,10 +78192,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 277,
-    "hodScoreTotal": 277,
-    "hoiScoreTotal": 277,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -78207,7 +78207,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -78480,10 +78480,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 213,
-    "hodScoreTotal": 213,
-    "hoiScoreTotal": 213,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -78495,7 +78495,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -78768,10 +78768,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 328,
-    "hodScoreTotal": 328,
-    "hoiScoreTotal": 328,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -78783,7 +78783,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -79056,9 +79056,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -79071,7 +79071,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -79344,10 +79344,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 277,
-    "hodScoreTotal": 277,
-    "hoiScoreTotal": 277,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -79359,7 +79359,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -79632,10 +79632,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 267,
-    "hodScoreTotal": 267,
-    "hoiScoreTotal": 267,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -79647,7 +79647,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -79920,9 +79920,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 302,
-    "hodScoreTotal": 302,
-    "hoiScoreTotal": 302,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -79935,7 +79935,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -80208,9 +80208,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 296,
-    "hodScoreTotal": 296,
-    "hoiScoreTotal": 296,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -80223,7 +80223,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -80496,10 +80496,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 276,
-    "hodScoreTotal": 276,
-    "hoiScoreTotal": 276,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -80511,7 +80511,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -80784,10 +80784,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 317,
-    "hodScoreTotal": 317,
-    "hoiScoreTotal": 317,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -80799,7 +80799,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -81072,9 +81072,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 291,
-    "hodScoreTotal": 291,
-    "hoiScoreTotal": 291,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -81087,7 +81087,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -81360,10 +81360,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 298,
-    "hodScoreTotal": 298,
-    "hoiScoreTotal": 298,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -81375,7 +81375,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -81648,10 +81648,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 320,
-    "hodScoreTotal": 320,
-    "hoiScoreTotal": 320,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -81663,7 +81663,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -81936,10 +81936,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 210,
-    "hodScoreTotal": 210,
-    "hoiScoreTotal": 210,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -81951,7 +81951,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -82224,9 +82224,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -82239,7 +82239,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -82512,10 +82512,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 272,
-    "hodScoreTotal": 272,
-    "hoiScoreTotal": 272,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -82527,7 +82527,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -82800,9 +82800,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 325,
-    "hodScoreTotal": 325,
-    "hoiScoreTotal": 325,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -82815,7 +82815,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -83088,10 +83088,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 287,
-    "hodScoreTotal": 287,
-    "hoiScoreTotal": 287,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -83103,7 +83103,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -83376,10 +83376,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 215,
-    "hodScoreTotal": 215,
-    "hoiScoreTotal": 215,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -83391,7 +83391,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -83664,9 +83664,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 271,
-    "hodScoreTotal": 271,
-    "hoiScoreTotal": 271,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -83679,7 +83679,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -83952,10 +83952,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -83967,7 +83967,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -84240,10 +84240,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 329,
-    "hodScoreTotal": 329,
-    "hoiScoreTotal": 329,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -84255,7 +84255,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -84528,10 +84528,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 283,
-    "hodScoreTotal": 283,
-    "hoiScoreTotal": 283,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -84543,7 +84543,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -84816,10 +84816,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 286,
-    "hodScoreTotal": 286,
-    "hoiScoreTotal": 286,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -84831,7 +84831,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -85104,10 +85104,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 280,
-    "hodScoreTotal": 280,
-    "hoiScoreTotal": 280,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -85119,7 +85119,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -85392,9 +85392,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 328,
-    "hodScoreTotal": 328,
-    "hoiScoreTotal": 328,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -85407,7 +85407,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -85680,10 +85680,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 214,
-    "hodScoreTotal": 214,
-    "hoiScoreTotal": 214,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -85695,7 +85695,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -85968,10 +85968,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 329,
-    "hodScoreTotal": 329,
-    "hoiScoreTotal": 329,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -85983,7 +85983,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -86256,10 +86256,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 317,
-    "hodScoreTotal": 317,
-    "hoiScoreTotal": 317,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -86271,7 +86271,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -86544,9 +86544,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -86559,7 +86559,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -86832,10 +86832,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 225,
-    "hodScoreTotal": 225,
-    "hoiScoreTotal": 225,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -86847,7 +86847,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -87120,9 +87120,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 291,
-    "hodScoreTotal": 291,
-    "hoiScoreTotal": 291,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -87135,7 +87135,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -87408,10 +87408,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -87423,7 +87423,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -87696,10 +87696,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 275,
-    "hodScoreTotal": 275,
-    "hoiScoreTotal": 275,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -87711,7 +87711,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -87984,10 +87984,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 332,
-    "hodScoreTotal": 332,
-    "hoiScoreTotal": 332,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -87999,7 +87999,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -88272,10 +88272,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 287,
-    "hodScoreTotal": 287,
-    "hoiScoreTotal": 287,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -88287,7 +88287,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -88560,10 +88560,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 288,
-    "hodScoreTotal": 288,
-    "hoiScoreTotal": 288,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -88575,7 +88575,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -88848,10 +88848,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 299,
-    "hodScoreTotal": 299,
-    "hoiScoreTotal": 299,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -88863,7 +88863,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -89136,10 +89136,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 229,
-    "hodScoreTotal": 229,
-    "hoiScoreTotal": 229,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -89151,7 +89151,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -89424,10 +89424,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 231,
-    "hodScoreTotal": 231,
-    "hoiScoreTotal": 231,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -89439,7 +89439,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -89712,9 +89712,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 295,
-    "hodScoreTotal": 295,
-    "hoiScoreTotal": 295,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -89727,7 +89727,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -90000,10 +90000,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 301,
-    "hodScoreTotal": 301,
-    "hoiScoreTotal": 301,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -90015,7 +90015,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -90288,10 +90288,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 280,
-    "hodScoreTotal": 280,
-    "hoiScoreTotal": 280,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -90303,7 +90303,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -90576,10 +90576,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 306,
-    "hodScoreTotal": 306,
-    "hoiScoreTotal": 306,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -90591,7 +90591,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -90864,10 +90864,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 335,
-    "hodScoreTotal": 335,
-    "hoiScoreTotal": 335,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -90879,7 +90879,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -91152,10 +91152,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 321,
-    "hodScoreTotal": 321,
-    "hoiScoreTotal": 321,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -91167,7 +91167,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -91440,10 +91440,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 286,
-    "hodScoreTotal": 286,
-    "hoiScoreTotal": 286,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -91455,7 +91455,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -91728,9 +91728,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -91743,7 +91743,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -92016,9 +92016,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 283,
-    "hodScoreTotal": 283,
-    "hoiScoreTotal": 283,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -92031,7 +92031,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -92304,10 +92304,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 337,
-    "hodScoreTotal": 337,
-    "hoiScoreTotal": 337,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -92319,7 +92319,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -92592,10 +92592,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 225,
-    "hodScoreTotal": 225,
-    "hoiScoreTotal": 225,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -92607,7 +92607,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -92880,10 +92880,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 289,
-    "hodScoreTotal": 289,
-    "hoiScoreTotal": 289,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -92895,7 +92895,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -93168,10 +93168,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 276,
-    "hodScoreTotal": 276,
-    "hoiScoreTotal": 276,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -93183,7 +93183,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -93456,10 +93456,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 269,
-    "hodScoreTotal": 269,
-    "hoiScoreTotal": 269,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -93471,7 +93471,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -93744,10 +93744,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 209,
-    "hodScoreTotal": 209,
-    "hoiScoreTotal": 209,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -93759,7 +93759,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -94032,10 +94032,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 334,
-    "hodScoreTotal": 334,
-    "hoiScoreTotal": 334,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -94047,7 +94047,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -94320,9 +94320,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 271,
-    "hodScoreTotal": 271,
-    "hoiScoreTotal": 271,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -94335,7 +94335,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -94608,10 +94608,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 270,
-    "hodScoreTotal": 270,
-    "hoiScoreTotal": 270,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -94623,7 +94623,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -94896,9 +94896,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 234,
-    "hodScoreTotal": 234,
-    "hoiScoreTotal": 234,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -94911,7 +94911,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -95184,9 +95184,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 265,
-    "hodScoreTotal": 265,
-    "hoiScoreTotal": 265,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -95199,7 +95199,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -95472,9 +95472,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 304,
-    "hodScoreTotal": 304,
-    "hoiScoreTotal": 304,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -95487,7 +95487,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -95760,10 +95760,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 299,
-    "hodScoreTotal": 299,
-    "hoiScoreTotal": 299,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -95775,7 +95775,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "Easwari Engineering College (EEC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "Easwari Engineering College (EEC)",
@@ -96048,10 +96048,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 324,
-    "hodScoreTotal": 324,
-    "hoiScoreTotal": 324,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -96063,7 +96063,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -96336,9 +96336,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -96351,7 +96351,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -96624,10 +96624,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 208,
-    "hodScoreTotal": 208,
-    "hoiScoreTotal": 208,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -96639,7 +96639,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -96912,10 +96912,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 267,
-    "hodScoreTotal": 267,
-    "hoiScoreTotal": 267,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -96927,7 +96927,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -97200,10 +97200,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 313,
-    "hodScoreTotal": 313,
-    "hoiScoreTotal": 313,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -97215,7 +97215,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -97488,10 +97488,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 300,
-    "hodScoreTotal": 300,
-    "hoiScoreTotal": 300,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -97503,7 +97503,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -97776,10 +97776,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 330,
-    "hodScoreTotal": 330,
-    "hoiScoreTotal": 330,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -97791,7 +97791,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -98064,10 +98064,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 291,
-    "hodScoreTotal": 291,
-    "hoiScoreTotal": 291,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -98079,7 +98079,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -98352,9 +98352,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 294,
-    "hodScoreTotal": 294,
-    "hoiScoreTotal": 294,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -98367,7 +98367,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -98640,10 +98640,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 202,
-    "hodScoreTotal": 202,
-    "hoiScoreTotal": 202,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -98655,7 +98655,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -98928,10 +98928,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 332,
-    "hodScoreTotal": 332,
-    "hoiScoreTotal": 332,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -98943,7 +98943,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -99216,9 +99216,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 270,
-    "hodScoreTotal": 270,
-    "hoiScoreTotal": 270,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -99231,7 +99231,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -99504,10 +99504,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 324,
-    "hodScoreTotal": 324,
-    "hoiScoreTotal": 324,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -99519,7 +99519,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -99792,10 +99792,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 275,
-    "hodScoreTotal": 275,
-    "hoiScoreTotal": 275,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -99807,7 +99807,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -100080,9 +100080,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 276,
-    "hodScoreTotal": 276,
-    "hoiScoreTotal": 276,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -100095,7 +100095,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -100368,9 +100368,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 292,
-    "hodScoreTotal": 292,
-    "hoiScoreTotal": 292,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -100383,7 +100383,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -100656,10 +100656,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 304,
-    "hodScoreTotal": 304,
-    "hoiScoreTotal": 304,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -100671,7 +100671,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -100944,9 +100944,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 208,
-    "hodScoreTotal": 208,
-    "hoiScoreTotal": 208,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -100959,7 +100959,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -101232,9 +101232,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 312,
-    "hodScoreTotal": 312,
-    "hoiScoreTotal": 312,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -101247,7 +101247,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -101520,10 +101520,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 269,
-    "hodScoreTotal": 269,
-    "hoiScoreTotal": 269,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -101535,7 +101535,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -101808,9 +101808,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 286,
-    "hodScoreTotal": 286,
-    "hoiScoreTotal": 286,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -101823,7 +101823,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -102096,10 +102096,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 315,
-    "hodScoreTotal": 315,
-    "hoiScoreTotal": 315,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -102111,7 +102111,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -102384,9 +102384,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 291,
-    "hodScoreTotal": 291,
-    "hoiScoreTotal": 291,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -102399,7 +102399,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -102672,9 +102672,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -102687,7 +102687,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -102960,10 +102960,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 216,
-    "hodScoreTotal": 216,
-    "hoiScoreTotal": 216,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -102975,7 +102975,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -103248,9 +103248,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 269,
-    "hodScoreTotal": 269,
-    "hoiScoreTotal": 269,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -103263,7 +103263,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -103536,10 +103536,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 265,
-    "hodScoreTotal": 265,
-    "hoiScoreTotal": 265,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -103551,7 +103551,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -103824,10 +103824,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 214,
-    "hodScoreTotal": 214,
-    "hoiScoreTotal": 214,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -103839,7 +103839,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -104112,10 +104112,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 294,
-    "hodScoreTotal": 294,
-    "hoiScoreTotal": 294,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -104127,7 +104127,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -104400,10 +104400,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 283,
-    "hodScoreTotal": 283,
-    "hoiScoreTotal": 283,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -104415,7 +104415,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -104688,9 +104688,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 338,
-    "hodScoreTotal": 338,
-    "hoiScoreTotal": 338,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -104703,7 +104703,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -104976,9 +104976,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 221,
-    "hodScoreTotal": 221,
-    "hoiScoreTotal": 221,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -104991,7 +104991,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -105264,10 +105264,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 329,
-    "hodScoreTotal": 329,
-    "hoiScoreTotal": 329,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -105279,7 +105279,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -105552,9 +105552,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 292,
-    "hodScoreTotal": 292,
-    "hoiScoreTotal": 292,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -105567,7 +105567,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -105840,9 +105840,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -105855,7 +105855,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -106128,10 +106128,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 275,
-    "hodScoreTotal": 275,
-    "hoiScoreTotal": 275,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -106143,7 +106143,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -106416,10 +106416,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 285,
-    "hodScoreTotal": 285,
-    "hoiScoreTotal": 285,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -106431,7 +106431,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -106704,10 +106704,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 227,
-    "hodScoreTotal": 227,
-    "hoiScoreTotal": 227,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -106719,7 +106719,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -106992,10 +106992,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 319,
-    "hodScoreTotal": 319,
-    "hoiScoreTotal": 319,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -107007,7 +107007,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -107280,10 +107280,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 269,
-    "hodScoreTotal": 269,
-    "hoiScoreTotal": 269,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -107295,7 +107295,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -107568,9 +107568,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 301,
-    "hodScoreTotal": 301,
-    "hoiScoreTotal": 301,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -107583,7 +107583,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -107856,10 +107856,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 284,
-    "hodScoreTotal": 284,
-    "hoiScoreTotal": 284,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -107871,7 +107871,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -108144,10 +108144,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 324,
-    "hodScoreTotal": 324,
-    "hoiScoreTotal": 324,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -108159,7 +108159,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -108432,10 +108432,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 320,
-    "hodScoreTotal": 320,
-    "hoiScoreTotal": 320,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -108447,7 +108447,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -108720,9 +108720,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 284,
-    "hodScoreTotal": 284,
-    "hoiScoreTotal": 284,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -108735,7 +108735,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -109008,10 +109008,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 220,
-    "hodScoreTotal": 220,
-    "hoiScoreTotal": 220,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -109023,7 +109023,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -109296,9 +109296,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 295,
-    "hodScoreTotal": 295,
-    "hoiScoreTotal": 295,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -109311,7 +109311,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -109584,10 +109584,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 293,
-    "hodScoreTotal": 293,
-    "hoiScoreTotal": 293,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -109599,7 +109599,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -109872,9 +109872,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 295,
-    "hodScoreTotal": 295,
-    "hoiScoreTotal": 295,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -109887,7 +109887,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -110160,10 +110160,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 323,
-    "hodScoreTotal": 323,
-    "hoiScoreTotal": 323,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -110175,7 +110175,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -110448,10 +110448,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 265,
-    "hodScoreTotal": 265,
-    "hoiScoreTotal": 265,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -110463,7 +110463,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -110736,10 +110736,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 219,
-    "hodScoreTotal": 219,
-    "hoiScoreTotal": 219,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -110751,7 +110751,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -111024,10 +111024,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 274,
-    "hodScoreTotal": 274,
-    "hoiScoreTotal": 274,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -111039,7 +111039,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -111312,9 +111312,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 276,
-    "hodScoreTotal": 276,
-    "hoiScoreTotal": 276,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -111327,7 +111327,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -111600,10 +111600,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 326,
-    "hodScoreTotal": 326,
-    "hoiScoreTotal": 326,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -111615,7 +111615,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -111888,10 +111888,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 286,
-    "hodScoreTotal": 286,
-    "hoiScoreTotal": 286,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -111903,7 +111903,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Dental College (SRMDC)",
     "campus": "SRM Ramapuram Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Dental College (SRMDC)",
@@ -112176,10 +112176,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 320,
-    "hodScoreTotal": 320,
-    "hoiScoreTotal": 320,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -112191,7 +112191,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -112464,10 +112464,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 294,
-    "hodScoreTotal": 294,
-    "hoiScoreTotal": 294,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -112479,7 +112479,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -112752,9 +112752,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 226,
-    "hodScoreTotal": 226,
-    "hoiScoreTotal": 226,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -112767,7 +112767,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -113040,9 +113040,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 294,
-    "hodScoreTotal": 294,
-    "hoiScoreTotal": 294,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -113055,7 +113055,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -113328,9 +113328,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 298,
-    "hodScoreTotal": 298,
-    "hoiScoreTotal": 298,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -113343,7 +113343,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -113616,10 +113616,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 290,
-    "hodScoreTotal": 290,
-    "hoiScoreTotal": 290,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -113631,7 +113631,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -113904,10 +113904,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 314,
-    "hodScoreTotal": 314,
-    "hoiScoreTotal": 314,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -113919,7 +113919,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -114192,9 +114192,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 289,
-    "hodScoreTotal": 289,
-    "hoiScoreTotal": 289,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -114207,7 +114207,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -114480,10 +114480,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 329,
-    "hodScoreTotal": 329,
-    "hoiScoreTotal": 329,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -114495,7 +114495,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -114768,10 +114768,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 290,
-    "hodScoreTotal": 290,
-    "hoiScoreTotal": 290,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -114783,7 +114783,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -115056,10 +115056,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 286,
-    "hodScoreTotal": 286,
-    "hoiScoreTotal": 286,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -115071,7 +115071,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -115344,10 +115344,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 230,
-    "hodScoreTotal": 230,
-    "hoiScoreTotal": 230,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -115359,7 +115359,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -115632,9 +115632,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -115647,7 +115647,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -115920,10 +115920,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 323,
-    "hodScoreTotal": 323,
-    "hoiScoreTotal": 323,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -115935,7 +115935,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -116208,9 +116208,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 266,
-    "hodScoreTotal": 266,
-    "hoiScoreTotal": 266,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -116223,7 +116223,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -116496,9 +116496,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 290,
-    "hodScoreTotal": 290,
-    "hoiScoreTotal": 290,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -116511,7 +116511,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -116784,9 +116784,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 291,
-    "hodScoreTotal": 291,
-    "hoiScoreTotal": 291,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -116799,7 +116799,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -117072,9 +117072,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 226,
-    "hodScoreTotal": 226,
-    "hoiScoreTotal": 226,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -117087,7 +117087,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -117360,10 +117360,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 330,
-    "hodScoreTotal": 330,
-    "hoiScoreTotal": 330,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -117375,7 +117375,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -117648,10 +117648,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 267,
-    "hodScoreTotal": 267,
-    "hoiScoreTotal": 267,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -117663,7 +117663,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -117936,9 +117936,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 222,
-    "hodScoreTotal": 222,
-    "hoiScoreTotal": 222,
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
     "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -117951,7 +117951,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -118224,9 +118224,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 281,
-    "hodScoreTotal": 281,
-    "hoiScoreTotal": 281,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -118239,7 +118239,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -118512,9 +118512,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 267,
-    "hodScoreTotal": 267,
-    "hoiScoreTotal": 267,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -118527,7 +118527,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Engineering College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Engineering College",
@@ -118800,10 +118800,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 300,
-    "hodScoreTotal": 300,
-    "hoiScoreTotal": 300,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -118815,7 +118815,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -119088,10 +119088,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 294,
-    "hodScoreTotal": 294,
-    "hoiScoreTotal": 294,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -119103,7 +119103,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -119376,10 +119376,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 195,
-    "hodScoreTotal": 195,
-    "hoiScoreTotal": 195,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -119391,7 +119391,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -119664,9 +119664,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 298,
-    "hodScoreTotal": 298,
-    "hoiScoreTotal": 298,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -119679,7 +119679,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -119952,9 +119952,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 278,
-    "hodScoreTotal": 278,
-    "hoiScoreTotal": 278,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -119967,7 +119967,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -120240,9 +120240,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 322,
-    "hodScoreTotal": 322,
-    "hoiScoreTotal": 322,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -120255,7 +120255,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -120528,10 +120528,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 213,
-    "hodScoreTotal": 213,
-    "hoiScoreTotal": 213,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -120543,7 +120543,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -120816,9 +120816,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 329,
-    "hodScoreTotal": 329,
-    "hoiScoreTotal": 329,
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
     "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -120831,7 +120831,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -121104,9 +121104,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 279,
-    "hodScoreTotal": 279,
-    "hoiScoreTotal": 279,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -121119,7 +121119,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -121392,10 +121392,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 271,
-    "hodScoreTotal": 271,
-    "hoiScoreTotal": 271,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -121407,7 +121407,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -121680,10 +121680,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 276,
-    "hodScoreTotal": 276,
-    "hoiScoreTotal": 276,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -121695,7 +121695,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -121968,10 +121968,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 319,
-    "hodScoreTotal": 319,
-    "hoiScoreTotal": 319,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -121983,7 +121983,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -122256,10 +122256,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 276,
-    "hodScoreTotal": 276,
-    "hoiScoreTotal": 276,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -122271,7 +122271,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -122544,10 +122544,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 281,
-    "hodScoreTotal": 281,
-    "hoiScoreTotal": 281,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -122559,7 +122559,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -122832,10 +122832,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 207,
-    "hodScoreTotal": 207,
-    "hoiScoreTotal": 207,
-    "grade": "Grade C",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -122847,7 +122847,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -123120,10 +123120,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 275,
-    "hodScoreTotal": 275,
-    "hoiScoreTotal": 275,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -123135,7 +123135,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -123408,10 +123408,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 275,
-    "hodScoreTotal": 275,
-    "hoiScoreTotal": 275,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -123423,7 +123423,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -123696,10 +123696,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 323,
-    "hodScoreTotal": 323,
-    "hoiScoreTotal": 323,
-    "grade": "Grade A",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -123711,7 +123711,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -123984,9 +123984,9 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 289,
-    "hodScoreTotal": 289,
-    "hoiScoreTotal": 289,
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
     "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
@@ -123999,7 +123999,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Head of Department(HOD)",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -124272,10 +124272,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 220,
-    "hodScoreTotal": 220,
-    "hoiScoreTotal": 220,
-    "grade": "Grade C",
+    "selfScoreTotal": 280,
+    "hodScoreTotal": 280,
+    "hoiScoreTotal": 280,
+    "grade": "Grade B",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -124287,7 +124287,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -124560,10 +124560,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 273,
-    "hodScoreTotal": 273,
-    "hoiScoreTotal": 273,
-    "grade": "Grade B",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -124575,7 +124575,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Assistant Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOD_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -124848,10 +124848,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 292,
-    "hodScoreTotal": 292,
-    "hoiScoreTotal": 292,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -124863,7 +124863,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Associate Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "SUBMITTED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -125136,10 +125136,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 282,
-    "hodScoreTotal": 282,
-    "hoiScoreTotal": 282,
-    "grade": "Grade B",
+    "selfScoreTotal": 320,
+    "hodScoreTotal": 320,
+    "hoiScoreTotal": 320,
+    "grade": "Grade A",
     "updatedAt": "2025-01-15T10:00:00Z"
   },
   {
@@ -125151,7 +125151,7 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
     "institution": "SRM Trichy Medical College",
     "campus": "SRM Trichy Campus",
     "designation": "Professor",
-    "monthYear": "Jan 2025",
+    "monthYear": "January 2026",
     "status": "HOI_APPROVED",
     "generalDetails": {
       "institutionName": "SRM Trichy Medical College",
@@ -125424,10 +125424,10 @@ export const INITIAL_APPRAISALS: AppraisalRecord[] = [
       "disciplinaryAction": false,
       "lastYearCompliance": []
     },
-    "selfScoreTotal": 333,
-    "hodScoreTotal": 333,
-    "hoiScoreTotal": 333,
-    "grade": "Grade A",
+    "selfScoreTotal": 160,
+    "hodScoreTotal": 160,
+    "hoiScoreTotal": 160,
+    "grade": "Grade C",
     "updatedAt": "2025-01-15T10:00:00Z"
   }
 ];
